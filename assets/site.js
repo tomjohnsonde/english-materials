@@ -97,7 +97,29 @@
     }
     document.title = `${section.title} · Intermediate English Materials`;
     const resources = data.resources.filter((item) => item.section === section.slug);
-    main.innerHTML = `<section class="page-intro"><div class="container"><p class="eyebrow eyebrow--coral">${escapeHtml(section.group)}</p><h1>${escapeHtml(section.title)}</h1><p>${escapeHtml(section.desc)}</p></div></section><section class="section section--paper"><div class="container"><div class="archive-banner"><div><p class="eyebrow eyebrow--coral">Complete source archive</p><h2>Every current link stays available.</h2><p>This section contains a direct route to the complete, checked archive on the original site.</p></div><a class="button button--dark" href="${section.source}" target="_blank" rel="noopener noreferrer">Open complete section <span aria-hidden="true">↗</span></a></div>${resources.length ? `<div class="section-heading"><p class="eyebrow eyebrow--coral">Featured direct links</p><h2>Start with these materials</h2></div><div class="resource-grid resource-grid--three">${resources.map((resource) => resourceCard(resource)).join('')}</div>` : `<p class="archive-empty">This current archive page has no separately indexed material links. Use the complete-section button above to view the original page.</p>`}</div></section>`;
+    main.innerHTML = `<section class="page-intro"><div class="container"><p class="eyebrow eyebrow--coral">${escapeHtml(section.group)}</p><h1>${escapeHtml(section.title)}</h1><p>${escapeHtml(section.desc)}</p></div></section><section class="section section--paper"><div class="container"><div class="archive-banner"><div><p class="eyebrow eyebrow--coral">Full local archive</p><h2>Files are hosted inside this site.</h2><p>Download the copied materials below. The original page remains available as a reference.</p></div><a class="button button--dark" href="${section.source}" target="_blank" rel="noopener noreferrer">View original page <span aria-hidden="true">↗</span></a></div>${resources.length ? `<div class="section-heading"><p class="eyebrow eyebrow--coral">Featured files</p><h2>Start with these materials</h2></div><div class="resource-grid resource-grid--three">${resources.map((resource) => resourceCard(resource)).join('')}</div>` : ''}<section class="local-materials" aria-labelledby="local-materials-title"><p class="eyebrow eyebrow--coral">All copied files</p><h2 id="local-materials-title">Complete section archive</h2><div data-local-materials="${section.slug}"><p class="archive-loading">Loading local files…</p></div></section></div></section>`;
+  }
+
+  function localFileCard(file) {
+    const extension = file.local.split('.').pop().toUpperCase();
+    return `<a class="local-file" href="${file.local}" download><span class="local-file__type">${escapeHtml(extension)}</span><span class="local-file__title">${escapeHtml(file.title || 'Download file')}</span><span class="local-file__arrow" aria-hidden="true">↓</span></a>`;
+  }
+
+  async function renderLocalMaterials() {
+    const targets = document.querySelectorAll('[data-local-materials]');
+    if (!targets.length) return;
+    try {
+      const response = await fetch('assets/materials/manifest.json');
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const files = await response.json();
+      targets.forEach((target) => {
+        const section = target.dataset.localMaterials;
+        const matching = files.filter((file) => file.sections.includes(section));
+        target.innerHTML = matching.length ? `<div class="local-file-list">${matching.map(localFileCard).join('')}</div>` : `<p class="archive-empty">No local files are listed for this section.</p>`;
+      });
+    } catch {
+      targets.forEach((target) => { target.innerHTML = '<p class="archive-empty">The local file list will appear after the site is published. The direct links above are still available.</p>'; });
+    }
   }
 
   function handleContactForm() {
@@ -120,5 +142,6 @@
   renderSectionDirectory();
   renderLibrary();
   renderSectionPage();
+  renderLocalMaterials();
   handleContactForm();
 })();
