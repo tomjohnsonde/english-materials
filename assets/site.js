@@ -26,7 +26,7 @@
   function renderFooter() {
     const footer = document.querySelector('[data-site-footer]');
     if (!footer) return;
-    footer.innerHTML = `<div class="footer-band"><div class="container footer-band__inner"><p>Intermediate English Materials</p><a href="#main">Back to top ↑</a></div></div><div class="footer-main"><div class="container footer-main__inner"><div><a class="footer-brand" href="index.html">IEM<span>.</span></a><p>Practical English materials<br />for curious intermediate learners.</p></div><div class="footer-links"><p>Explore</p>${data.navigation.map((item) => `<a href="${item.href}">${item.label}</a>`).join('')}</div><div class="footer-links"><p>More sections</p><a href="library.html#section-directory">All 20 sections</a><a href="contact.html">Contact Tom</a><a href="${data.sourceHome}" target="_blank" rel="noopener noreferrer">Original materials ↗</a></div></div><div class="container footer-legal"><span>© ${new Date().getFullYear()} Intermediate English Materials</span><span>Direct resource links are retained from the current materials archive.</span></div></div>`;
+    footer.innerHTML = `<div class="footer-band"><div class="container footer-band__inner"><p>Intermediate English Materials</p><a href="#main">Back to top ↑</a></div></div><div class="footer-main"><div class="container footer-main__inner"><div><a class="footer-brand" href="index.html">IEM<span>.</span></a><p>Practical English materials<br />for curious intermediate learners.</p></div><div class="footer-links"><p>Explore</p>${data.navigation.map((item) => `<a href="${item.href}">${item.label}</a>`).join('')}</div><div class="footer-links"><p>Site information</p><a href="library.html#section-directory">All 20 sections</a><a href="contact.html">Contact Tom</a><a href="mailto:tomjohnsonde@gmail.com">Email Tom</a></div></div><div class="container footer-legal"><span>© ${new Date().getFullYear()} Intermediate English Materials</span><span>Materials are stored and available directly on this site.</span></div></div>`;
   }
 
   function renderResourceGrids() {
@@ -46,12 +46,6 @@
     const grid = document.querySelector('[data-topic-grid]');
     if (!grid) return;
     grid.innerHTML = data.topics.map((topic) => `<a class="topic-card" href="${topic.href}"><span>${topic.mark}</span><h3>${topic.title}</h3><p>${topic.text}</p><b aria-hidden="true">→</b></a>`).join('');
-  }
-
-  function renderUsefulLinks() {
-    const grid = document.querySelector('[data-useful-links]');
-    if (!grid) return;
-    grid.innerHTML = data.usefulLinks.map((link) => `<a class="useful-link" href="${link.href}" target="_blank" rel="noopener noreferrer"><span class="useful-link__mark">↗</span><h3>${escapeHtml(link.title)}</h3><p>${escapeHtml(link.text)}</p></a>`).join('');
   }
 
   function renderSectionDirectory() {
@@ -97,7 +91,7 @@
     }
     document.title = `${section.title} · Intermediate English Materials`;
     const resources = data.resources.filter((item) => item.section === section.slug);
-    main.innerHTML = `<section class="page-intro"><div class="container"><p class="eyebrow eyebrow--coral">${escapeHtml(section.group)}</p><h1>${escapeHtml(section.title)}</h1><p>${escapeHtml(section.desc)}</p></div></section><section class="section section--paper"><div class="container"><div class="archive-banner"><div><p class="eyebrow eyebrow--coral">Full local archive</p><h2>Files are hosted inside this site.</h2><p>Download the copied materials below. The original page remains available as a reference.</p></div><a class="button button--dark" href="${section.source}" target="_blank" rel="noopener noreferrer">View original page <span aria-hidden="true">↗</span></a></div>${resources.length ? `<div class="section-heading"><p class="eyebrow eyebrow--coral">Featured files</p><h2>Start with these materials</h2></div><div class="resource-grid resource-grid--three">${resources.map((resource) => resourceCard(resource)).join('')}</div>` : ''}<section class="local-materials" aria-labelledby="local-materials-title"><p class="eyebrow eyebrow--coral">All copied files</p><h2 id="local-materials-title">Complete section archive</h2><div data-local-materials="${section.slug}"><p class="archive-loading">Loading local files…</p></div></section></div></section>`;
+    main.innerHTML = `<section class="page-intro"><div class="container"><p class="eyebrow eyebrow--coral">${escapeHtml(section.group)}</p><h1>${escapeHtml(section.title)}</h1><p>${escapeHtml(section.desc)}</p></div></section><section class="section section--paper"><div class="container"><div class="archive-banner"><div><p class="eyebrow eyebrow--coral">Full local archive</p><h2>Everything is stored on this site.</h2><p>Choose a featured resource or download a file from the complete section archive below.</p></div><a class="button button--dark" href="library.html">Browse all materials <span aria-hidden="true">→</span></a></div>${resources.length ? `<div class="section-heading"><p class="eyebrow eyebrow--coral">Featured files</p><h2>Start with these materials</h2></div><div class="resource-grid resource-grid--three">${resources.map((resource) => resourceCard(resource)).join('')}</div>` : ''}<section class="local-materials" aria-labelledby="local-materials-title"><p class="eyebrow eyebrow--coral">All copied files</p><h2 id="local-materials-title">Complete section archive</h2><div data-local-materials="${section.slug}"><p class="archive-loading">Loading local files…</p></div></section></div></section>`;
   }
 
   function localFileCard(file) {
@@ -129,8 +123,13 @@
     form.addEventListener('submit', (event) => {
       event.preventDefault();
       if (!form.checkValidity()) { status.textContent = 'Please complete your name, email and message.'; status.className = 'form-status form-status--error'; form.reportValidity(); return; }
-      status.textContent = 'Your message is ready. Use “Open contact form” to send it through Tom’s active original form, or connect this form to your own email service before publishing.';
+      const formData = new FormData(form);
+      const name = `${formData.get('firstName')} ${formData.get('lastName')}`.trim();
+      const subject = 'Message from Intermediate English Materials';
+      const body = `Name: ${name}\nEmail: ${formData.get('email')}\n\nMessage:\n${formData.get('message')}`;
+      status.textContent = 'Opening your email app with the message ready to send…';
       status.className = 'form-status form-status--success'; form.reset();
+      window.location.href = `mailto:tomjohnsonde@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     });
   }
 
@@ -138,7 +137,6 @@
   renderFooter();
   renderResourceGrids();
   renderTopics();
-  renderUsefulLinks();
   renderSectionDirectory();
   renderLibrary();
   renderSectionPage();

@@ -1,5 +1,4 @@
 globalThis.siteData = {
-  sourceHome: 'https://myintermediatematerials.weebly.com/',
   navigation: [
     { label: 'Home', href: 'index.html', page: 'home' },
     { label: 'Grammar', href: 'grammar.html', page: 'grammar' },
@@ -8,38 +7,31 @@ globalThis.siteData = {
     { label: 'All materials', href: 'library.html', page: 'library' }
   ],
   sections: [
-    { slug: 'grammar', title: 'Grammar', href: 'grammar.html', source: 'https://myintermediatematerials.weebly.com/grammar.html', group: 'Language', desc: 'Conditionals, verb tenses, linking words and grammar practice.' },
-    { slug: 'medical', title: 'Medical English', href: 'medical-english.html', source: 'https://myintermediatematerials.weebly.com/medical-english.html', group: 'Language', desc: 'Healthcare vocabulary, reports and specialist discussion tasks.' },
-    { slug: 'speaking', title: 'Speaking', href: 'speaking.html', source: 'https://myintermediatematerials.weebly.com/speaking.html', group: 'Skills', desc: 'Discussion topics, telephone dialogues and role plays.' },
-    { slug: 'business-1', title: 'VHS — Business Intermediate', href: 'section.html?section=business-1', source: 'https://myintermediatematerials.weebly.com/vhs---business-intermediate.html', group: 'Business', desc: 'Business-intermediate course archive.' },
-    { slug: 'business-2', title: 'VHS Business Int Course 2', href: 'section.html?section=business-2', source: 'https://myintermediatematerials.weebly.com/vhs-business-int-course-2.html', group: 'Business', desc: 'Business course resources and current lesson links.' },
-    { slug: 'collocations', title: 'Collocations', href: 'section.html?section=collocations', source: 'https://myintermediatematerials.weebly.com/collocations.html', group: 'Language', desc: 'Natural word combinations, make/do and topic vocabulary.' },
-    { slug: 'pronunciation', title: 'Pronunciation & Spelling', href: 'section.html?section=pronunciation', source: 'https://myintermediatematerials.weebly.com/pronunciation--spelling.html', group: 'Language', desc: 'Phonemic transcription and spelling resources.' },
-    { slug: 'false-friends', title: 'False Friends', href: 'section.html?section=false-friends', source: 'https://myintermediatematerials.weebly.com/false-friends.html', group: 'Language', desc: 'German–English false friends and practice files.' },
-    { slug: 'writing-1', title: 'Writing 1', href: 'section.html?section=writing-1', source: 'https://myintermediatematerials.weebly.com/writing-1.html', group: 'Skills', desc: 'Writing practice, linking words and annotation support.' },
-    { slug: 'writing-2', title: 'Writing 2', href: 'section.html?section=writing-2', source: 'https://myintermediatematerials.weebly.com/writing-2.html', group: 'Skills', desc: 'Second writing course archive.' },
-    { slug: 'reading-listening', title: 'Reading & Listening', href: 'section.html?section=reading-listening', source: 'https://myintermediatematerials.weebly.com/reading--listening.html', group: 'Skills', desc: 'Reading texts, listening practice and answer sheets.' },
-    { slug: 'spelling-punctuation', title: 'Spelling & Punctuation', href: 'section.html?section=spelling-punctuation', source: 'https://myintermediatematerials.weebly.com/spelling--punctuation.html', group: 'Language', desc: 'Punctuation and spelling worksheets.' },
-    { slug: 'emails', title: 'Emails', href: 'section.html?section=emails', source: 'https://myintermediatematerials.weebly.com/emails.html', group: 'Business', desc: 'Formal letters, email structure and stock phrases.' },
-    { slug: 'games', title: 'Games', href: 'section.html?section=games', source: 'https://myintermediatematerials.weebly.com/games.html', group: 'Practice', desc: 'Jeopardy, crosswords, hangman and classroom games.' },
-    { slug: 'videos', title: 'Videos', href: 'section.html?section=videos', source: 'https://myintermediatematerials.weebly.com/videos.html', group: 'Skills', desc: 'Video and listening activities from trusted providers.' },
-    { slug: 'tests', title: 'Tests', href: 'section.html?section=tests', source: 'https://myintermediatematerials.weebly.com/tests.html', group: 'Practice', desc: 'Business English tests and quiz resources.' },
-    { slug: 'attendance', title: 'Attendance', href: 'section.html?section=attendance', source: 'https://myintermediatematerials.weebly.com/attendance.html', group: 'Course', desc: 'Course attendance area.' },
-    { slug: 'vocabulary', title: 'Vocabulary', href: 'section.html?section=vocabulary', source: 'https://myintermediatematerials.weebly.com/vocabulary.html', group: 'Language', desc: 'Telephone, travel, news and everyday vocabulary.' },
-    { slug: 'finance', title: 'Finance', href: 'section.html?section=finance', source: 'https://myintermediatematerials.weebly.com/finance.html', group: 'Business', desc: 'Money, finance and business vocabulary.' }
+    { slug: 'grammar', title: 'Grammar', href: 'grammar.html', group: 'Language', desc: 'Conditionals, verb tenses, linking words and grammar practice.' },
+    { slug: 'medical', title: 'Medical English', href: 'medical-english.html', group: 'Language', desc: 'Healthcare vocabulary, reports and specialist discussion tasks.' },
+    { slug: 'speaking', title: 'Speaking', href: 'speaking.html', group: 'Skills', desc: 'Discussion topics, telephone dialogues and role plays.' },
+    { slug: 'business-1', title: 'VHS — Business Intermediate', href: 'section.html?section=business-1', group: 'Business', desc: 'Business-intermediate course archive.' },
+    { slug: 'business-2', title: 'VHS Business Int Course 2', href: 'section.html?section=business-2', group: 'Business', desc: 'Business course resources and current lesson links.' },
+    { slug: 'collocations', title: 'Collocations', href: 'section.html?section=collocations', group: 'Language', desc: 'Natural word combinations, make/do and topic vocabulary.' },
+    { slug: 'pronunciation', title: 'Pronunciation & Spelling', href: 'section.html?section=pronunciation', group: 'Language', desc: 'Phonemic transcription and spelling resources.' },
+    { slug: 'false-friends', title: 'False Friends', href: 'section.html?section=false-friends', group: 'Language', desc: 'German–English false friends and practice files.' },
+    { slug: 'writing-1', title: 'Writing 1', href: 'section.html?section=writing-1', group: 'Skills', desc: 'Writing practice, linking words and annotation support.' },
+    { slug: 'writing-2', title: 'Writing 2', href: 'section.html?section=writing-2', group: 'Skills', desc: 'Second writing course archive.' },
+    { slug: 'reading-listening', title: 'Reading & Listening', href: 'section.html?section=reading-listening', group: 'Skills', desc: 'Reading texts, listening practice and answer sheets.' },
+    { slug: 'spelling-punctuation', title: 'Spelling & Punctuation', href: 'section.html?section=spelling-punctuation', group: 'Language', desc: 'Punctuation and spelling worksheets.' },
+    { slug: 'emails', title: 'Emails', href: 'section.html?section=emails', group: 'Business', desc: 'Formal letters, email structure and stock phrases.' },
+    { slug: 'games', title: 'Games', href: 'section.html?section=games', group: 'Practice', desc: 'Jeopardy, crosswords, hangman and classroom games.' },
+    { slug: 'videos', title: 'Videos', href: 'section.html?section=videos', group: 'Skills', desc: 'Video and listening activities from trusted providers.' },
+    { slug: 'tests', title: 'Tests', href: 'section.html?section=tests', group: 'Practice', desc: 'Business English tests and quiz resources.' },
+    { slug: 'attendance', title: 'Attendance', href: 'section.html?section=attendance', group: 'Course', desc: 'Course attendance area.' },
+    { slug: 'vocabulary', title: 'Vocabulary', href: 'section.html?section=vocabulary', group: 'Language', desc: 'Telephone, travel, news and everyday vocabulary.' },
+    { slug: 'finance', title: 'Finance', href: 'section.html?section=finance', group: 'Business', desc: 'Money, finance and business vocabulary.' }
   ],
   topics: [
     { title: 'Grammar', text: 'Tenses, conditionals and useful sentence patterns.', href: 'grammar.html', mark: '01' },
     { title: 'Medical English', text: 'Healthcare vocabulary and professional communication.', href: 'medical-english.html', mark: '02' },
     { title: 'Speaking', text: 'Discussion prompts, role plays and telephone language.', href: 'speaking.html', mark: '03' },
     { title: 'All 20 sections', text: 'A clear, complete directory of the whole materials archive.', href: 'library.html', mark: '04' }
-  ],
-  usefulLinks: [
-    { title: "Tom's IELTS materials", href: 'https://tomsmaterials.weebly.com/', text: 'IELTS practice and course materials.' },
-    { title: 'Blair English', href: 'https://www.blairenglish.com/', text: 'Business English exercises and vocabulary.' },
-    { title: 'Elementary & lower-intermediate', href: 'https://mylowerintermediatematerials.weebly.com/', text: 'Materials for earlier stages of learning.' },
-    { title: 'English for Everyone', href: 'https://englishforeveryone.org/', text: 'Free grammar and reading worksheets.' },
-    { title: 'In Conversation', href: 'https://www.book2look.com/book/978-3-12-501558-6', text: 'Preview pages from the course book.' }
   ],
   resources: [
     { title: 'Business letters — sentences', type: 'PDF worksheet', topic: 'writing', section: 'home', href: 'assets/materials/a0ba6b1f293d--business_letter_writing_sentence_exercise.pdf', desc: 'Useful sentence starters for formal business communication.', accent: true },
@@ -56,7 +48,6 @@ globalThis.siteData = {
     { title: 'Phrasal verbs in context', type: 'PDF guide', topic: 'grammar', section: 'grammar', href: 'assets/materials/e65bda0ea4fa--phrasal_verbs_in_context_-_one.pdf', desc: 'Understand common phrasal verbs in everyday situations.', accent: false },
     { title: 'Present perfect & past simple', type: 'PDF rules', topic: 'grammar', section: 'grammar', href: 'assets/materials/863f24f7e99e--present_perfect___past_simple_rules.pdf', desc: 'Choose the right tense for past time and experience.', accent: true },
     { title: 'Present simple & continuous', type: 'PDF worksheet', topic: 'grammar', section: 'grammar', href: 'assets/materials/7f6d0be1b449--pres_simple_or_continuous_1.pdf', desc: 'Practise routines, habits and actions happening now.', accent: true },
-    { title: 'Active / passive', type: 'Web exercise', topic: 'grammar', section: 'grammar', href: 'https://www.ego4u.com/en/cram-up/grammar/passive/exercises?simple-present', desc: 'Interactive practice with active and passive forms.', accent: false },
     { title: 'Linkers I', type: 'PDF worksheet', topic: 'grammar', section: 'grammar', href: 'assets/materials/5a105b46e236--linking_words___phrases.pdf', desc: 'Connect ideas with contrast, result and addition.', accent: false },
     { title: 'Relative clauses', type: 'PDF worksheet', topic: 'grammar', section: 'grammar', href: 'assets/materials/d0ea9fd775d4--relative_clauses___rules___exercises.pdf', desc: 'Join ideas smoothly with who, which, that and where.', accent: true },
 
@@ -71,10 +62,8 @@ globalThis.siteData = {
     { title: 'Interpreting graphs', type: 'PDF worksheet', topic: 'medical', section: 'medical', href: 'assets/materials/7ae573ebaff0--interpreting_graphs_-_questions.pdf', desc: 'Read graphs and support your answers with evidence.', accent: false },
     { title: 'Topic sentences', type: 'PDF writing', topic: 'medical', section: 'medical', href: 'assets/materials/8233e749ffbf--topic_sentences.pdf', desc: 'Write clear opening sentences for academic paragraphs.', accent: false },
 
-    { title: 'Space exploration discussion', type: 'Google Doc', topic: 'speaking', section: 'speaking', href: 'https://docs.google.com/document/d/1hh-gtYVrRTwk5hT0T1_7IzkSnDbk1ZRBoIjQIFGfJ0M/edit?tab=t.0', desc: 'Discuss arguments for and against space exploration.', accent: true },
     { title: 'Discussion topics', type: 'PDF worksheet', topic: 'speaking', section: 'speaking', href: 'assets/materials/1b9f478c8327--28_discussion_topics.pdf', desc: 'Conversation starters for pairs and groups.', accent: true },
     { title: 'Arranging a meeting I', type: 'PDF role play', topic: 'speaking', section: 'speaking', href: 'assets/materials/2e3b6c2172b0--cold-calls_-_arranging_a_meeting_part_one.pdf', desc: 'Make suggestions and agree a suitable time.', accent: true },
-    { title: 'Story puzzles', type: 'Web game', topic: 'speaking', section: 'speaking', href: 'https://yesnogame.net/en/easy', desc: 'Ask focused questions and solve a mystery together.', accent: false },
     { title: 'Arranging a meeting II', type: 'PDF role play', topic: 'speaking', section: 'speaking', href: 'assets/materials/73fd4138aa1f--cold-calls_arranging_a_meeting_part_two.pdf', desc: 'Continue a professional telephone conversation.', accent: true },
     { title: 'Confirming information', type: 'PDF dialogue', topic: 'speaking', section: 'speaking', href: 'assets/materials/80253baacf1b--telephone_dialogues_-_confirming_information.pdf', desc: 'Check and repeat important information politely.', accent: false },
     { title: 'Buying time', type: 'PDF dialogue', topic: 'speaking', section: 'speaking', href: 'assets/materials/6f30f691968c--telephone_dialogues_-_buying_time.pdf', desc: 'Keep a call moving while you check details.', accent: false },
