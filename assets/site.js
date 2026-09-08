@@ -40,11 +40,24 @@
     return data.sections.find((section) => section.slug === slug);
   }
 
+  function availableSections() {
+    return data.sections.filter((section) => section.available !== false);
+  }
+
+  function sectionMenuMarkup() {
+    const groups = availableSections().reduce((result, section) => {
+      (result[section.group] ||= []).push(section);
+      return result;
+    }, {});
+    return Object.entries(groups).map(([group, sections]) => `<div class="section-menu__group"><p>${escapeHtml(group)}</p>${sections.map((section) => `<a href="${section.href}">${escapeHtml(section.title)}</a>`).join('')}</div>`).join('');
+  }
+
   function sectionPager(slug) {
-    const current = data.sections.findIndex((section) => section.slug === slug);
+    const sections = availableSections();
+    const current = sections.findIndex((section) => section.slug === slug);
     if (current < 0) return '';
-    const previous = data.sections[current - 1];
-    const next = data.sections[current + 1];
+    const previous = sections[current - 1];
+    const next = sections[current + 1];
     return `<nav class="section-pager" aria-label="Browse sections">${previous ? `<a class="section-pager__link" href="${previous.href}"><span>← Previous section</span><strong>${escapeHtml(previous.title)}</strong></a>` : '<span></span>'}${next ? `<a class="section-pager__link section-pager__link--next" href="${next.href}"><span>Next section →</span><strong>${escapeHtml(next.title)}</strong></a>` : '<span></span>'}</nav>`;
   }
 
@@ -65,17 +78,22 @@
     const header = document.querySelector('[data-site-header]');
     if (!header) return;
     const links = data.navigation.map((item) => `<a ${item.page === page ? 'aria-current="page"' : ''} href="${item.href}">${item.label}</a>`).join('');
-    header.innerHTML = `<div class="utility-bar"><div class="container utility-bar__inner"><a class="brand" href="index.html" aria-label="Official learning materials site of Tom Johnson"><span class="brand__dot"></span><span class="brand__full">Intermediate English Materials</span><span class="brand__short">IEM</span></a><span class="official-site">Official site of Tom Johnson</span><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span></span><span class="sr-only">Open menu</span></button><form class="site-search" action="library.html" role="search"><label class="sr-only" for="site-search-input">Search materials</label><input id="site-search-input" name="q" type="search" placeholder="Search materials" /><button aria-label="Search" type="submit">⌕</button></form></div></div><nav class="main-nav" id="site-navigation" aria-label="Main navigation"><div class="container main-nav__inner">${links}<a class="main-nav__search" href="library.html#catalogue">Search materials <span aria-hidden="true">⌕</span></a><a class="main-nav__contact" href="contact.html">Contact Tom <span aria-hidden="true">→</span></a></div></nav>`;
+    header.innerHTML = `<div class="utility-bar"><div class="container utility-bar__inner"><a class="brand" href="index.html" aria-label="Official learning materials site of Tom Johnson"><span class="brand__dot"></span><span class="brand__full">Intermediate English Materials</span><span class="brand__short">IEM</span></a><span class="official-site">Official site of Tom Johnson</span><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span></span><span class="sr-only">Open menu</span></button><form class="site-search" action="library.html" role="search"><label class="sr-only" for="site-search-input">Search materials</label><input id="site-search-input" name="q" type="search" placeholder="Search materials" /><button aria-label="Search" type="submit">⌕</button></form></div></div><nav class="main-nav" id="site-navigation" aria-label="Main navigation"><div class="container main-nav__inner">${links}<div class="section-menu" data-section-menu><button class="section-menu__toggle" type="button" aria-expanded="false" aria-controls="section-menu-panel">Browse sections <span aria-hidden="true">⌄</span></button><div class="section-menu__panel" id="section-menu-panel"><div class="section-menu__intro"><p>All material sections</p><a href="library.html#section-directory">Open the full directory <span aria-hidden="true">→</span></a></div><div class="section-menu__groups">${sectionMenuMarkup()}</div></div></div><a class="main-nav__search" href="library.html#catalogue">Search materials <span aria-hidden="true">⌕</span></a><a class="main-nav__contact" href="contact.html">Contact Tom <span aria-hidden="true">→</span></a></div></nav>`;
     const toggle = header.querySelector('.menu-toggle');
     const nav = header.querySelector('.main-nav');
-    toggle.addEventListener('click', () => { const open = nav.classList.toggle('main-nav--open'); toggle.setAttribute('aria-expanded', String(open)); toggle.querySelector('.sr-only').textContent = open ? 'Close menu' : 'Open menu'; });
-    document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && nav.classList.contains('main-nav--open')) { nav.classList.remove('main-nav--open'); toggle.setAttribute('aria-expanded', 'false'); toggle.querySelector('.sr-only').textContent = 'Open menu'; toggle.focus(); } });
+    const sectionMenu = header.querySelector('[data-section-menu]');
+    const sectionToggle = sectionMenu.querySelector('.section-menu__toggle');
+    const closeSectionMenu = () => { sectionMenu.classList.remove('section-menu--open'); sectionToggle.setAttribute('aria-expanded', 'false'); };
+    toggle.addEventListener('click', () => { const open = nav.classList.toggle('main-nav--open'); toggle.setAttribute('aria-expanded', String(open)); toggle.querySelector('.sr-only').textContent = open ? 'Close menu' : 'Open menu'; if (!open) closeSectionMenu(); });
+    sectionToggle.addEventListener('click', (event) => { event.stopPropagation(); const open = sectionMenu.classList.toggle('section-menu--open'); sectionToggle.setAttribute('aria-expanded', String(open)); });
+    document.addEventListener('click', (event) => { if (!sectionMenu.contains(event.target)) closeSectionMenu(); });
+    document.addEventListener('keydown', (event) => { if (event.key !== 'Escape') return; const wasOpen = nav.classList.contains('main-nav--open'); nav.classList.remove('main-nav--open'); toggle.setAttribute('aria-expanded', 'false'); toggle.querySelector('.sr-only').textContent = 'Open menu'; closeSectionMenu(); if (wasOpen) toggle.focus(); });
   }
 
   function renderFooter() {
     const footer = document.querySelector('[data-site-footer]');
     if (!footer) return;
-    footer.innerHTML = `<div class="footer-band"><div class="container footer-band__inner"><p>Intermediate English Materials</p><a href="#main">Back to top ↑</a></div></div><div class="footer-main"><div class="container footer-main__inner"><div><a class="footer-brand" href="index.html">IEM<span>.</span></a><p>Practical English materials<br />for curious intermediate learners.</p></div><div class="footer-links"><p>Explore</p>${data.navigation.map((item) => `<a href="${item.href}">${item.label}</a>`).join('')}</div><div class="footer-links"><p>Site information</p><a href="library.html#section-directory">All 19 sections</a><a href="contact.html">Contact Tom</a><a href="mailto:tomjohnsonde@gmail.com">Email Tom</a></div></div><div class="container footer-legal"><span>© ${new Date().getFullYear()} Intermediate English Materials</span><span>Materials are stored and available directly on this site.</span></div></div>`;
+    footer.innerHTML = `<div class="footer-band"><div class="container footer-band__inner"><p>Intermediate English Materials</p><a href="#main">Back to top ↑</a></div></div><div class="footer-main"><div class="container footer-main__inner"><div><a class="footer-brand" href="index.html">IEM<span>.</span></a><p>Practical English materials<br />for curious intermediate learners.</p></div><div class="footer-contact"><p>Contact Tom</p><a href="mailto:tomjohnsonde@gmail.com">tomjohnsonde@gmail.com</a></div></div><div class="container footer-legal"><span>© ${new Date().getFullYear()} Intermediate English Materials</span><span>Materials are stored and available directly on this site.</span></div></div>`;
   }
 
   function renderResourceGrids() {
@@ -100,7 +118,7 @@
   function renderSectionDirectory() {
     const directory = document.querySelector('[data-section-directory]');
     if (!directory) return;
-    directory.innerHTML = data.sections.map((section) => `<a class="section-directory__item" href="${section.href}"><span class="section-directory__group">${escapeHtml(section.group)}</span><h3>${escapeHtml(section.title)}</h3><p>${escapeHtml(section.desc)}</p><small class="section-directory__count" data-section-count="${section.slug}">Checking materials…</small><b aria-hidden="true">→</b></a>`).join('');
+    directory.innerHTML = availableSections().map((section) => `<a class="section-directory__item" href="${section.href}"><span class="section-directory__group">${escapeHtml(section.group)}</span><h3>${escapeHtml(section.title)}</h3><p>${escapeHtml(section.desc)}</p><small class="section-directory__count" data-section-count="${section.slug}">Checking materials…</small><b aria-hidden="true">→</b></a>`).join('');
     fetchManifest().then((files) => {
       directory.querySelectorAll('[data-section-count]').forEach((count) => {
         const total = files.filter((file) => file.sections.includes(count.dataset.sectionCount)).length;
@@ -148,13 +166,13 @@
     let activeFormat = params.get('format') || 'all';
     let query = params.get('q') || '';
     let visible = 24;
-    if (!sectionFor(activeSection)) activeSection = 'all';
+    if (!sectionFor(activeSection) || sectionFor(activeSection).available === false) activeSection = 'all';
     if (input) input.value = query;
     try {
       const records = (await fetchManifest()).map(archiveRecord).sort((a, b) => a.title.localeCompare(b.title));
       const formats = [...new Set(records.map((record) => record.format))].sort();
       if (!formats.includes(activeFormat)) activeFormat = 'all';
-      controls.innerHTML = `<label class="catalogue-select">Section<select data-section-filter><option value="all">All sections</option>${data.sections.map((section) => `<option value="${section.slug}">${escapeHtml(section.title)}</option>`).join('')}</select></label><label class="catalogue-select">File format<select data-format-filter><option value="all">All formats</option>${formats.map((format) => `<option value="${format}">${escapeHtml(format)}</option>`).join('')}</select></label><button class="filter-button" type="button" data-clear-filters>Clear filters</button>`;
+      controls.innerHTML = `<label class="catalogue-select">Section<select data-section-filter><option value="all">All sections</option>${availableSections().map((section) => `<option value="${section.slug}">${escapeHtml(section.title)}</option>`).join('')}</select></label><label class="catalogue-select">File format<select data-format-filter><option value="all">All formats</option>${formats.map((format) => `<option value="${format}">${escapeHtml(format)}</option>`).join('')}</select></label><button class="filter-button" type="button" data-clear-filters>Clear filters</button>`;
       const sectionSelect = controls.querySelector('[data-section-filter]');
       const formatSelect = controls.querySelector('[data-format-filter]');
       sectionSelect.value = activeSection;
