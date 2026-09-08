@@ -1,6 +1,7 @@
 [
   {
-    "source": "https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/making_calls.pdf",
-    "error": "HTTP 404"
+    "file": "making_calls.pdf",
+    "status": "temporarily unavailable",
+    "local_page": "unavailable.html"
   }
 ]
