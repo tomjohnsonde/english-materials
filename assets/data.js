@@ -1,0 +1,85 @@
+globalThis.siteData = {
+  sourceHome: 'https://myintermediatematerials.weebly.com/',
+  navigation: [
+    { label: 'Home', href: 'index.html', page: 'home' },
+    { label: 'Grammar', href: 'grammar.html', page: 'grammar' },
+    { label: 'Medical English', href: 'medical-english.html', page: 'medical' },
+    { label: 'Speaking', href: 'speaking.html', page: 'speaking' },
+    { label: 'All materials', href: 'library.html', page: 'library' }
+  ],
+  sections: [
+    { slug: 'grammar', title: 'Grammar', href: 'grammar.html', source: 'https://myintermediatematerials.weebly.com/grammar.html', group: 'Language', desc: 'Conditionals, verb tenses, linking words and grammar practice.' },
+    { slug: 'medical', title: 'Medical English', href: 'medical-english.html', source: 'https://myintermediatematerials.weebly.com/medical-english.html', group: 'Language', desc: 'Healthcare vocabulary, reports and specialist discussion tasks.' },
+    { slug: 'speaking', title: 'Speaking', href: 'speaking.html', source: 'https://myintermediatematerials.weebly.com/speaking.html', group: 'Skills', desc: 'Discussion topics, telephone dialogues and role plays.' },
+    { slug: 'business-1', title: 'VHS — Business Intermediate', href: 'section.html?section=business-1', source: 'https://myintermediatematerials.weebly.com/vhs---business-intermediate.html', group: 'Business', desc: 'Business-intermediate course archive.' },
+    { slug: 'business-2', title: 'VHS Business Int Course 2', href: 'section.html?section=business-2', source: 'https://myintermediatematerials.weebly.com/vhs-business-int-course-2.html', group: 'Business', desc: 'Business course resources and current lesson links.' },
+    { slug: 'collocations', title: 'Collocations', href: 'section.html?section=collocations', source: 'https://myintermediatematerials.weebly.com/collocations.html', group: 'Language', desc: 'Natural word combinations, make/do and topic vocabulary.' },
+    { slug: 'pronunciation', title: 'Pronunciation & Spelling', href: 'section.html?section=pronunciation', source: 'https://myintermediatematerials.weebly.com/pronunciation--spelling.html', group: 'Language', desc: 'Phonemic transcription and spelling resources.' },
+    { slug: 'false-friends', title: 'False Friends', href: 'section.html?section=false-friends', source: 'https://myintermediatematerials.weebly.com/false-friends.html', group: 'Language', desc: 'German–English false friends and practice files.' },
+    { slug: 'writing-1', title: 'Writing 1', href: 'section.html?section=writing-1', source: 'https://myintermediatematerials.weebly.com/writing-1.html', group: 'Skills', desc: 'Writing practice, linking words and annotation support.' },
+    { slug: 'writing-2', title: 'Writing 2', href: 'section.html?section=writing-2', source: 'https://myintermediatematerials.weebly.com/writing-2.html', group: 'Skills', desc: 'Second writing course archive.' },
+    { slug: 'reading-listening', title: 'Reading & Listening', href: 'section.html?section=reading-listening', source: 'https://myintermediatematerials.weebly.com/reading--listening.html', group: 'Skills', desc: 'Reading texts, listening practice and answer sheets.' },
+    { slug: 'spelling-punctuation', title: 'Spelling & Punctuation', href: 'section.html?section=spelling-punctuation', source: 'https://myintermediatematerials.weebly.com/spelling--punctuation.html', group: 'Language', desc: 'Punctuation and spelling worksheets.' },
+    { slug: 'emails', title: 'Emails', href: 'section.html?section=emails', source: 'https://myintermediatematerials.weebly.com/emails.html', group: 'Business', desc: 'Formal letters, email structure and stock phrases.' },
+    { slug: 'games', title: 'Games', href: 'section.html?section=games', source: 'https://myintermediatematerials.weebly.com/games.html', group: 'Practice', desc: 'Jeopardy, crosswords, hangman and classroom games.' },
+    { slug: 'videos', title: 'Videos', href: 'section.html?section=videos', source: 'https://myintermediatematerials.weebly.com/videos.html', group: 'Skills', desc: 'Video and listening activities from trusted providers.' },
+    { slug: 'tests', title: 'Tests', href: 'section.html?section=tests', source: 'https://myintermediatematerials.weebly.com/tests.html', group: 'Practice', desc: 'Business English tests and quiz resources.' },
+    { slug: 'attendance', title: 'Attendance', href: 'section.html?section=attendance', source: 'https://myintermediatematerials.weebly.com/attendance.html', group: 'Course', desc: 'Course attendance area.' },
+    { slug: 'vocabulary', title: 'Vocabulary', href: 'section.html?section=vocabulary', source: 'https://myintermediatematerials.weebly.com/vocabulary.html', group: 'Language', desc: 'Telephone, travel, news and everyday vocabulary.' },
+    { slug: 'finance', title: 'Finance', href: 'section.html?section=finance', source: 'https://myintermediatematerials.weebly.com/finance.html', group: 'Business', desc: 'Money, finance and business vocabulary.' }
+  ],
+  topics: [
+    { title: 'Grammar', text: 'Tenses, conditionals and useful sentence patterns.', href: 'grammar.html', mark: '01' },
+    { title: 'Medical English', text: 'Healthcare vocabulary and professional communication.', href: 'medical-english.html', mark: '02' },
+    { title: 'Speaking', text: 'Discussion prompts, role plays and telephone language.', href: 'speaking.html', mark: '03' },
+    { title: 'All 20 sections', text: 'A clear, complete directory of the whole materials archive.', href: 'library.html', mark: '04' }
+  ],
+  usefulLinks: [
+    { title: "Tom's IELTS materials", href: 'https://tomsmaterials.weebly.com/', text: 'IELTS practice and course materials.' },
+    { title: 'Blair English', href: 'https://www.blairenglish.com/', text: 'Business English exercises and vocabulary.' },
+    { title: 'Elementary & lower-intermediate', href: 'https://mylowerintermediatematerials.weebly.com/', text: 'Materials for earlier stages of learning.' },
+    { title: 'English for Everyone', href: 'https://englishforeveryone.org/', text: 'Free grammar and reading worksheets.' },
+    { title: 'In Conversation', href: 'https://www.book2look.com/book/978-3-12-501558-6', text: 'Preview pages from the course book.' }
+  ],
+  resources: [
+    { title: 'Business letters — sentences', type: 'PDF worksheet', topic: 'writing', section: 'home', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/business_letter_writing_sentence_exercise.pdf', desc: 'Useful sentence starters for formal business communication.', accent: true },
+    { title: 'Presentations without PPT', type: 'DOC activity', topic: 'speaking', section: 'home', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/presentation_evaluation_sheet_-_without_ppt.doc', desc: 'Plan a short, confident presentation without slides.', accent: true },
+    { title: 'Email mistakes 1', type: 'PDF worksheet', topic: 'writing', section: 'home', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/vhs_business_course_emails_-_common_mistakes_parti.pdf', desc: 'Spot and fix common errors in professional emails.', accent: true },
+    { title: 'Email mistakes 2', type: 'PDF worksheet', topic: 'writing', section: 'home', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/common_mistakes_in_emails_%E2%80%93_part_ii.pdf', desc: 'Continue correcting common email errors.', accent: true },
+    { title: 'Business collocations', type: 'PDF guide', topic: 'vocabulary', section: 'home', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/business_collocations.pdf', desc: 'Natural word partnerships for professional English.', accent: false },
+    { title: 'Using a dictionary', type: 'PDF guide', topic: 'vocabulary', section: 'home', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/using_a_dictionary.pdf', desc: 'Find meanings and collocations more effectively.', accent: false },
+    { title: 'Telephone talk I', type: 'PDF role play', topic: 'speaking', section: 'home', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/making_calls.pdf', desc: 'Language for making and receiving calls.', accent: false },
+    { title: 'Number & frequency', type: 'PDF practice', topic: 'grammar', section: 'home', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/number___frequency.pdf', desc: 'Describe figures, trends and frequency accurately.', accent: true },
+
+    { title: '1st type conditionals', type: 'PDF worksheet', topic: 'grammar', section: 'grammar', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/first_type_conditional_exercise.pdf', desc: 'Use real future possibilities with if and will.', accent: true },
+    { title: '1st & 2nd type conditionals', type: 'PDF rules', topic: 'grammar', section: 'grammar', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/first_and_second_conditionals_-_rules.pdf', desc: 'Compare real and unreal conditional patterns.', accent: false },
+    { title: 'Phrasal verbs in context', type: 'PDF guide', topic: 'grammar', section: 'grammar', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/phrasal_verbs_in_context_-_one.pdf', desc: 'Understand common phrasal verbs in everyday situations.', accent: false },
+    { title: 'Present perfect & past simple', type: 'PDF rules', topic: 'grammar', section: 'grammar', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/present_perfect_%E2%80%93_past_simple_rules.pdf', desc: 'Choose the right tense for past time and experience.', accent: true },
+    { title: 'Present simple & continuous', type: 'PDF worksheet', topic: 'grammar', section: 'grammar', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/pres_simple_or_continuous_1.pdf', desc: 'Practise routines, habits and actions happening now.', accent: true },
+    { title: 'Active / passive', type: 'Web exercise', topic: 'grammar', section: 'grammar', href: 'https://www.ego4u.com/en/cram-up/grammar/passive/exercises?simple-present', desc: 'Interactive practice with active and passive forms.', accent: false },
+    { title: 'Linkers I', type: 'PDF worksheet', topic: 'grammar', section: 'grammar', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/linking_words___phrases.pdf', desc: 'Connect ideas with contrast, result and addition.', accent: false },
+    { title: 'Relative clauses', type: 'PDF worksheet', topic: 'grammar', section: 'grammar', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/relative_clauses_%E2%80%93_rules___exercises.pdf', desc: 'Join ideas smoothly with who, which, that and where.', accent: true },
+
+    { title: 'Healthcare services', type: 'PDF vocabulary', topic: 'medical', section: 'medical', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/healthcare_services.pdf', desc: 'Essential words for appointments, care and treatment.', accent: true },
+    { title: 'Word families', type: 'PDF practice', topic: 'medical', section: 'medical', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/word_families.pdf', desc: 'Extend medical vocabulary through related word forms.', accent: true },
+    { title: 'Health issues', type: 'PDF vocabulary', topic: 'medical', section: 'medical', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/health_issues.pdf', desc: 'Talk about symptoms, conditions and feeling unwell.', accent: true },
+    { title: 'Medical advances', type: 'PDF reading', topic: 'medical', section: 'medical', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/i_can_describe_medical_advances.pdf', desc: 'Discuss innovations in health and how they affect patients.', accent: true },
+    { title: 'Malaria', type: 'PDF reading', topic: 'medical', section: 'medical', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/malaria.pdf', desc: 'Read and discuss a major global health issue.', accent: false },
+    { title: 'Phonemic script', type: 'PDF chart', topic: 'medical', section: 'medical', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/phonemic_script.pdf', desc: 'A reference chart for speaking specialist vocabulary.', accent: true },
+    { title: 'Health & illness', type: 'PDF worksheet', topic: 'medical', section: 'medical', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/francesco_-_health___illness.pdf', desc: 'Use health vocabulary in useful everyday contexts.', accent: false },
+    { title: 'Line graph & bar graph', type: 'PDF practice', topic: 'medical', section: 'medical', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/line_graph___bar_graph.pdf', desc: 'Describe health-related data and charts clearly.', accent: false },
+    { title: 'Interpreting graphs', type: 'PDF worksheet', topic: 'medical', section: 'medical', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/interpreting_graphs_-_questions.pdf', desc: 'Read graphs and support your answers with evidence.', accent: false },
+    { title: 'Topic sentences', type: 'PDF writing', topic: 'medical', section: 'medical', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/topic_sentences.pdf', desc: 'Write clear opening sentences for academic paragraphs.', accent: false },
+
+    { title: 'Space exploration discussion', type: 'Google Doc', topic: 'speaking', section: 'speaking', href: 'https://docs.google.com/document/d/1hh-gtYVrRTwk5hT0T1_7IzkSnDbk1ZRBoIjQIFGfJ0M/edit?tab=t.0', desc: 'Discuss arguments for and against space exploration.', accent: true },
+    { title: 'Discussion topics', type: 'PDF worksheet', topic: 'speaking', section: 'speaking', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/28_discussion_topics.pdf', desc: 'Conversation starters for pairs and groups.', accent: true },
+    { title: 'Arranging a meeting I', type: 'PDF role play', topic: 'speaking', section: 'speaking', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/cold-calls_-_arranging_a_meeting_part_one.pdf', desc: 'Make suggestions and agree a suitable time.', accent: true },
+    { title: 'Story puzzles', type: 'Web game', topic: 'speaking', section: 'speaking', href: 'https://yesnogame.net/en/easy', desc: 'Ask focused questions and solve a mystery together.', accent: false },
+    { title: 'Arranging a meeting II', type: 'PDF role play', topic: 'speaking', section: 'speaking', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/cold-calls_arranging_a_meeting_part_two.pdf', desc: 'Continue a professional telephone conversation.', accent: true },
+    { title: 'Confirming information', type: 'PDF dialogue', topic: 'speaking', section: 'speaking', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/telephone_dialogues_-_confirming_information.pdf', desc: 'Check and repeat important information politely.', accent: false },
+    { title: 'Buying time', type: 'PDF dialogue', topic: 'speaking', section: 'speaking', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/telephone_dialogues_-_buying_time.pdf', desc: 'Keep a call moving while you check details.', accent: false },
+    { title: 'Uses of objects', type: 'PDF discussion', topic: 'speaking', section: 'speaking', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/uses_of_everyday_objects.pdf', desc: 'Explain practical solutions with everyday vocabulary.', accent: false },
+    { title: 'Business idioms I', type: 'PDF worksheet', topic: 'speaking', section: 'speaking', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/business_idioms_-_one.pdf', desc: 'Learn idioms you may hear in business contexts.', accent: false },
+    { title: 'The Green Revolution', type: 'PDF reading', topic: 'speaking', section: 'speaking', href: 'https://myintermediatematerials.weebly.com/uploads/2/1/4/0/21405606/vocab_for_ielts_u15_the_green_revolution.pdf', desc: 'Discuss sustainability and environmental change.', accent: true }
+  ]
+};

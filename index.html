@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Intermediate English learning materials and lesson resources." />
+    <title>Intermediate English Materials</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/data.js" defer></script>
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header data-site-header></header>
+    <main id="main">
+      <section class="hero hero--space">
+        <div class="hero__orbit hero__orbit--one"></div>
+        <div class="hero__orbit hero__orbit--two"></div>
+        <div class="container hero__content hero__content--home">
+          <p class="eyebrow">Official learning materials site of Tom Johnson · B1–B2</p>
+          <h1>Intermediate<br />English Materials</h1>
+          <p class="hero__lead">Clear materials for class, homework and independent study.</p>
+          <a class="button button--light" href="library.html">Find a material <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+
+      <section class="section section--dark" aria-labelledby="featured-title">
+        <div class="container">
+          <div class="section-heading section-heading--split">
+            <div>
+              <p class="eyebrow eyebrow--coral">Start here</p>
+              <h2 id="featured-title">Popular materials</h2>
+            </div>
+            <p>Choose a resource, open it, and start learning. Every item clearly shows what it contains.</p>
+          </div>
+          <div class="resource-grid resource-grid--featured" data-resource-grid="home"></div>
+        </div>
+      </section>
+
+      <section class="section section--paper" aria-labelledby="path-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow eyebrow--coral">Find your route</p>
+            <h2 id="path-title">Choose a topic</h2>
+          </div>
+          <div class="topic-grid" data-topic-grid></div>
+        </div>
+      </section>
+
+      <section class="section section--dark" aria-labelledby="useful-title">
+        <div class="container">
+          <div class="section-heading section-heading--split">
+            <div><p class="eyebrow eyebrow--coral">Useful links</p><h2 id="useful-title">Trusted learning partners</h2></div>
+            <p>Direct links retained from the original site. Each opens in a new tab.</p>
+          </div>
+          <div class="useful-links" data-useful-links></div>
+        </div>
+      </section>
+
+      <section class="section section--coral" aria-labelledby="note-title">
+        <div class="container note-banner">
+          <div>
+            <p class="eyebrow">For every lesson</p>
+            <h2 id="note-title">Not sure where to start?</h2>
+          </div>
+          <p>Open the complete catalogue and pick the topic that matters to you today.</p>
+          <a class="text-link text-link--light" href="library.html">Browse all materials <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+    </main>
+    <footer data-site-footer></footer>
+  </body>
+</html>
