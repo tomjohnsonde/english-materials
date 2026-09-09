@@ -28,6 +28,62 @@
     }).join(' ');
   }
 
+  function normalizeSearchText(value) {
+    return String(value ?? '')
+      .normalize('NFKD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, ' ')
+      .trim();
+  }
+
+  function editDistance(left, right) {
+    const previous = Array.from({ length: right.length + 1 }, (_, index) => index);
+    for (let row = 1; row <= left.length; row += 1) {
+      const current = [row];
+      for (let column = 1; column <= right.length; column += 1) {
+        current[column] = Math.min(
+          current[column - 1] + 1,
+          previous[column] + 1,
+          previous[column - 1] + (left[row - 1] === right[column - 1] ? 0 : 1)
+        );
+      }
+      previous.splice(0, previous.length, ...current);
+    }
+    return previous[right.length];
+  }
+
+  function termScore(term, value, weight) {
+    if (!value) return 0;
+    if (value.includes(term)) return weight;
+    const words = value.split(' ');
+    if (words.some((word) => word.startsWith(term) || (term.length > 3 && term.startsWith(word)))) return weight * 0.7;
+    const distance = term.length >= 6 ? 2 : 1;
+    if (term.length >= 5 && words.some((word) => Math.abs(word.length - term.length) <= distance && editDistance(word, term) <= distance)) return weight * 0.35;
+    return 0;
+  }
+
+  function searchScore(record, rawQuery) {
+    const phrase = normalizeSearchText(rawQuery);
+    if (!phrase) return 0;
+    const terms = [...new Set(phrase.split(' ').filter(Boolean))];
+    let score = 0;
+    for (const term of terms) {
+      const best = Math.max(
+        termScore(term, record.searchIndex.title, 100),
+        termScore(term, record.searchIndex.sections, 70),
+        termScore(term, record.searchIndex.description, 50),
+        termScore(term, record.searchIndex.filename, 35),
+        termScore(term, record.searchIndex.format, 20)
+      );
+      if (!best) return -1;
+      score += best;
+    }
+    if (record.searchIndex.title.includes(phrase)) return score + 1000;
+    if (record.searchIndex.all.includes(phrase)) return score + 200;
+    return score;
+  }
+
   function displayFileTitle(file) {
     const featured = data.resources.find((resource) => resource.href === file.local);
     if (featured) return featured.title;
@@ -42,14 +98,6 @@
 
   function availableSections() {
     return data.sections.filter((section) => section.available !== false);
-  }
-
-  function sectionMenuMarkup() {
-    const groups = availableSections().reduce((result, section) => {
-      (result[section.group] ||= []).push(section);
-      return result;
-    }, {});
-    return Object.entries(groups).map(([group, sections]) => `<div class="section-menu__group"><p>${escapeHtml(group)}</p>${sections.map((section) => `<a href="${section.href}">${escapeHtml(section.title)}</a>`).join('')}</div>`).join('');
   }
 
   function sectionPager(slug) {
@@ -78,22 +126,17 @@
     const header = document.querySelector('[data-site-header]');
     if (!header) return;
     const links = data.navigation.map((item) => `<a ${item.page === page ? 'aria-current="page"' : ''} href="${item.href}">${item.label}</a>`).join('');
-    header.innerHTML = `<div class="utility-bar"><div class="container utility-bar__inner"><a class="brand" href="index.html" aria-label="Official learning materials site of Tom Johnson"><span class="brand__dot"></span><span class="brand__full">Intermediate English Materials</span><span class="brand__short">IEM</span></a><span class="official-site">Official site of Tom Johnson</span><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span></span><span class="sr-only">Open menu</span></button><form class="site-search" action="library.html" role="search"><label class="sr-only" for="site-search-input">Search materials</label><input id="site-search-input" name="q" type="search" placeholder="Search materials" /><button aria-label="Search" type="submit">⌕</button></form></div></div><nav class="main-nav" id="site-navigation" aria-label="Main navigation"><div class="container main-nav__inner">${links}<div class="section-menu" data-section-menu><button class="section-menu__toggle" type="button" aria-expanded="false" aria-controls="section-menu-panel">Browse sections <span aria-hidden="true">⌄</span></button><div class="section-menu__panel" id="section-menu-panel"><div class="section-menu__intro"><p>All material sections</p><a href="library.html#section-directory">Open the full directory <span aria-hidden="true">→</span></a></div><div class="section-menu__groups">${sectionMenuMarkup()}</div></div></div><a class="main-nav__search" href="library.html#catalogue">Search materials <span aria-hidden="true">⌕</span></a><a class="main-nav__contact" href="contact.html">Contact Tom <span aria-hidden="true">→</span></a></div></nav>`;
+    header.innerHTML = `<div class="utility-bar"><div class="container utility-bar__inner"><a class="brand" href="index.html" aria-label="Official learning materials site of Tom Johnson"><span class="brand__dot"></span><span class="brand__full">Intermediate English Materials</span><span class="brand__short">IEM</span></a><span class="official-site">Official site of Tom Johnson</span><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span></span><span class="sr-only">Open menu</span></button><form class="site-search" action="library.html" role="search"><label class="sr-only" for="site-search-input">Search materials</label><input id="site-search-input" name="q" type="search" placeholder="Search materials" /><button aria-label="Search" type="submit">⌕</button></form></div></div><nav class="main-nav" id="site-navigation" aria-label="Main navigation"><div class="container main-nav__inner">${links}<a class="main-nav__search" href="library.html#catalogue">Search materials <span aria-hidden="true">⌕</span></a></div></nav>`;
     const toggle = header.querySelector('.menu-toggle');
     const nav = header.querySelector('.main-nav');
-    const sectionMenu = header.querySelector('[data-section-menu]');
-    const sectionToggle = sectionMenu.querySelector('.section-menu__toggle');
-    const closeSectionMenu = () => { sectionMenu.classList.remove('section-menu--open'); sectionToggle.setAttribute('aria-expanded', 'false'); };
-    toggle.addEventListener('click', () => { const open = nav.classList.toggle('main-nav--open'); toggle.setAttribute('aria-expanded', String(open)); toggle.querySelector('.sr-only').textContent = open ? 'Close menu' : 'Open menu'; if (!open) closeSectionMenu(); });
-    sectionToggle.addEventListener('click', (event) => { event.stopPropagation(); const open = sectionMenu.classList.toggle('section-menu--open'); sectionToggle.setAttribute('aria-expanded', String(open)); });
-    document.addEventListener('click', (event) => { if (!sectionMenu.contains(event.target)) closeSectionMenu(); });
-    document.addEventListener('keydown', (event) => { if (event.key !== 'Escape') return; const wasOpen = nav.classList.contains('main-nav--open'); nav.classList.remove('main-nav--open'); toggle.setAttribute('aria-expanded', 'false'); toggle.querySelector('.sr-only').textContent = 'Open menu'; closeSectionMenu(); if (wasOpen) toggle.focus(); });
+    toggle.addEventListener('click', () => { const open = nav.classList.toggle('main-nav--open'); toggle.setAttribute('aria-expanded', String(open)); toggle.querySelector('.sr-only').textContent = open ? 'Close menu' : 'Open menu'; });
+    document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && nav.classList.contains('main-nav--open')) { nav.classList.remove('main-nav--open'); toggle.setAttribute('aria-expanded', 'false'); toggle.querySelector('.sr-only').textContent = 'Open menu'; toggle.focus(); } });
   }
 
   function renderFooter() {
     const footer = document.querySelector('[data-site-footer]');
     if (!footer) return;
-    footer.innerHTML = `<div class="footer-band"><div class="container footer-band__inner"><p>Intermediate English Materials</p><a href="#main">Back to top ↑</a></div></div><div class="footer-main"><div class="container footer-main__inner"><div><a class="footer-brand" href="index.html">IEM<span>.</span></a><p>Practical English materials<br />for curious intermediate learners.</p></div><div class="footer-contact"><p>Contact Tom</p><a href="mailto:tomjohnsonde@gmail.com">tomjohnsonde@gmail.com</a></div></div><div class="container footer-legal"><span>© ${new Date().getFullYear()} Intermediate English Materials</span><span>Materials are stored and available directly on this site.</span></div></div>`;
+    footer.innerHTML = `<div class="footer-band"><div class="container footer-band__inner"><p>Intermediate English Materials</p><a href="#main">Back to top ↑</a></div></div><div class="footer-main"><div class="container footer-main__inner"><div><a class="footer-brand" href="index.html">IEM<span>.</span></a><p>Practical English materials<br />for curious intermediate learners.</p></div><a class="footer-contact" href="contact.html">Contact <span aria-hidden="true">→</span></a></div><div class="container footer-legal"><span>© ${new Date().getFullYear()} Intermediate English Materials</span><span>Materials are stored and available directly on this site.</span></div></div>`;
   }
 
   function renderResourceGrids() {
@@ -136,6 +179,15 @@
     const primary = sections[0];
     const format = extensionFor(file.local);
     const title = displayFileTitle(file);
+    const description = featured?.desc || (primary ? `Part of the ${primary.title} archive.` : 'Part of the Intermediate English Materials archive.');
+    const sectionText = sections.map((section) => `${section.title} ${section.group}`).join(' ');
+    const searchIndex = {
+      title: normalizeSearchText(title),
+      sections: normalizeSearchText(sectionText),
+      description: normalizeSearchText(description),
+      filename: normalizeSearchText(file.local),
+      format: normalizeSearchText(`${format} ${featured?.type || ''}`)
+    };
     return {
       ...file,
       featured,
@@ -143,8 +195,8 @@
       title,
       sections,
       primary,
-      description: featured?.desc || (primary ? `Part of the ${primary.title} archive.` : 'Part of the Intermediate English Materials archive.'),
-      searchText: `${title} ${file.local} ${format} ${featured?.type || ''} ${featured?.desc || ''} ${sections.map((section) => `${section.title} ${section.group}`).join(' ')}`.toLowerCase()
+      description,
+      searchIndex: { ...searchIndex, all: Object.values(searchIndex).join(' ') }
     };
   }
 
@@ -186,15 +238,18 @@
         history.replaceState({}, '', `${next.pathname}${next.search}${next.hash}`);
       };
       const apply = () => {
-        const terms = query.trim().toLowerCase();
-        const matches = records.filter((record) =>
+        const hasQuery = Boolean(normalizeSearchText(query));
+        const hasFilter = activeSection !== 'all' || activeFormat !== 'all';
+        const filtered = records.filter((record) =>
           (activeSection === 'all' || record.sections.some((section) => section.slug === activeSection)) &&
-          (activeFormat === 'all' || record.format === activeFormat) &&
-          (!terms || record.searchText.includes(terms))
+          (activeFormat === 'all' || record.format === activeFormat)
         );
+        const matches = hasQuery
+          ? filtered.map((record) => ({ record, score: searchScore(record, query) })).filter(({ score }) => score >= 0).sort((left, right) => right.score - left.score || left.record.title.localeCompare(right.record.title)).map(({ record }) => record)
+          : hasFilter ? filtered : [];
         const showing = matches.slice(0, visible);
-        grid.innerHTML = matches.length ? showing.map(catalogueItem).join('') : `<p class="empty-state">No materials match that search. Try another word, section or file format.</p>`;
-        resultNote.textContent = matches.length ? `Showing ${showing.length} of ${matches.length} ${matches.length === 1 ? 'material' : 'materials'}` : 'No materials found';
+        grid.innerHTML = matches.length ? showing.map(catalogueItem).join('') : `<p class="empty-state">${hasQuery || hasFilter ? 'No materials match that search. Try another word, section or file format.' : 'Start with a keyword or choose a section or file format to find materials.'}</p>`;
+        resultNote.textContent = matches.length ? `${hasQuery ? 'Best matches: ' : ''}Showing ${showing.length} of ${matches.length} ${matches.length === 1 ? 'material' : 'materials'}` : hasQuery || hasFilter ? 'No materials found' : 'Use search or a filter to find materials';
         more.innerHTML = matches.length > visible ? `<button class="button button--dark" type="button" data-show-more>Show 24 more <span aria-hidden="true">↓</span></button>` : '';
         updateUrl();
       };
@@ -221,7 +276,7 @@
     }
     document.title = `${section.title} · Intermediate English Materials`;
     const resources = data.resources.filter((item) => item.section === section.slug);
-    main.innerHTML = `<section class="page-intro"><div class="container"><nav class="breadcrumbs breadcrumbs--light" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><a href="library.html">All materials</a><span aria-hidden="true">/</span><span>${escapeHtml(section.title)}</span></nav><p class="eyebrow eyebrow--coral">${escapeHtml(section.group)}</p><h1>${escapeHtml(section.title)}</h1><p>${escapeHtml(section.desc)}</p></div></section><section class="section section--paper"><div class="container"><div class="archive-banner"><div><p class="eyebrow eyebrow--coral">Original archive, improved</p><h2>Choose a material before opening it.</h2><p>The original course structure is retained. Each item now has a clear page with file details, an on-page PDF preview where possible, and simple open or download options.</p></div><a class="button button--dark" href="library.html#catalogue">Search all materials <span aria-hidden="true">→</span></a></div>${resources.length ? `<div class="section-heading"><p class="eyebrow eyebrow--coral">Featured files</p><h2>Start with these materials</h2></div><div class="resource-grid resource-grid--three">${resources.map((resource) => resourceCard(resource)).join('')}</div>` : ''}<section class="local-materials" aria-labelledby="local-materials-title"><p class="eyebrow eyebrow--coral">Complete collection</p><h2 id="local-materials-title">All ${escapeHtml(section.title)} materials</h2><p class="archive-description">Select a file to view its details, then open or download it when you are ready.</p><div data-local-materials="${section.slug}"><p class="archive-loading">Loading local files…</p></div></section>${sectionPager(section.slug)}</div></section>`;
+    main.innerHTML = `<section class="page-intro"><div class="container"><nav class="breadcrumbs breadcrumbs--light" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><a href="library.html">All materials</a><span aria-hidden="true">/</span><span>${escapeHtml(section.title)}</span></nav><p class="eyebrow eyebrow--coral">${escapeHtml(section.group)}</p><h1>${escapeHtml(section.title)}</h1><p>${escapeHtml(section.desc)}</p></div></section><section class="section section--paper"><div class="container"><div class="archive-banner"><div><p class="eyebrow eyebrow--coral">Original archive, improved</p><h2>Choose a material before opening it.</h2><p>The original course structure is retained. Each item now has a clear page with file details, an on-page PDF preview where possible, and simple open or download options.</p></div><a class="button button--dark" href="library.html#catalogue">Search all materials <span aria-hidden="true">→</span></a></div>${resources.length ? `<div class="section-heading"><p class="eyebrow eyebrow--coral">Featured files</p><h2>Start with these materials</h2></div><div class="resource-grid resource-grid--three">${resources.map((resource) => resourceCard(resource)).join('')}</div>` : ''}<section class="local-materials" aria-labelledby="local-materials-title"><p class="eyebrow eyebrow--coral">Complete collection</p><h2 id="local-materials-title">Materials in ${escapeHtml(section.title)}</h2><p class="archive-description">The full list stays hidden until you choose to browse it.</p><div data-local-materials="${section.slug}"><p class="archive-loading">Loading local files…</p></div></section>${sectionPager(section.slug)}</div></section>`;
   }
 
   function localFileCard(file) {
@@ -247,7 +302,22 @@
       targets.forEach((target) => {
         const section = target.dataset.localMaterials;
         const matching = files.filter((file) => file.sections.includes(section)).sort((a, b) => displayFileTitle(a).localeCompare(displayFileTitle(b)));
-        target.innerHTML = matching.length ? `<div class="local-file-list">${matching.map(localFileCard).join('')}</div>` : `<p class="archive-empty">This section is part of the original archive, but no downloadable materials were available in the migrated copy.</p>`;
+        if (!matching.length) {
+          target.innerHTML = '<p class="archive-empty">This section is part of the original archive, but no downloadable materials were available in the migrated copy.</p>';
+          return;
+        }
+        const title = sectionFor(section)?.title || 'section';
+        const total = `${matching.length} ${matching.length === 1 ? 'material' : 'materials'}`;
+        const listId = `local-materials-${section}`;
+        target.innerHTML = `<button class="local-materials__toggle" type="button" aria-expanded="false" aria-controls="${listId}" data-local-materials-toggle>Show all ${escapeHtml(title)} materials <span>${total}</span><b aria-hidden="true">↓</b></button><div class="local-materials__content" id="${listId}" hidden><div class="local-file-list">${matching.map(localFileCard).join('')}</div></div>`;
+        const button = target.querySelector('[data-local-materials-toggle]');
+        const content = target.querySelector(`#${listId}`);
+        button.addEventListener('click', () => {
+          const open = content.hidden;
+          content.hidden = !open;
+          button.setAttribute('aria-expanded', String(open));
+          button.innerHTML = open ? `Hide materials <span>${total}</span><b aria-hidden="true">↑</b>` : `Show all ${escapeHtml(title)} materials <span>${total}</span><b aria-hidden="true">↓</b>`;
+        });
       });
     } catch {
       targets.forEach((target) => { target.innerHTML = '<p class="archive-empty">The local file list will appear after the site is published.</p>'; });
