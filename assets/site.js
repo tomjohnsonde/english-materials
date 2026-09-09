@@ -165,8 +165,13 @@
     fetchManifest().then((files) => {
       directory.querySelectorAll('[data-section-count]').forEach((count) => {
         const total = files.filter((file) => file.sections.includes(count.dataset.sectionCount)).length;
-        count.textContent = total ? `${total} ${total === 1 ? 'material' : 'materials'}` : 'No local files';
-        count.closest('.section-directory__item').classList.toggle('section-directory__item--empty', total === 0);
+        const onlineResources = data.resources.filter((resource) => resource.section === count.dataset.sectionCount && !isLocalMaterial(resource.href)).length;
+        count.textContent = total
+          ? `${total} ${total === 1 ? 'material' : 'materials'}`
+          : onlineResources
+            ? `${onlineResources} ${onlineResources === 1 ? 'online activity' : 'online activities'}`
+            : 'No local files';
+        count.closest('.section-directory__item').classList.toggle('section-directory__item--empty', total === 0 && !onlineResources);
       });
     }).catch(() => {
       directory.querySelectorAll('[data-section-count]').forEach((count) => { count.textContent = 'View section'; });
@@ -276,7 +281,14 @@
     }
     document.title = `${section.title} · Intermediate English Materials`;
     const resources = data.resources.filter((item) => item.section === section.slug);
-    main.innerHTML = `<section class="page-intro"><div class="container"><nav class="breadcrumbs breadcrumbs--light" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><a href="library.html">All materials</a><span aria-hidden="true">/</span><span>${escapeHtml(section.title)}</span></nav><p class="eyebrow eyebrow--coral">${escapeHtml(section.group)}</p><h1>${escapeHtml(section.title)}</h1><p>${escapeHtml(section.desc)}</p></div></section><section class="section section--paper"><div class="container"><div class="archive-banner"><div><p class="eyebrow eyebrow--coral">Original archive, improved</p><h2>Choose a material before opening it.</h2><p>The original course structure is retained. Each item now has a clear page with file details, an on-page PDF preview where possible, and simple open or download options.</p></div><a class="button button--dark" href="library.html#catalogue">Search all materials <span aria-hidden="true">→</span></a></div>${resources.length ? `<div class="section-heading"><p class="eyebrow eyebrow--coral">Featured files</p><h2>Start with these materials</h2></div><div class="resource-grid resource-grid--three">${resources.map((resource) => resourceCard(resource)).join('')}</div>` : ''}<section class="local-materials" aria-labelledby="local-materials-title"><p class="eyebrow eyebrow--coral">Complete collection</p><h2 id="local-materials-title">Materials in ${escapeHtml(section.title)}</h2><p class="archive-description">The full list stays hidden until you choose to browse it.</p><div data-local-materials="${section.slug}"><p class="archive-loading">Loading local files…</p></div></section>${sectionPager(section.slug)}</div></section>`;
+    const localResources = resources.filter((item) => isLocalMaterial(item.href));
+    const externalResources = resources.filter((item) => !isLocalMaterial(item.href));
+    const resourceIntro = localResources.length && externalResources.length
+      ? 'Choose a featured worksheet or a trusted online activity before browsing the full archive.'
+      : externalResources.length
+        ? 'Choose an original online activity. It opens in a new tab so this site stays easy to navigate.'
+        : 'Choose a featured material to see its details first, then open or download it when you are ready.';
+    main.innerHTML = `<section class="page-intro"><div class="container"><nav class="breadcrumbs breadcrumbs--light" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><a href="library.html">All materials</a><span aria-hidden="true">/</span><span>${escapeHtml(section.title)}</span></nav><p class="eyebrow eyebrow--coral">${escapeHtml(section.group)}</p><h1>${escapeHtml(section.title)}</h1><p>${escapeHtml(section.desc)}</p></div></section><section class="section section--paper"><div class="container"><div class="archive-banner"><div><p class="eyebrow eyebrow--coral">Original archive, improved</p><h2>Choose a material before opening it.</h2><p>The original course structure is retained. Each item now has a clear page with file details, an on-page PDF preview where possible, and simple open or download options.</p></div><a class="button button--dark" href="library.html#catalogue">Search all materials <span aria-hidden="true">→</span></a></div>${resources.length ? `<div class="section-heading section-heading--split"><div><p class="eyebrow eyebrow--coral">${externalResources.length ? 'Topics & online activities' : 'Featured topics'}</p><h2>Choose a topic</h2></div><p>${resourceIntro}</p></div><div class="resource-grid resource-grid--three">${resources.map((resource) => resourceCard(resource)).join('')}</div>` : ''}<section class="local-materials" aria-labelledby="local-materials-title"><p class="eyebrow eyebrow--coral">Complete collection</p><h2 id="local-materials-title">Materials in ${escapeHtml(section.title)}</h2><p class="archive-description">The full list stays hidden until you choose to browse it.</p><div data-local-materials="${section.slug}"><p class="archive-loading">Loading local files…</p></div></section>${sectionPager(section.slug)}</div></section>`;
   }
 
   function localFileCard(file) {
