@@ -4,7 +4,9 @@ globalThis.siteData = {
     { label: 'Grammar', href: 'grammar.html', page: 'grammar' },
     { label: 'Medical English', href: 'medical-english.html', page: 'medical' },
     { label: 'Speaking', href: 'speaking.html', page: 'speaking' },
-    { label: 'All materials', href: 'library.html', page: 'library' }
+    { label: 'All materials', href: 'library.html', page: 'library' },
+    { label: 'My courses', href: 'courses.html', page: 'courses' },
+    { label: 'QR', href: 'qr.html', page: 'qr' }
   ],
   sections: [
     { slug: 'grammar', title: 'Grammar', href: 'grammar.html', group: 'Language', desc: 'Conditionals, verb tenses, linking words and grammar practice.' },
@@ -33,6 +35,26 @@ globalThis.siteData = {
     { title: 'Speaking', text: 'Discussion prompts, role plays and telephone language.', href: 'speaking.html', mark: '03' },
     { title: 'Browse all course areas', text: 'A clear directory of local materials and original online activities.', href: 'library.html#section-directory', mark: '04' }
   ],
+  sectionTopics: {
+    grammar: ['grammar', 'sentence structure', 'accuracy'],
+    medical: ['healthcare', 'professional communication', 'medical vocabulary'],
+    speaking: ['speaking', 'discussion', 'conversation practice'],
+    'business-1': ['business English', 'workplace communication'],
+    'business-2': ['business English', 'listening practice'],
+    collocations: ['vocabulary', 'natural word combinations'],
+    pronunciation: ['pronunciation', 'spelling', 'phonemic script'],
+    'false-friends': ['German–English', 'common mistakes', 'vocabulary'],
+    'writing-1': ['writing', 'linking words', 'formal writing'],
+    'writing-2': ['writing', 'online practice'],
+    'reading-listening': ['reading', 'listening', 'comprehension'],
+    'spelling-punctuation': ['spelling', 'punctuation', 'accuracy'],
+    emails: ['emails', 'business writing', 'professional communication'],
+    games: ['classroom games', 'speaking practice'],
+    videos: ['video', 'listening practice'],
+    tests: ['tests', 'business English'],
+    vocabulary: ['vocabulary', 'everyday English'],
+    finance: ['finance', 'business vocabulary', 'money']
+  },
   resources: [
     { title: 'Business letters — sentences', type: 'PDF worksheet', topic: 'writing', section: 'home', href: 'assets/materials/business-letter-writing-sentence-exercise.pdf', desc: 'Useful sentence starters for formal business communication.', accent: true },
     { title: 'Presentations without PPT', type: 'DOC activity', topic: 'speaking', section: 'home', href: 'assets/materials/presentation-evaluation-sheet-without-ppt.doc', desc: 'Plan a short, confident presentation without slides.', accent: true },
@@ -63,6 +85,7 @@ globalThis.siteData = {
     { title: 'Arranging a meeting I', type: 'PDF role play', topic: 'speaking', section: 'speaking', href: 'assets/materials/cold-calls-arranging-a-meeting-part-one.pdf', desc: 'Make suggestions and agree a suitable time.', accent: true },
     { title: 'Arranging a meeting II', type: 'PDF role play', topic: 'speaking', section: 'speaking', href: 'assets/materials/cold-calls-arranging-a-meeting-part-two.pdf', desc: 'Continue a professional telephone conversation.', accent: true },
     { title: 'Confirming information', type: 'PDF dialogue', topic: 'speaking', section: 'speaking', href: 'assets/materials/telephone-dialogues-confirming-information.pdf', desc: 'Check and repeat important information politely.', accent: false },
+    { title: 'Making calls', type: 'PDF worksheet', topic: 'speaking', section: 'speaking', href: 'unavailable.html', desc: 'Original course file that is temporarily unavailable.', accent: false },
     { title: 'Buying time', type: 'PDF dialogue', topic: 'speaking', section: 'speaking', href: 'assets/materials/telephone-dialogues-buying-time.pdf', desc: 'Keep a call moving while you check details.', accent: false },
     { title: 'Uses of objects', type: 'PDF discussion', topic: 'speaking', section: 'speaking', href: 'assets/materials/uses-of-everyday-objects.pdf', desc: 'Explain practical solutions with everyday vocabulary.', accent: false },
     { title: 'Business idioms I', type: 'PDF worksheet', topic: 'speaking', section: 'speaking', href: 'assets/materials/business-idioms-one.pdf', desc: 'Learn idioms you may hear in business contexts.', accent: false },

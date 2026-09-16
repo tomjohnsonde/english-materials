@@ -2,6 +2,8 @@
   const data = globalThis.siteData;
   const page = document.body.dataset.page;
   const materialRoot = 'assets/materials/';
+  const siteOrigin = 'https://tomjohnsonde.github.io/english-materials/';
+  const assetRevision = '20260916.2';
   const escapeHtml = (value) => String(value ?? '').replace(/[&<>'"]/g, (character) => ({ '&': '&amp;', '>': '&gt;', '<': '&lt;', "'": '&#39;', '"': '&quot;' }[character]));
   const isLocalMaterial = (href) => typeof href === 'string' && href.startsWith(materialRoot);
   const materialRoute = (path) => `material.html?file=${encodeURIComponent(path)}`;
@@ -10,6 +12,37 @@
   const titleLowercaseWords = new Set(['a', 'an', 'and', 'at', 'by', 'for', 'from', 'in', 'of', 'on', 'or', 'the', 'to', 'with']);
   const titleAcronyms = { doc: 'DOC', docx: 'DOCX', ielts: 'IELTS', odg: 'ODG', odt: 'ODT', ott: 'OTT', pdf: 'PDF', ppt: 'PPT', uk: 'UK', usa: 'USA', vhs: 'VHS' };
   let manifestRequest;
+
+  function upsertMeta(attribute, name, content) {
+    let meta = document.querySelector(`meta[${attribute}="${name}"]`);
+    if (!meta && document.head) {
+      meta = document.createElement('meta');
+      meta.setAttribute(attribute, name);
+      document.head.append(meta);
+    }
+    meta?.setAttribute('content', content);
+  }
+
+  function setPageMetadata({ title, description, relativeUrl }) {
+    const absoluteUrl = new URL(relativeUrl, siteOrigin).href;
+    document.title = title;
+    upsertMeta('name', 'description', description);
+    upsertMeta('property', 'og:title', title);
+    upsertMeta('property', 'og:description', description);
+    upsertMeta('property', 'og:url', absoluteUrl);
+    upsertMeta('property', 'og:image', `${siteOrigin}assets/social-card.png`);
+    upsertMeta('property', 'og:image:alt', 'English Materials — practical English resources for focused learners');
+    upsertMeta('name', 'twitter:title', title);
+    upsertMeta('name', 'twitter:description', description);
+    upsertMeta('name', 'twitter:image', `${siteOrigin}assets/social-card.png`);
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical && document.head) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.append(canonical);
+    }
+    canonical?.setAttribute('href', absoluteUrl);
+  }
 
   function friendlyTitle(value) {
     const words = String(value || '')
@@ -73,6 +106,7 @@
         termScore(term, record.searchIndex.title, 100),
         termScore(term, record.searchIndex.sections, 70),
         termScore(term, record.searchIndex.description, 50),
+        termScore(term, record.searchIndex.tags, 65),
         termScore(term, record.searchIndex.filename, 35),
         termScore(term, record.searchIndex.format, 20)
       );
@@ -94,6 +128,20 @@
 
   function sectionFor(slug) {
     return data.sections.find((section) => section.slug === slug);
+  }
+
+  function materialTags(sections, title) {
+    const sectionTags = sections.flatMap((section) => data.sectionTopics?.[section.slug] || []);
+    const titleTags = [];
+    const normalized = normalizeSearchText(title);
+    const keywords = [
+      ['conditionals', 'conditionals'], ['phrasal', 'phrasal verbs'], ['email', 'emails'], ['telephone', 'telephone English'],
+      ['listening', 'listening'], ['reading', 'reading'], ['writing', 'writing'], ['vocabulary', 'vocabulary'],
+      ['grammar', 'grammar'], ['business', 'business English'], ['medical', 'medical English'], ['finance', 'finance'],
+      ['pronunciation', 'pronunciation'], ['spelling', 'spelling'], ['collocation', 'collocations'], ['ielts', 'IELTS']
+    ];
+    keywords.forEach(([needle, tag]) => { if (normalized.includes(needle)) titleTags.push(tag); });
+    return [...new Set([...sectionTags, ...titleTags])].slice(0, 6);
   }
 
   function availableSections() {
@@ -186,10 +234,12 @@
     const title = displayFileTitle(file);
     const description = featured?.desc || (primary ? `Part of the ${primary.title} archive.` : 'Part of the Intermediate English Materials archive.');
     const sectionText = sections.map((section) => `${section.title} ${section.group}`).join(' ');
+    const tags = materialTags(sections, title);
     const searchIndex = {
       title: normalizeSearchText(title),
       sections: normalizeSearchText(sectionText),
       description: normalizeSearchText(description),
+      tags: normalizeSearchText(tags.join(' ')),
       filename: normalizeSearchText(file.local),
       format: normalizeSearchText(`${format} ${featured?.type || ''}`)
     };
@@ -201,6 +251,7 @@
       sections,
       primary,
       description,
+      tags,
       searchIndex: { ...searchIndex, all: Object.values(searchIndex).join(' ') }
     };
   }
@@ -279,7 +330,11 @@
       main.innerHTML = `<section class="page-intro"><div class="container"><p class="eyebrow eyebrow--coral">Materials archive</p><h1>Section not found</h1><p>Please choose a section from the full directory.</p><a class="button button--light" href="library.html">Open directory <span aria-hidden="true">→</span></a></div></section>`;
       return;
     }
-    document.title = `${section.title} · Intermediate English Materials`;
+    setPageMetadata({
+      title: `${section.title} · Intermediate English Materials`,
+      description: `${section.desc} Browse original local materials and online activities from Tom Johnson.`,
+      relativeUrl: section.href
+    });
     const resources = data.resources.filter((item) => item.section === section.slug);
     const localResources = resources.filter((item) => isLocalMaterial(item.href));
     const externalResources = resources.filter((item) => !isLocalMaterial(item.href));
@@ -298,7 +353,7 @@
 
   async function fetchManifest() {
     if (!manifestRequest) {
-      manifestRequest = fetch('assets/materials/manifest.json').then((response) => {
+      manifestRequest = fetch(`assets/materials/manifest.json?v=${assetRevision}`).then((response) => {
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         return response.json();
       });
@@ -368,9 +423,13 @@
       const sections = file.sections.map(sectionFor).filter(Boolean);
       const primary = sections.find((section) => section.slug !== 'home') || sections[0];
       const extension = extensionFor(file.local);
-      document.title = `${title} · Intermediate English Materials`;
-      document.querySelector('meta[name="description"]')?.setAttribute('content', `${title} — ${extension} material in the Intermediate English Materials archive.`);
-      main.innerHTML = `<section class="page-intro material-intro"><div class="container"><nav class="breadcrumbs breadcrumbs--light" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><a href="library.html">All materials</a>${primary ? `<span aria-hidden="true">/</span><a href="${primary.href}">${escapeHtml(primary.title)}</a>` : ''}<span aria-hidden="true">/</span><span>${escapeHtml(title)}</span></nav><p class="eyebrow eyebrow--coral">${escapeHtml(extension)} material</p><h1>${escapeHtml(title)}</h1><p>Review the material here, then open or download the original file when you are ready.</p></div></section><section class="section section--paper"><div class="container"><div class="material-layout"><div class="material-preview">${previewMarkup(file, title)}</div><aside class="material-sidebar"><p class="eyebrow eyebrow--coral">Material details</p><dl><div><dt>Format</dt><dd>${escapeHtml(extension)}</dd></div><div><dt>File size</dt><dd>${escapeHtml(fileSize(file.bytes))}</dd></div>${sections.length ? `<div><dt>In this archive</dt><dd>${sections.map((section) => `<a href="${section.href}">${escapeHtml(section.title)}</a>`).join(', ')}</dd></div>` : ''}</dl><div class="material-actions"><a class="button button--coral" href="${file.local}" target="_blank" rel="noopener noreferrer">Open file <span aria-hidden="true">↗</span></a><a class="text-link" href="${file.local}" download>Download file <span aria-hidden="true">↓</span></a></div>${primary ? `<a class="material-back" href="${primary.href}">← Back to ${escapeHtml(primary.title)}</a>` : '<a class="material-back" href="library.html">← Back to all materials</a>'}</aside></div>${primary ? materialPager(files, file, primary.slug) : ''}</div></section>`;
+      const tags = materialTags(sections, title);
+      setPageMetadata({
+        title: `${title} · Intermediate English Materials`,
+        description: `${title} — ${extension} material in the Intermediate English Materials archive.`,
+        relativeUrl: materialRoute(file.local)
+      });
+      main.innerHTML = `<section class="page-intro material-intro"><div class="container"><nav class="breadcrumbs breadcrumbs--light" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><a href="library.html">All materials</a>${primary ? `<span aria-hidden="true">/</span><a href="${primary.href}">${escapeHtml(primary.title)}</a>` : ''}<span aria-hidden="true">/</span><span>${escapeHtml(title)}</span></nav><p class="eyebrow eyebrow--coral">${escapeHtml(extension)} material</p><h1>${escapeHtml(title)}</h1><p>Review the material here, then open or download the original file when you are ready.</p></div></section><section class="section section--paper"><div class="container"><div class="material-layout"><div class="material-preview">${previewMarkup(file, title)}</div><aside class="material-sidebar"><p class="eyebrow eyebrow--coral">Material details</p><dl><div><dt>Format</dt><dd>${escapeHtml(extension)}</dd></div><div><dt>File size</dt><dd>${escapeHtml(fileSize(file.bytes))}</dd></div>${tags.length ? `<div><dt>Topics</dt><dd class="material-tags">${tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join('')}</dd></div>` : ''}${sections.length ? `<div><dt>In this archive</dt><dd>${sections.map((section) => `<a href="${section.href}">${escapeHtml(section.title)}</a>`).join(', ')}</dd></div>` : ''}</dl><div class="material-actions"><a class="button button--coral" href="${file.local}" target="_blank" rel="noopener noreferrer">Open file <span aria-hidden="true">↗</span></a><a class="text-link" href="${file.local}" download>Download file <span aria-hidden="true">↓</span></a></div>${primary ? `<a class="material-back" href="${primary.href}">← Back to ${escapeHtml(primary.title)}</a>` : '<a class="material-back" href="library.html">← Back to all materials</a>'}</aside></div>${primary ? materialPager(files, file, primary.slug) : ''}</div></section>`;
     } catch {
       main.innerHTML = `<section class="page-intro"><div class="container"><p class="eyebrow eyebrow--coral">Materials archive</p><h1>Material not found</h1><p>This material is not currently available in the local archive.</p><a class="button button--light" href="library.html">Browse materials <span aria-hidden="true">→</span></a></div></section>`;
     }

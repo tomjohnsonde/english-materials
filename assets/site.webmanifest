@@ -1,0 +1,16 @@
+{
+  "name": "Intermediate English Materials",
+  "short_name": "English Materials",
+  "description": "Practical English resources for focused learners.",
+  "start_url": "/english-materials/",
+  "display": "browser",
+  "background_color": "#111214",
+  "theme_color": "#111214",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
