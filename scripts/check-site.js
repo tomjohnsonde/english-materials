@@ -5,7 +5,7 @@ const vm = require('vm');
 const root = path.resolve(__dirname, '..');
 const reportPath = path.join(root, 'reports', 'site-check.json');
 const checkExternal = process.argv.includes('--external');
-const assetRevision = '20260916.2';
+const assetRevision = '20260917.4';
 const errors = [];
 const warnings = [];
 
@@ -69,6 +69,8 @@ async function externalReport(urls) {
 
 async function main() {
   const data = readData();
+  const dataSource = fs.readFileSync(file('assets/data.js'), 'utf8');
+  if (/myintermediatematerials\.weebly\.com|tomsmaterials\.weebly\.com/i.test(dataSource)) errors.push('Old Weebly URL remains in assets/data.js');
   const manifest = JSON.parse(fs.readFileSync(file('assets/materials/manifest.json'), 'utf8'));
   const rootFiles = ['index.html', 'grammar.html', 'medical-english.html', 'speaking.html', 'library.html', 'section.html', 'material.html', 'contact.html', 'courses.html', '404.html', 'unavailable.html', 'qr.html', 'robots.txt', 'sitemap.xml'];
   rootFiles.forEach((relative) => exists(relative, 'Required site file is missing'));
