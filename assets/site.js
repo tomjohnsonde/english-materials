@@ -174,14 +174,14 @@
   function renderHeader() {
     const header = document.querySelector('[data-site-header]');
     if (!header) return;
-    const links = data.navigation.map((item) => `<a ${item.page === page ? 'aria-current="page"' : ''} href="${item.href}">${item.label}</a>`).join('');
+    const links = data.navigation.map((item) => `<a${item.page === 'contact' ? ' class="main-nav__contact"' : ''} ${item.page === page ? 'aria-current="page"' : ''} href="${item.href}">${item.label}</a>`).join('');
     header.innerHTML = `<div class="utility-bar"><div class="container utility-bar__inner"><a class="brand" href="index.html" aria-label="Official learning materials site of Tom Johnson"><span class="brand__dot"></span><span class="brand__full">Intermediate English Materials</span><span class="brand__short">IEM</span></a><span class="official-site">Official site of Tom Johnson</span><form class="site-search" action="library.html" role="search"><label class="sr-only" for="site-search-input">Search materials</label><input id="site-search-input" name="q" type="search" placeholder="Search materials" /><button aria-label="Search" type="submit">⌕</button></form><a class="mobile-header-action" href="library.html" aria-label="Search all materials"><span aria-hidden="true">⌕</span><span>Search</span></a></div></div><nav class="main-nav" id="site-navigation" aria-label="Main navigation"><div class="container main-nav__inner">${links}</div></nav>`;
   }
 
   function renderFooter() {
     const footer = document.querySelector('[data-site-footer]');
     if (!footer) return;
-    footer.innerHTML = `<div class="footer-band"><div class="container footer-band__inner"><p>Intermediate English Materials</p><a href="#main">Back to top ↑</a></div></div><div class="footer-main"><div class="container footer-main__inner"><div><a class="footer-brand" href="index.html">IEM<span>.</span></a><p>Practical English materials<br />for curious intermediate learners.</p></div><a class="footer-contact" href="contact.html">Contact <span aria-hidden="true">→</span></a></div><div class="container footer-legal"><span>© ${new Date().getFullYear()} Intermediate English Materials</span><span>Materials are stored and available directly on this site.</span></div></div>`;
+    footer.innerHTML = `<div class="footer-band"><div class="container footer-band__inner"><p>Intermediate English Materials</p><a href="#main">Back to top ↑</a></div></div><div class="footer-main"><div class="container footer-main__inner"><div><a class="footer-brand" href="index.html">IEM<span>.</span></a><p>Practical English materials<br />for curious intermediate learners.</p></div></div><div class="container footer-legal"><span>© ${new Date().getFullYear()} Intermediate English Materials</span><span>Materials are stored and available directly on this site.</span></div></div>`;
   }
 
   function renderResourceGrids() {

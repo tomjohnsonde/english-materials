@@ -6,7 +6,8 @@ globalThis.siteData = {
     { label: 'Speaking', href: 'speaking.html', page: 'speaking' },
     { label: 'All materials', href: 'library.html', page: 'library' },
     { label: 'My courses', href: 'courses.html', page: 'courses' },
-    { label: 'QR', href: 'qr.html', page: 'qr' }
+    { label: 'QR', href: 'qr.html', page: 'qr' },
+    { label: 'Contact', href: 'contact.html', page: 'contact' }
   ],
   sections: [
     { slug: 'grammar', title: 'Grammar', href: 'grammar.html', group: 'Language', desc: 'Conditionals, verb tenses, linking words and grammar practice.' },
