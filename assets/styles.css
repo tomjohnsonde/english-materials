@@ -33,18 +33,20 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .hero { position:relative; overflow:hidden; min-height:470px; display:grid; align-items:center; isolation:isolate; color:var(--white); background:var(--ink); }
 .hero::before { content:""; position:absolute; z-index:-3; inset:0; background-image:radial-gradient(circle at 11% 19%,rgba(255,255,255,.77) 0 1px,transparent 1.5px),radial-gradient(circle at 70% 26%,rgba(255,255,255,.55) 0 1.2px,transparent 1.7px),radial-gradient(circle at 42% 67%,rgba(255,255,255,.35) 0 1px,transparent 1.5px),radial-gradient(circle at 91% 75%,rgba(255,255,255,.5) 0 1px,transparent 1.5px); background-size:110px 110px,170px 170px,130px 130px,200px 200px; opacity:.85; }
 .hero::after { content:""; position:absolute; z-index:-2; inset:0; background:linear-gradient(100deg,rgba(6,7,9,.2),rgba(6,7,9,.82)); }
-.hero--space { background:linear-gradient(135deg,#111214 0%,#1d2025 100%); }.hero--space::before { display:none; }.hero--space::after { background:linear-gradient(105deg,rgba(17,18,20,.02),rgba(17,18,20,.62)); }.hero.hero--materials { min-height:375px; }
+.hero--space { background:linear-gradient(135deg,#111214 0%,#1d2025 100%); }.hero--space::before { display:none; }.hero--space::after { background:linear-gradient(105deg,rgba(17,18,20,.02),rgba(17,18,20,.62)); }
 .hero--compact { min-height:310px; }
 .hero__content { padding-block:62px; max-width:720px; }
-.hero__content--materials { padding-block:58px; }
-.hero__content--materials h2 { max-width:11.5ch; margin-bottom:20px; color:var(--white); font-size:clamp(46px,7vw,78px); text-transform:uppercase; }
-.materials-search { display:grid; grid-template-columns:1fr auto; width:min(100%,590px); margin-top:28px; background:var(--white); }
+.material-finder { display:grid; grid-template-columns:minmax(210px,.58fr) minmax(360px,1fr); align-items:end; gap:36px clamp(45px,8vw,120px); margin-bottom:55px; padding-bottom:48px; border-bottom:1px solid rgba(255,255,255,.2); }
+.material-finder__intro h2 { margin-bottom:8px; font-size:clamp(28px,3.2vw,39px); }
+.material-finder__intro p { max-width:31ch; margin:0; color:rgba(255,255,255,.72); font-size:15px; line-height:1.45; }
+.material-finder__actions { width:100%; }
+.materials-search { display:grid; grid-template-columns:1fr auto; width:100%; background:var(--white); }
 .materials-search input { min-width:0; min-height:56px; padding:0 18px; border:0; outline:0; color:var(--ink); background:transparent; font:400 16px/1.3 var(--font-body); }
 .materials-search input::placeholder { color:var(--muted); opacity:1; }
 .materials-search button { min-width:118px; padding:0 17px; border:0; color:var(--white); background:var(--coral); font:700 12px/1 var(--font-display); letter-spacing:.07em; text-transform:uppercase; transition:background .18s ease; }
 .materials-search button:hover,.materials-search button:focus-visible { background:var(--coral-dark); }
-.hero-materials__link { display:inline-block; margin-top:17px; padding-bottom:3px; border-bottom:1px solid currentColor; color:var(--white); font:700 12px/1.2 var(--font-display); letter-spacing:.07em; text-transform:uppercase; }
-.hero-materials__link:hover,.hero-materials__link:focus-visible { color:#f4d272; }
+.material-finder__link { display:inline-block; margin-top:16px; padding-bottom:3px; border-bottom:1px solid currentColor; color:var(--white); font:700 12px/1.2 var(--font-display); letter-spacing:.07em; text-transform:uppercase; }
+.material-finder__link:hover,.material-finder__link:focus-visible { color:#f4d272; }
 .teacher-intro { padding-block:clamp(47px,7vw,86px); background:var(--paper); }
 .teacher-intro__grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(180px,235px); align-items:center; gap:clamp(34px,7vw,95px); }
 .teacher-intro__copy { max-width:650px; }
@@ -179,12 +181,12 @@ h3 { margin-bottom:10px; font-size:22px; }
   .main-nav a:hover,.main-nav a:focus-visible,.main-nav a[aria-current="page"] { color:var(--white); border-bottom-color:var(--white); }
   .main-nav__contact { margin-left:0; }
   .main-nav__search { display:none; }
-  .hero { min-height:calc(100svh - 102px); }.hero.hero--materials { min-height:355px; }
+  .hero { min-height:calc(100svh - 102px); }
   .hero--compact { min-height:360px; }
   .hero__content { padding-block:72px 64px; }
-  .hero__content--materials { padding-block:54px; }
-  .hero__content--materials h2 { max-width:9ch; font-size:clamp(50px,16vw,76px); line-height:.94; }
-  .materials-search { width:100%; margin-top:25px; }
+  .material-finder { grid-template-columns:1fr; gap:23px; margin-bottom:40px; padding-bottom:35px; }
+  .material-finder__intro h2 { font-size:31px; }
+  .material-finder .materials-search { width:100%; }
   .materials-search input { min-height:54px; padding-inline:16px; }
   .materials-search button { min-width:98px; }
   .hero__content h1 { max-width:9ch; font-size:clamp(52px,16vw,76px); line-height:.94; }
