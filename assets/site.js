@@ -330,6 +330,7 @@
         history.replaceState({}, '', `${next.pathname}${next.search}${next.hash}`);
       };
       const apply = () => {
+        if (input && input.value !== query) input.value = query;
         const hasQuery = Boolean(normalizeSearchText(query));
         const hasFilter = activeSection !== 'all' || activeFormat !== 'all';
         const filtered = records.filter((record) =>
