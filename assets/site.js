@@ -481,12 +481,13 @@
     const status = document.querySelector('[data-form-status]');
     form.addEventListener('submit', (event) => {
       event.preventDefault();
-      if (!form.checkValidity()) { status.textContent = 'Please complete your name, email and message.'; status.className = 'form-status form-status--error'; form.reportValidity(); return; }
+      if (!form.checkValidity()) { status.textContent = 'Please complete your name, email address and message.'; status.className = 'form-status form-status--error'; form.reportValidity(); return; }
       const formData = new FormData(form);
-      const name = `${formData.get('firstName')} ${formData.get('lastName')}`.trim();
-      const subject = 'Message from Intermediate English Materials';
-      const body = `Name: ${name}\nEmail: ${formData.get('email')}\n\nMessage:\n${formData.get('message')}`;
-      status.textContent = 'Opening your email app with the message ready to send…';
+      const name = String(formData.get('fullName') || '').trim();
+      const enquiryType = String(formData.get('enquiryType') || 'General enquiry').trim();
+      const subject = `Enquiry: ${enquiryType}`;
+      const body = `Name: ${name}\nEmail: ${formData.get('email')}\nEnquiry: ${enquiryType}\n\nMessage:\n${formData.get('message')}`;
+      status.textContent = 'Opening your email app with your enquiry ready to send…';
       status.className = 'form-status form-status--success'; form.reset();
       window.location.href = `mailto:tomjohnsonde@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     });
