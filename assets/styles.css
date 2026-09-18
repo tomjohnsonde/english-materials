@@ -36,7 +36,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .hero--space { background:linear-gradient(135deg,#111214 0%,#1d2025 100%); }.hero--space::before { display:none; }.hero--space::after { background:linear-gradient(105deg,rgba(17,18,20,.02),rgba(17,18,20,.62)); }
 .hero--compact { min-height:310px; }
 .hero__content { padding-block:62px; max-width:720px; }
-.material-finder { display:grid; grid-template-columns:minmax(210px,.58fr) minmax(360px,1fr); align-items:end; gap:36px clamp(45px,8vw,120px); margin-bottom:55px; padding-bottom:48px; border-bottom:1px solid rgba(255,255,255,.2); }
+.material-finder { display:grid; grid-template-columns:minmax(210px,.58fr) minmax(360px,1fr); align-items:end; gap:36px clamp(45px,8vw,120px); margin:55px 0; padding-bottom:48px; border-bottom:1px solid rgba(255,255,255,.2); }
 .material-finder__intro h2 { margin-bottom:8px; font-size:clamp(28px,3.2vw,39px); }
 .material-finder__intro p { max-width:31ch; margin:0; color:rgba(255,255,255,.72); font-size:15px; line-height:1.45; }
 .material-finder__actions { width:100%; }
