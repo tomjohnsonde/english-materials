@@ -140,6 +140,7 @@ globalThis.siteData = {
     { title: 'C1 reading', type: 'External lesson', section: 'reading-listening', href: 'https://learnenglish.britishcouncil.org/skills/reading/c1-reading', desc: 'British Council advanced reading practice.', accent: false },
     { title: 'Business & culture', type: 'External PDF', section: 'reading-listening', href: 'https://learnenglish.britishcouncil.org/sites/podcasts/files/LearnEnglish-Reading-C1-Cultural-behaviour-in-business.pdf', desc: 'British Council reading material on cultural behaviour in business.', accent: false },
     { title: 'Work rumours', type: 'External listening', section: 'reading-listening', href: 'https://learnenglish.britishcouncil.org/skills/listening/b2-listening/talking-about-rumours', desc: 'British Council listening practice for B2 learners.', accent: false },
+    { title: 'Horror film clichés', type: 'External reading', section: 'reading-listening', href: 'https://learnenglish.britishcouncil.org/free-resources/reading/c1/horror-film-cliches', desc: 'British Council C1 reading practice with a downloadable worksheet.', accent: false },
 
     { title: 'Punctuation rules', type: 'PDF guide', section: 'spelling-punctuation', href: 'assets/materials/punctuation-rules-exercises.pdf', desc: 'Review common punctuation rules and practise them.', accent: true },
     { title: 'Spelling & punctuation', type: 'PDF practice', section: 'spelling-punctuation', href: 'assets/materials/advanced-english-grammar-a-spelling-punctuation.pdf', desc: 'Practise advanced spelling and punctuation.', accent: false },
@@ -233,7 +234,7 @@ globalThis.siteData = {
     { title: 'Modern Day Athens video', type: 'External video', section: 'videos', href: 'https://www.youtube.com/watch?v=kbokVfMWm2I', desc: 'Embedded video retained from the original Videos page.', accent: false },
     { title: 'Shopping in London video', type: 'External video', section: 'videos', href: 'https://www.youtube.com/watch?v=UlCUFGBJNMQ', desc: 'Embedded video retained from the original Videos page.', accent: false },
     { title: 'The smallest car video', type: 'External video', section: 'videos', href: 'https://www.youtube.com/watch?v=dJfSS0ZXYdo', desc: 'Embedded video retained from the original Videos page.', accent: false },
-    { title: 'Music festival video', type: 'External video', section: 'videos', href: 'https://www.youtube.com/watch?v=l0ffoi3K9ZY', desc: 'Embedded video retained from the original Videos page.', accent: false },
+    { title: 'Airfish 8 video', type: 'External video', section: 'videos', href: 'https://www.youtube.com/watch?v=l0ffoi3K9ZY', desc: 'Watch the Airfish 8 ground-effect vehicle in action.', accent: false },
 
     { title: 'Telephone vocabulary I', type: 'PDF vocabulary', section: 'vocabulary', href: 'assets/materials/business-english-telephone-vocabulary-part-i.pdf', desc: 'Useful words and phrases for telephone conversations.', accent: true },
     { title: 'Politics, war & peace', type: 'PDF vocabulary', section: 'vocabulary', href: 'assets/materials/politics-war-peace.pdf', desc: 'Vocabulary for discussing society and current affairs.', accent: false },

@@ -3,7 +3,7 @@
   const page = document.body.dataset.page;
   const materialRoot = 'assets/materials/';
   const siteOrigin = 'https://tomjohnsonde.github.io/english-materials/';
-  const assetRevision = '20260917.5';
+  const assetRevision = '20260918.1';
   const escapeHtml = (value) => String(value ?? '').replace(/[&<>'"]/g, (character) => ({ '&': '&amp;', '>': '&gt;', '<': '&lt;', "'": '&#39;', '"': '&quot;' }[character]));
   const isLocalMaterial = (href) => typeof href === 'string' && href.startsWith(materialRoot);
   const isExternalResource = (href) => typeof href === 'string' && /^https?:\/\//i.test(href);
