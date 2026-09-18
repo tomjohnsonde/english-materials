@@ -1933,5 +1933,68 @@
     "local": "assets/materials/writing-advantages-and-disadvantages-ii.pdf",
     "bytes": 114183,
     "content_type": null
+  },
+  {
+    "title": "A GHOST STORY",
+    "sections": [
+      "reading-listening"
+    ],
+    "local": "assets/materials/a-ghost-story.pdf",
+    "bytes": 222358,
+    "content_type": "application/pdf"
+  },
+  {
+    "title": "A GHOST STORY — GAPPED TEXT",
+    "sections": [
+      "reading-listening"
+    ],
+    "local": "assets/materials/a-ghost-story-gapped.pdf",
+    "bytes": 308305,
+    "content_type": "application/pdf"
+  },
+  {
+    "title": "A FUNNY STORY",
+    "sections": [
+      "reading-listening"
+    ],
+    "local": "assets/materials/funny-story.pdf",
+    "bytes": 77439,
+    "content_type": "application/pdf"
+  },
+  {
+    "title": "THIRSTY MAN IN THE DESERT",
+    "sections": [
+      "reading-listening"
+    ],
+    "local": "assets/materials/thirsty-man-in-the-desert.pdf",
+    "bytes": 768380,
+    "content_type": "application/pdf"
+  },
+  {
+    "title": "AT AN AIRPORT",
+    "sections": [
+      "reading-listening"
+    ],
+    "local": "assets/materials/at-an-airport.pdf",
+    "bytes": 566415,
+    "content_type": "application/pdf"
+  },
+  {
+    "title": "AT A HOTEL",
+    "sections": [
+      "reading-listening"
+    ],
+    "local": "assets/materials/at-a-hotel.pdf",
+    "bytes": 593730,
+    "content_type": "application/pdf"
+  },
+  {
+    "title": "WORKING CONDITIONS",
+    "sections": [
+      "reading-listening"
+    ],
+    "local": "assets/materials/working-conditions.pdf",
+    "bytes": 364002,
+    "content_type": "application/pdf"
   }
 ]
