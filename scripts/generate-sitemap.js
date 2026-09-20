@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
 
+const model = require('../assets/site.js');
 const root = path.resolve(__dirname, '..');
 const origin = 'https://tomjohnsonde.github.io/english-materials/';
 const sitemapPath = path.join(root, 'sitemap.xml');
@@ -29,7 +30,7 @@ const urls = new Set([
   origin,
   ...staticPages.filter((page) => page !== 'index.html').map(absoluteUrl),
   ...data.sections.filter((section) => section.available !== false).map((section) => absoluteUrl(section.href)),
-  ...manifest.map((file) => absoluteUrl(`material.html?file=${encodeURIComponent(file.local)}`))
+  ...manifest.filter((file) => !file.canonical).map((file) => absoluteUrl(model.materialRoute(file.local)))
 ]);
 const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${[...urls].sort().map((url) => `  <url><loc>${escapeXml(url)}</loc></url>`).join('\n')}\n</urlset>\n`;
 
