@@ -1,0 +1,11 @@
+{
+  "name": "english-materials",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-static.js && node scripts/generate-sitemap.js",
+    "test": "node --test scripts/site.test.js",
+    "check": "node scripts/build-static.js --check && node scripts/generate-sitemap.js --check && node scripts/check-site.js && node --test scripts/site.test.js",
+    "check:external": "node scripts/check-site.js --external"
+  },
+  "engines": { "node": ">=22" }
+}
