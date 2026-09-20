@@ -6,7 +6,19 @@
     ],
     "local": "assets/materials/false-friends-match-the-definitions-1.odt",
     "bytes": 25572,
-    "content_type": null
+    "content_type": null,
+    "description": "Match English–German false friends to definitions, then use the words to distinguish their English meanings.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/false-friends-match-the-definitions-1.pdf"
+    ]
   },
   {
     "title": "False Friends: Match the Definitions A",
@@ -15,7 +27,20 @@
     ],
     "local": "assets/materials/false-friends-match-the-definitions-1.pdf",
     "bytes": 97555,
-    "content_type": null
+    "content_type": null,
+    "description": "Match English–German false friends to definitions, then use the words to distinguish their English meanings.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/false-friends-match-the-definitions-1.odt"
+    ]
   },
   {
     "title": "False Friends: Match the Definitions B",
@@ -24,7 +49,19 @@
     ],
     "local": "assets/materials/false-friends-match-the-definitions-2.odt",
     "bytes": 24908,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise a second set of false friends with definition matching and English vocabulary exercises.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/false-friends-match-the-definitions-2.pdf"
+    ]
   },
   {
     "title": "False Friends: Match the Definitions B",
@@ -33,7 +70,20 @@
     ],
     "local": "assets/materials/false-friends-match-the-definitions-2.pdf",
     "bytes": 95770,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise a second set of false friends with definition matching and English vocabulary exercises.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/false-friends-match-the-definitions-2.odt"
+    ]
   },
   {
     "title": "ROBOTS AT WORK",
@@ -42,16 +92,39 @@
     ],
     "local": "assets/materials/robots-at-work-reading-comprehension.pdf",
     "bytes": 467117,
-    "content_type": null
+    "content_type": null,
+    "description": "Read about automated newspaper production, complete a process chart and check statements against the text.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Worksheet",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
-    "title": "PARAPHRASE / DEFINITIONS",
+    "title": "Paraphrase and Definitions from Context",
     "sections": [
       "medical"
     ],
     "local": "assets/materials/guessing-word-meaning-from-context-intermediate.pdf",
     "bytes": 57665,
-    "content_type": null
+    "content_type": null,
+    "description": "Write paraphrases and definitions for unfamiliar words, using the companion context exercise as a starting point.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/guessing-word-meaning-from-sentence-context.pdf"
+    ]
   },
   {
     "title": "LISTENING TEST ANSWER SHEET",
@@ -60,16 +133,37 @@
     ],
     "local": "assets/materials/ielts-listening-test-answer-sheet.pdf",
     "bytes": 18706,
-    "content_type": null
+    "content_type": null,
+    "description": "A numbered blank response sheet for recording answers during an IELTS listening practice session.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Template",
+    "skills": []
   },
   {
     "title": "DICTIONARY COLLOCATIONS",
     "sections": [
-      "home"
+      "home",
+      "collocations"
     ],
     "local": "assets/materials/collocations-iv-using-a-dictionary-to-find-them.pdf",
     "bytes": 402114,
-    "content_type": null
+    "content_type": null,
+    "aliases": [
+      "USING A DICTIONARY TO FIND COLLOCATIONS",
+      "using-a-dictionary-to-find-collocations.pdf"
+    ],
+    "description": "Use learner-dictionary entries to find collocations, complete examples and record useful word combinations.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "DISCUSSION: BOOKS & SLEEP",
@@ -78,16 +172,46 @@
     ],
     "local": "assets/materials/discussion-topics-sleep-books.pdf",
     "bytes": 50545,
-    "content_type": null
+    "content_type": null,
+    "description": "Read model paragraphs about books and sleep, then write a paragraph using phrasal verbs linked to one topic.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Discussion",
+    "skills": [
+      "Writing",
+      "Speaking",
+      "Reading"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "COLLOCATIONS INTRO",
     "sections": [
-      "home"
+      "home",
+      "reading-listening",
+      "collocations"
     ],
     "local": "assets/materials/intro-to-collocations-unit-1.pdf",
     "bytes": 572353,
-    "content_type": null
+    "content_type": null,
+    "aliases": [
+      "COLLOCATIONS 1",
+      "collocations-unit-1.pdf",
+      "INTRODUCTION TO COLLOCATIONS ​",
+      "introduction-to-collocations.pdf"
+    ],
+    "description": "Learn how collocations differ from compounds and idioms, then identify and correct word combinations.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "MAGLEV IN GERMANY",
@@ -96,16 +220,31 @@
     ],
     "local": "assets/materials/maglev-train-in-germany-the-future-of-magnetic-levitation.pdf",
     "bytes": 403668,
-    "content_type": null
+    "content_type": null,
+    "description": "Read an archived article about German maglev technology and discuss the advantages and disadvantages of Hyperloop.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Reading",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
-    "title": "NOUGHTS & CROSSES TEMPLATE",
+    "title": "Noughts and Crosses — Editable Template",
     "sections": [
       "games"
     ],
     "local": "assets/materials/original-template.docx",
     "bytes": 24252,
-    "content_type": null
+    "content_type": null,
+    "description": "An editable noughts-and-crosses board template for adapting classroom vocabulary or question games.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Template",
+    "skills": []
   },
   {
     "title": "DISCUSSION TOPICS",
@@ -114,25 +253,58 @@
     ],
     "local": "assets/materials/28-discussion-topics.pdf",
     "bytes": 73357,
-    "content_type": null
+    "content_type": null,
+    "description": "Conversation questions across 28 everyday topics, including hobbies, sleep, music and free time; choose topics for a speaking session.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 5,
+    "activityType": "Discussion",
+    "skills": [
+      "Speaking"
+    ],
+    "estimatedMinutes": 35,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
-    "title": "General Knowledge Crossword II: Empty Grid",
+    "title": "General Knowledge Crossword — Empty Grid",
     "sections": [
       "games"
     ],
     "local": "assets/materials/games-original-worksheet-1.pdf",
     "bytes": 166596,
-    "content_type": null
+    "content_type": null,
+    "aliases": [
+      "General Knowledge Crossword II: Empty Grid",
+      "general-knowledge-crossword-ii-empty-grid.pdf"
+    ],
+    "description": "A blank general-knowledge crossword grid to use with the separate mixed-clues worksheet and teacher prompts.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Template",
+    "skills": [],
+    "relatedFiles": [
+      "assets/materials/games-original-worksheet-3.pdf"
+    ]
   },
   {
-    "title": "Paraphrase & Definitions: Mixed-Up Clues",
+    "title": "Paraphrase and Definitions — Mixed Clues",
     "sections": [
       "games"
     ],
     "local": "assets/materials/games-original-worksheet-2.pdf",
     "bytes": 118424,
-    "content_type": null
+    "content_type": null,
+    "description": "Mixed-up definition clues for a vocabulary guessing activity; identify objects, actions and descriptive words.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "CONFERENCES & VISITS",
@@ -141,7 +313,17 @@
     ],
     "local": "assets/materials/academic-skills-unit-5-conferences-visits.pdf",
     "bytes": 921042,
-    "content_type": null
+    "content_type": null,
+    "description": "Read conference invitations, itineraries and emails; identify purpose and audience and practise academic vocabulary.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 4,
+    "activityType": "Worksheet",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 30,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "CHARACTER",
@@ -150,7 +332,17 @@
     ],
     "local": "assets/materials/adjectives-describing-a-person-s-character.pdf",
     "bytes": 3676427,
-    "content_type": null
+    "content_type": null,
+    "description": "Describe personality using character adjectives, opposites and related nouns, with short profiles and vocabulary exercises.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "COLLOCATIONS 3",
@@ -159,7 +351,17 @@
     ],
     "local": "assets/materials/advanced-collocation-exercises-part-one.pdf",
     "bytes": 174506,
-    "content_type": null
+    "content_type": null,
+    "description": "Complete advanced collocations in texts and sentences, choosing words that fit fixed expressions and context.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 4,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 30,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "ADV. ENGLISH SPELLING & PRON",
@@ -168,7 +370,17 @@
     ],
     "local": "assets/materials/advanced-english-grammar-a-spelling-punctuation.pdf",
     "bytes": 387003,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise homophones, spelling and punctuation through paired sentences and text-correction activities.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Worksheet",
+    "skills": [
+      "Grammar"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "ADV PARAGRAPH CORRECTION 1",
@@ -177,7 +389,17 @@
     ],
     "local": "assets/materials/advanced-paragraph-correction-1.pdf",
     "bytes": 83095,
-    "content_type": null
+    "content_type": null,
+    "description": "Choose corrections for grammar, spelling and punctuation in a short passage about Shakespeare and Hamlet.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Grammar"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "ADV PARAGRAPH CORRECTION 3",
@@ -186,7 +408,17 @@
     ],
     "local": "assets/materials/advanced-paragraph-correction-3.pdf",
     "bytes": 85662,
-    "content_type": null
+    "content_type": null,
+    "description": "Edit a passage about Murphy’s Law by choosing corrections to grammar, spelling and punctuation.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Grammar"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "ADV PARAGRAPH CORRECTION 5",
@@ -195,7 +427,17 @@
     ],
     "local": "assets/materials/advanced-paragraph-correction-5.pdf",
     "bytes": 73795,
-    "content_type": null
+    "content_type": null,
+    "description": "Choose corrections in a paragraph about an elderly professor, focusing on word meaning, grammar, spelling and punctuation.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Grammar"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "ADV PARAGRAPH CORRECTION 8",
@@ -204,7 +446,17 @@
     ],
     "local": "assets/materials/advanced-paragraph-correction-8.pdf",
     "bytes": 83914,
-    "content_type": null
+    "content_type": null,
+    "description": "Choose corrections in a paragraph about atoms, focusing on sentence structure, word choice and punctuation.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Grammar"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "Types of Mistakes",
@@ -213,7 +465,17 @@
     ],
     "local": "assets/materials/annotation-key-intermediate.doc",
     "bytes": 28160,
-    "content_type": null
+    "content_type": null,
+    "description": "A teacher’s correction-code reference with symbols and examples for grammar, vocabulary, spelling and punctuation errors.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Reference",
+    "skills": [
+      "Vocabulary"
+    ],
+    "relatedFiles": [
+      "assets/materials/annotation-key-intermediate.pdf"
+    ]
   },
   {
     "title": "ANNOTATION KEY",
@@ -222,7 +484,18 @@
     ],
     "local": "assets/materials/annotation-key-intermediate.pdf",
     "bytes": 46559,
-    "content_type": null
+    "content_type": null,
+    "description": "A teacher’s correction-code reference with symbols and examples for grammar, vocabulary, spelling and punctuation errors.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Reference",
+    "skills": [
+      "Vocabulary"
+    ],
+    "relatedFiles": [
+      "assets/materials/annotation-key-intermediate.doc"
+    ]
   },
   {
     "title": "PIE CHART: ARABLE LAND",
@@ -231,7 +504,17 @@
     ],
     "local": "assets/materials/arable-crops-grown-in-the-uk-blank-lines.odt",
     "bytes": 64152,
-    "content_type": null
+    "content_type": null,
+    "description": "Compare pie charts of UK arable crops in 2006 and 2011 and write a summary using the lined response pages.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Chart",
+    "skills": [
+      "Writing"
+    ],
+    "relatedFiles": [
+      "assets/materials/arable-crops-grown-in-the-uk-blank-lines.pdf"
+    ]
   },
   {
     "title": "PIE CHART: ARABLE LAND",
@@ -240,7 +523,18 @@
     ],
     "local": "assets/materials/arable-crops-grown-in-the-uk-blank-lines.pdf",
     "bytes": 57802,
-    "content_type": null
+    "content_type": null,
+    "description": "Compare pie charts of UK arable crops in 2006 and 2011 and write a summary using the lined response pages.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Chart",
+    "skills": [
+      "Writing"
+    ],
+    "relatedFiles": [
+      "assets/materials/arable-crops-grown-in-the-uk-blank-lines.odt"
+    ]
   },
   {
     "title": "BELIEFS & OPINIONS",
@@ -249,7 +543,17 @@
     ],
     "local": "assets/materials/beliefs-opinions.pdf",
     "bytes": 467374,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise collocations for expressing beliefs, agreement, doubt and differences of opinion.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "BLACK STORIES 1",
@@ -258,7 +562,18 @@
     ],
     "local": "assets/materials/black-stories-1-questions-only.pdf",
     "bytes": 73608,
-    "content_type": null
+    "content_type": null,
+    "description": "Short lateral-thinking mystery questions for a teacher-led guessing game; the explanations are not included.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Discussion",
+    "skills": [
+      "Speaking"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "answers": false
   },
   {
     "title": "Black Stories Game II: Questions Only",
@@ -267,7 +582,18 @@
     ],
     "local": "assets/materials/black-stories-game-ii-questions-only.pdf",
     "bytes": 101126,
-    "content_type": null
+    "content_type": null,
+    "description": "A second collection of lateral-thinking mystery scenarios for asking questions and proposing explanations; questions only.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Discussion",
+    "skills": [
+      "Speaking"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "answers": false
   },
   {
     "title": "TRY SOMETHING NEW FOR 30 DAYS-WORKSHEET",
@@ -276,7 +602,22 @@
     ],
     "local": "assets/materials/blurb-30-day-challenge-with-matt-cutts.jpeg",
     "bytes": 125404,
-    "content_type": null
+    "content_type": null,
+    "description": "Discuss personal challenges and answer viewing questions for Matt Cutts’ talk about trying something new for 30 days.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Worksheet",
+    "skills": [
+      "Listening"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedResources": [
+      {
+        "href": "assets/materials/try-something-new-for-30-days-worksheet-2.pdf",
+        "title": "Try something new for 30 days"
+      }
+    ]
   },
   {
     "title": "BODY LANGUAGE",
@@ -285,7 +626,17 @@
     ],
     "local": "assets/materials/body-language-gestures.pdf",
     "bytes": 438703,
-    "content_type": null
+    "content_type": null,
+    "description": "Learn vocabulary for gestures and body language, then describe behaviour and discuss possible interpretations.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "BRITISH VS. AMERICAN",
@@ -294,7 +645,17 @@
     ],
     "local": "assets/materials/british-english-vs-american-english.pdf",
     "bytes": 164489,
-    "content_type": null
+    "content_type": null,
+    "description": "Match British and American vocabulary and compare common spelling differences.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "BUSINESS & MONEY",
@@ -303,7 +664,17 @@
     ],
     "local": "assets/materials/business-and-money.pdf",
     "bytes": 413744,
-    "content_type": null
+    "content_type": null,
+    "description": "Complete vocabulary exercises about business and money, including a cloze text and commonly confused financial words.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "BUSINESS COLLOCATIONS",
@@ -312,7 +683,17 @@
     ],
     "local": "assets/materials/business-collocations.pdf",
     "bytes": 516441,
-    "content_type": null
+    "content_type": null,
+    "description": "Learn collocations for starting a business, competition, profit and loss, then practise them in context.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "TELEPHONE VOCAB 1",
@@ -321,7 +702,17 @@
     ],
     "local": "assets/materials/business-english-telephone-vocabulary-part-i.pdf",
     "bytes": 74631,
-    "content_type": null
+    "content_type": null,
+    "description": "Read a telephone conversation, infer the meanings of phone-related expressions and complete the vocabulary quiz.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Worksheet",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "TELEPHONE VOCAB 2",
@@ -330,7 +721,17 @@
     ],
     "local": "assets/materials/business-english-telephone-vocabulary-part-ii.pdf",
     "bytes": 78480,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise telephone expressions for connection problems, interruptions and returning calls through a dialogue and quiz.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "BUSINESS IDIOMS 1",
@@ -339,7 +740,17 @@
     ],
     "local": "assets/materials/business-idioms-one.pdf",
     "bytes": 261062,
-    "content_type": null
+    "content_type": null,
+    "description": "Complete ten business idioms, match them to their meanings and practise their use in sentences.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "BUSINESS IDIOMS 2",
@@ -348,7 +759,17 @@
     ],
     "local": "assets/materials/business-idioms-two.pdf",
     "bytes": 259640,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise a second set of ten business idioms through gap filling, definition matching and contextual use.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "BUSINESS LETTERS - SENTENCES",
@@ -358,7 +779,18 @@
     ],
     "local": "assets/materials/business-letter-writing-sentence-exercise.pdf",
     "bytes": 183630,
-    "content_type": null
+    "content_type": null,
+    "description": "Use ten picture prompts to complete formal business-letter sentences; the first sentence is given as an example.",
+    "skills": [
+      "Writing"
+    ],
+    "estimatedMinutes": 20,
+    "answers": false,
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "4 BUSINESS VERBS",
@@ -367,7 +799,18 @@
     ],
     "local": "assets/materials/business-verbs-match-pictures-with-phrases.pdf",
     "bytes": 185112,
-    "content_type": null
+    "content_type": null,
+    "description": "Match business verbs and phrases to pictures and answer personal discussion questions; a matching key is included.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "answers": true
   },
   {
     "title": "CARS & DRIVING II",
@@ -376,7 +819,17 @@
     ],
     "local": "assets/materials/cars-driving.pdf",
     "bytes": 494785,
-    "content_type": null
+    "content_type": null,
+    "description": "Identify car parts and learn vocabulary for driving, controls and road conditions through illustrated exercises.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "CARS DISCUSSION",
@@ -385,7 +838,17 @@
     ],
     "local": "assets/materials/cars-discussion-worksheet-2.pdf",
     "bytes": 123142,
-    "content_type": null
+    "content_type": null,
+    "description": "Conversation cards about cars, driving, costs and transport choices for pair or group discussion.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Discussion",
+    "skills": [
+      "Speaking"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "CAUSE & EFFECT",
@@ -394,7 +857,17 @@
     ],
     "local": "assets/materials/cause-effect.pdf",
     "bytes": 721190,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise cause-and-effect collocations with verbs such as cause, create and bring about, and discuss consequences.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "GERMAN GOVT DEBT",
@@ -403,7 +876,17 @@
     ],
     "local": "assets/materials/christine-schlichting-german-govt-debt.pdf",
     "bytes": 327330,
-    "content_type": null
+    "content_type": null,
+    "description": "Archived Bundesbank reading extracts about German government debt and cash use, for practising financial English.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 14,
+    "activityType": "Reading",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 45,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "ARRANGING A MEETING 1",
@@ -412,7 +895,17 @@
     ],
     "local": "assets/materials/cold-calls-arranging-a-meeting-part-one.pdf",
     "bytes": 152263,
-    "content_type": null
+    "content_type": null,
+    "description": "Read a cold-call dialogue about arranging a software demonstration and practise the business expressions in context.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "ARRANGING A MEETING 2",
@@ -421,7 +914,17 @@
     ],
     "local": "assets/materials/cold-calls-arranging-a-meeting-part-two.pdf",
     "bytes": 138104,
-    "content_type": null
+    "content_type": null,
+    "description": "Continue practising meeting arrangements with a second cold-call dialogue and follow-up language exercises.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "COLLOCATIONS 1",
@@ -430,7 +933,8 @@
     ],
     "local": "assets/materials/collocations-unit-1.pdf",
     "bytes": 572353,
-    "content_type": null
+    "content_type": null,
+    "canonical": "assets/materials/intro-to-collocations-unit-1.pdf"
   },
   {
     "title": "COLLOCATIONS FOR TALKING ABOUT EATING & DRINKING",
@@ -439,7 +943,17 @@
     ],
     "local": "assets/materials/collocations-for-discussing-eating-drinking.pdf",
     "bytes": 453140,
-    "content_type": null
+    "content_type": null,
+    "description": "Learn food and drink collocations and complete exercises about meals, ingredients and eating habits.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "OLLOCATIONS FOR DISCUSSING FILMS & BOOKS",
@@ -448,7 +962,17 @@
     ],
     "local": "assets/materials/collocations-for-discussing-films-books.pdf",
     "bytes": 703363,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise collocations for films and books; this combined worksheet also revisits homes and food vocabulary.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 6,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 40,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "COLLOCATIONS FOR TALKING ABOUT FLATS & HOUSES",
@@ -457,7 +981,17 @@
     ],
     "local": "assets/materials/collocations-for-discussing-flats-houses.pdf",
     "bytes": 759594,
-    "content_type": null
+    "content_type": null,
+    "description": "Learn collocations for describing flats and houses, followed by additional food and drink practice.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 4,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 30,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "​COLLOCATIONS FOR DISCUSSING MUSIC",
@@ -466,7 +1000,17 @@
     ],
     "local": "assets/materials/collocations-for-discussing-music.pdf",
     "bytes": 1156757,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise music collocations in reviews and conversations; the combined file also contains other everyday-topic exercises.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 9,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 45,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "COLLOCATIONS FOR TALKING ABOUT SPORT",
@@ -475,16 +1019,33 @@
     ],
     "local": "assets/materials/collocations-for-discussing-sports.pdf",
     "bytes": 1022267,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise sports collocations with do, play and go; the combined file also revisits music and other everyday topics.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 9,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 45,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
-    "title": "​",
+    "title": "Collocations for talking about music",
     "sections": [
       "collocations"
     ],
     "local": "assets/materials/collocations-for-talking-about-music.odg",
     "bytes": 588564,
-    "content_type": null
+    "content_type": null,
+    "description": "An editable drawing document containing music-collocation reference pages about performing, listening and reviewing music.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Reference",
+    "skills": [
+      "Vocabulary"
+    ]
   },
   {
     "title": "EMAILS - MISTAKES 2",
@@ -494,7 +1055,17 @@
     ],
     "local": "assets/materials/common-mistakes-in-emails-part-ii.pdf",
     "bytes": 29400,
-    "content_type": null
+    "content_type": null,
+    "description": "Correct common grammar and word-choice mistakes in short workplace emails.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Writing"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "ADVANTAGES & DISADVANTAGES",
@@ -503,7 +1074,18 @@
     ],
     "local": "assets/materials/compare-advantages-and-disadvantages.pdf",
     "bytes": 110521,
-    "content_type": null
+    "content_type": null,
+    "description": "Read a model comparison of a large and small car, then compare the advantages and disadvantages of other choices.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Writing",
+      "Reading"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "CONCLUDING SENTENCES",
@@ -512,7 +1094,17 @@
     ],
     "local": "assets/materials/concluding-sentences.pdf",
     "bytes": 69743,
-    "content_type": null
+    "content_type": null,
+    "description": "Study model paragraph endings and practise writing concluding sentences that restate the main idea.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Writing"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "CORRECT THE MISTAKES 1",
@@ -521,7 +1113,17 @@
     ],
     "local": "assets/materials/correct-the-mistakes-1.pdf",
     "bytes": 105470,
-    "content_type": null
+    "content_type": null,
+    "description": "Correct common English mistakes in workplace and everyday sentences.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Grammar"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "CORRECT THE MISTAKES 2",
@@ -530,7 +1132,17 @@
     ],
     "local": "assets/materials/correct-the-mistakes-2.pdf",
     "bytes": 133430,
-    "content_type": null
+    "content_type": null,
+    "description": "Correct marked errors and missing words in sentences, practising grammar, word order and word choice.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Grammar"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "CRYPTIC WORKSHEET",
@@ -539,7 +1151,21 @@
     ],
     "local": "assets/materials/cryptic-drawings-radio-example-questions.odt",
     "bytes": 187276,
-    "content_type": null
+    "content_type": null,
+    "description": "Describe shapes and their positions in cryptic drawings, then use possibility expressions to guess the objects.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Discussion",
+    "skills": [
+      "Speaking"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/cryptic-pictures-grid.pdf",
+      "assets/materials/shapes.jpg",
+      "assets/materials/cryptic-drawings-radio-example-questions.pdf"
+    ]
   },
   {
     "title": "CRYPTIC WORKSHEET",
@@ -548,7 +1174,22 @@
     ],
     "local": "assets/materials/cryptic-drawings-radio-example-questions.pdf",
     "bytes": 76123,
-    "content_type": null
+    "content_type": null,
+    "description": "Describe shapes and their positions in cryptic drawings, then use possibility expressions to guess the objects.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Discussion",
+    "skills": [
+      "Speaking"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/cryptic-pictures-grid.pdf",
+      "assets/materials/shapes.jpg",
+      "assets/materials/cryptic-drawings-radio-example-questions.odt"
+    ]
   },
   {
     "title": "CRYPTIC DRAWINGS",
@@ -557,7 +1198,16 @@
     ],
     "local": "assets/materials/cryptic-pictures-grid.pdf",
     "bytes": 399375,
-    "content_type": null
+    "content_type": null,
+    "description": "A labelled grid of cryptic pictures for describing shapes and guessing objects; use it with the companion instructions.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Template",
+    "skills": [],
+    "relatedFiles": [
+      "assets/materials/cryptic-drawings-radio-example-questions.pdf"
+    ]
   },
   {
     "title": "General Knowledge Crossword II: Mixed Clues",
@@ -566,7 +1216,24 @@
     ],
     "local": "assets/materials/games-original-worksheet-3.pdf",
     "bytes": 93393,
-    "content_type": null
+    "content_type": null,
+    "aliases": [
+      "General Knowledge Crossword II: Mixed Clues",
+      "general-knowledge-crossword-ii-mixed-clues.pdf"
+    ],
+    "description": "Mixed general-knowledge crossword clues to use with the separate empty grid and correctly numbered teacher prompts.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/games-original-worksheet-1.pdf"
+    ]
   },
   {
     "title": "DESCRIBING A HOUSE",
@@ -575,7 +1242,17 @@
     ],
     "local": "assets/materials/describing-a-house.pdf",
     "bytes": 606434,
-    "content_type": null
+    "content_type": null,
+    "description": "Read a house description and practise vocabulary for rooms, features, size and position.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "DESCRIBING COLLOCATIONS IN GRAMMATICAL CATEGORIES",
@@ -584,7 +1261,17 @@
     ],
     "local": "assets/materials/describing-collocations-in-grammatical-categories.pdf",
     "bytes": 442610,
-    "content_type": null
+    "content_type": null,
+    "description": "Recognise collocations by grammatical pattern, including adjective–noun and noun–verb combinations.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "APPEARANCE",
@@ -593,7 +1280,17 @@
     ],
     "local": "assets/materials/describing-someone-s-appearance-pictures.pdf",
     "bytes": 704224,
-    "content_type": null
+    "content_type": null,
+    "description": "Describe people’s appearance using illustrated vocabulary, definitions and practice exercises.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "LANGUAGES",
@@ -602,7 +1299,17 @@
     ],
     "local": "assets/materials/discussion-worksheet-lets-talk-about-languages-no-answer-key.pdf",
     "bytes": 108149,
-    "content_type": null
+    "content_type": null,
+    "description": "Conversation cards about languages, communication and language learning for pair or group discussion.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Discussion",
+    "skills": [
+      "Speaking"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "MONEY VOCABULARY",
@@ -611,7 +1318,18 @@
     ],
     "local": "assets/materials/elements-of-money-finances-2020.pdf",
     "bytes": 256502,
-    "content_type": null
+    "content_type": null,
+    "description": "Match money and finance expressions to illustrations and answer discussion questions; a picture-matching key is included.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "answers": true
   },
   {
     "title": "EMAIL SUBJECT LINES",
@@ -620,7 +1338,15 @@
     ],
     "local": "assets/materials/email-subject-lines.pdf",
     "bytes": 88125,
-    "content_type": null
+    "content_type": null,
+    "description": "A reference list of professional email subject lines for meetings, follow-ups, applications and project updates.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Reference",
+    "skills": [
+      "Writing"
+    ]
   },
   {
     "title": "EMAILS-COMMON MISTAKES 1",
@@ -629,7 +1355,8 @@
     ],
     "local": "assets/materials/emails-common-mistakes-part-i.pdf",
     "bytes": 82549,
-    "content_type": null
+    "content_type": null,
+    "canonical": "assets/materials/vhs-business-course-emails-common-mistakes-part-i.pdf"
   },
   {
     "title": "NEEDS ANALYSIS",
@@ -638,7 +1365,16 @@
     ],
     "local": "assets/materials/english-needs-analysis-general-all-sections.pdf",
     "bytes": 142111,
-    "content_type": null
+    "content_type": null,
+    "description": "A detailed learner-needs questionnaire for discussing goals, work situations, skills and study preferences over time.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 7,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "requirements": "Complete and update this questionnaire with your teacher over several sessions."
   },
   {
     "title": "False Friends: Yes / No Questions",
@@ -647,7 +1383,19 @@
     ],
     "local": "assets/materials/false-friends-yes-no-questions-table-1.odt",
     "bytes": 20030,
-    "content_type": null
+    "content_type": null,
+    "description": "Use yes/no questions about spelling, meaning and word class to identify English–German false friends.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Discussion",
+    "skills": [
+      "Speaking"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/false-friends-yes-no-questions-table-1.pdf"
+    ]
   },
   {
     "title": "False Friends: Yes / No Questions",
@@ -656,7 +1404,20 @@
     ],
     "local": "assets/materials/false-friends-yes-no-questions-table-1.pdf",
     "bytes": 69225,
-    "content_type": null
+    "content_type": null,
+    "description": "Use yes/no questions about spelling, meaning and word class to identify English–German false friends.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Discussion",
+    "skills": [
+      "Speaking"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/false-friends-yes-no-questions-table-1.odt"
+    ]
   },
   {
     "title": "False Friends: Some English Words & Their Meanings — Table 2",
@@ -665,7 +1426,19 @@
     ],
     "local": "assets/materials/false-friends-some-english-words-their-meanings-table-2.odt",
     "bytes": 20528,
-    "content_type": null
+    "content_type": null,
+    "description": "Complete a false-friends table with meanings, spelling and example sentences, then play a word-guessing activity.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Discussion",
+    "skills": [
+      "Speaking"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/false-friends-some-english-words-their-meanings-table-2.pdf"
+    ]
   },
   {
     "title": "False Friends: Some English Words & Their Meanings — Table 2",
@@ -674,7 +1447,20 @@
     ],
     "local": "assets/materials/false-friends-some-english-words-their-meanings-table-2.pdf",
     "bytes": 101942,
-    "content_type": null
+    "content_type": null,
+    "description": "Complete a false-friends table with meanings, spelling and example sentences, then play a word-guessing activity.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Discussion",
+    "skills": [
+      "Speaking"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/false-friends-some-english-words-their-meanings-table-2.odt"
+    ]
   },
   {
     "title": "False Friends: Meanings in English and German",
@@ -683,7 +1469,19 @@
     ],
     "local": "assets/materials/false-friends-what-the-false-friends-mean-in-english-and-in-german.odt",
     "bytes": 19063,
-    "content_type": null
+    "content_type": null,
+    "description": "Write contrasting sentences to explain the English meanings of words often confused with German lookalikes.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/false-friends-what-the-false-friends-mean-in-english-and-in-german.pdf"
+    ]
   },
   {
     "title": "False Friends: Meanings in English and German",
@@ -692,7 +1490,20 @@
     ],
     "local": "assets/materials/false-friends-what-the-false-friends-mean-in-english-and-in-german.pdf",
     "bytes": 74334,
-    "content_type": null
+    "content_type": null,
+    "description": "Write contrasting sentences to explain the English meanings of words often confused with German lookalikes.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/false-friends-what-the-false-friends-mean-in-english-and-in-german.odt"
+    ]
   },
   {
     "title": "False Friends: Correct the Sentences",
@@ -701,16 +1512,46 @@
     ],
     "local": "assets/materials/false-friends-correct-the-sentences.odt",
     "bytes": 17970,
-    "content_type": null
+    "content_type": null,
+    "description": "Correct false friends used with their German meanings, then write new sentences showing their English meanings.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/false-friends-correct-the-sentences.pdf"
+    ]
   },
   {
     "title": "False Friends: Correct the Sentences",
     "sections": [
-      "false-friends"
+      "false-friends",
+      "medical"
     ],
     "local": "assets/materials/false-friends-correct-the-sentences.pdf",
     "bytes": 82891,
-    "content_type": null
+    "content_type": null,
+    "aliases": [
+      "CORRECT THE SENTENCES",
+      "false-friends-one-correct-the-sentences.pdf"
+    ],
+    "description": "Correct false friends used with their German meanings, then write new sentences showing their English meanings.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/false-friends-correct-the-sentences.odt"
+    ]
   },
   {
     "title": "CORRECT THE SENTENCES",
@@ -719,7 +1560,8 @@
     ],
     "local": "assets/materials/false-friends-one-correct-the-sentences.pdf",
     "bytes": 82891,
-    "content_type": null
+    "content_type": null,
+    "canonical": "assets/materials/false-friends-correct-the-sentences.pdf"
   },
   {
     "title": "MOVIE GENRES IN CHINA & JAPAN",
@@ -728,7 +1570,14 @@
     ],
     "local": "assets/materials/favourite-movie-genres-in-china-japan.jpeg",
     "bytes": 34322,
-    "content_type": null
+    "content_type": null,
+    "description": "Two pie charts of favourite film genres in China and Japan for describing proportions and making comparisons.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Chart",
+    "skills": [
+      "Vocabulary"
+    ]
   },
   {
     "title": "FESTIVALS",
@@ -738,7 +1587,17 @@
     ],
     "local": "assets/materials/festivals-across-the-world.pdf",
     "bytes": 595031,
-    "content_type": null
+    "content_type": null,
+    "description": "Read about international festivals and practise vocabulary for celebrations, events and local traditions.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "FINANCE",
@@ -748,7 +1607,17 @@
     ],
     "local": "assets/materials/finance.pdf",
     "bytes": 1692035,
-    "content_type": null
+    "content_type": null,
+    "description": "Learn financial terms and practise describing increases, decreases and other changes in business figures.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "FIRE ON A SUB.",
@@ -757,7 +1626,17 @@
     ],
     "local": "assets/materials/fire-on-a-russian-nuclear-submarine.pdf",
     "bytes": 223084,
-    "content_type": null
+    "content_type": null,
+    "description": "An archived reading about a fire aboard a Russian nuclear submarine, for practising technical and news vocabulary.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 6,
+    "activityType": "Reading",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 40,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "1ST & 2ND TYPE CONDITIONALS",
@@ -766,7 +1645,18 @@
     ],
     "local": "assets/materials/first-and-second-conditionals-rules.pdf",
     "bytes": 197333,
-    "content_type": null
+    "content_type": null,
+    "description": "Study first and second conditional forms and use them in exercises about possible and hypothetical situations.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 4,
+    "activityType": "Worksheet",
+    "skills": [
+      "Grammar"
+    ],
+    "estimatedMinutes": 30,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "answers": true
   },
   {
     "title": "1ST TYPE CONDITIONALS",
@@ -775,7 +1665,18 @@
     ],
     "local": "assets/materials/first-type-conditional-exercise.pdf",
     "bytes": 149041,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise first conditional verb forms through a chain of events, multiple-choice questions and negative sentences.",
+    "skills": [
+      "Grammar"
+    ],
+    "estimatedMinutes": 20,
+    "answers": false,
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "FORMAL LETTERS 3",
@@ -784,7 +1685,17 @@
     ],
     "local": "assets/materials/formal-informal-openings-endings.pdf",
     "bytes": 87459,
-    "content_type": null
+    "content_type": null,
+    "description": "Sort email and letter greetings, openings and closings by formal, neutral and informal register.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Writing"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "FORMAL LETTER - ADV",
@@ -793,7 +1704,17 @@
     ],
     "local": "assets/materials/formal-letter-resource.pdf",
     "bytes": 2876962,
-    "content_type": null
+    "content_type": null,
+    "description": "Study a model formal letter, useful opening and closing phrases and exercises on formal written style.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Worksheet",
+    "skills": [
+      "Writing"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "FORMAL LETTERS 1",
@@ -802,7 +1723,18 @@
     ],
     "local": "assets/materials/formal-letters-components.pdf",
     "bytes": 180957,
-    "content_type": null
+    "content_type": null,
+    "description": "Match letter-writing terms to examples of greetings, letterheads, signatures and other components; a key is included.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Writing"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "answers": true
   },
   {
     "title": "FORMAL LINK WORDS",
@@ -811,7 +1743,17 @@
     ],
     "local": "assets/materials/formal-link-words.pdf",
     "bytes": 707618,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise formal linking expressions and language for presenting and developing arguments.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "HEALTH & ILLNESS",
@@ -820,7 +1762,17 @@
     ],
     "local": "assets/materials/francesco-health-illness.pdf",
     "bytes": 670899,
-    "content_type": null
+    "content_type": null,
+    "description": "Learn collocations for illnesses, injuries and healthy habits, then practise them in language exercises.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "A Fire in My School",
@@ -829,7 +1781,19 @@
     ],
     "local": "assets/materials/gapped-text-a-fire-in-my-school.odt",
     "bytes": 25053,
-    "content_type": null
+    "content_type": null,
+    "description": "Identify vocabulary from definitions and first-letter clues, then use it to complete a story about a school fire.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Worksheet",
+    "skills": [
+      "Writing"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/gapped-text-a-fire-in-my-school.pdf"
+    ]
   },
   {
     "title": "A Fire in My School",
@@ -838,7 +1802,20 @@
     ],
     "local": "assets/materials/gapped-text-a-fire-in-my-school.pdf",
     "bytes": 83938,
-    "content_type": null
+    "content_type": null,
+    "description": "Identify vocabulary from definitions and first-letter clues, then use it to complete a story about a school fire.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Writing"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/gapped-text-a-fire-in-my-school.odt"
+    ]
   },
   {
     "title": "A Terrible Accident",
@@ -847,7 +1824,19 @@
     ],
     "local": "assets/materials/gapped-text-a-terrible-accident.odt",
     "bytes": 17317,
-    "content_type": null
+    "content_type": null,
+    "description": "Complete a story about a motorway accident using a word bank of frequently confused vocabulary.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Worksheet",
+    "skills": [
+      "Writing"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/gapped-text-a-terrible-accident.pdf"
+    ]
   },
   {
     "title": "A Terrible Accident",
@@ -856,7 +1845,20 @@
     ],
     "local": "assets/materials/gapped-text-a-terrible-accident.pdf",
     "bytes": 65691,
-    "content_type": null
+    "content_type": null,
+    "description": "Complete a story about a motorway accident using a word bank of frequently confused vocabulary.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Writing"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/gapped-text-a-terrible-accident.odt"
+    ]
   },
   {
     "title": "General Knowledge Crossword II: Empty Grid",
@@ -865,7 +1867,8 @@
     ],
     "local": "assets/materials/general-knowledge-crossword-ii-empty-grid.pdf",
     "bytes": 166596,
-    "content_type": null
+    "content_type": null,
+    "canonical": "assets/materials/games-original-worksheet-1.pdf"
   },
   {
     "title": "General Knowledge Crossword II: Mixed Clues",
@@ -874,7 +1877,8 @@
     ],
     "local": "assets/materials/general-knowledge-crossword-ii-mixed-clues.pdf",
     "bytes": 93393,
-    "content_type": null
+    "content_type": null,
+    "canonical": "assets/materials/games-original-worksheet-3.pdf"
   },
   {
     "title": "Gina Davis: Personal Data Mistakes",
@@ -883,7 +1887,18 @@
     ],
     "local": "assets/materials/gina-davis-personal-data-mistakes-composite.pdf",
     "bytes": 59411,
-    "content_type": null
+    "content_type": null,
+    "description": "Annotate and correct mistakes in a short personal profile, then rewrite the paragraphs accurately.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Writing",
+      "Grammar"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "GLOBAL ENGLISH",
@@ -892,7 +1907,17 @@
     ],
     "local": "assets/materials/global-english.pdf",
     "bytes": 969088,
-    "content_type": null
+    "content_type": null,
+    "description": "Read about English as a world language and complete vocabulary, comprehension and sentence-transformation tasks.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 4,
+    "activityType": "Worksheet",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 30,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "GOVT. & SOCIETY",
@@ -901,7 +1926,17 @@
     ],
     "local": "assets/materials/government-society.pdf",
     "bytes": 143559,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise vocabulary about government and society through cloze passages and contextual exercises.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 4,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 30,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "GUESSING WORD MEANING",
@@ -910,7 +1945,17 @@
     ],
     "local": "assets/materials/guessing-word-meaning-from-sentence-context.pdf",
     "bytes": 181151,
-    "content_type": null
+    "content_type": null,
+    "description": "Infer the meanings of unfamiliar words from sentence context and explain which clues helped you.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "HEALTH ISSUES",
@@ -919,7 +1964,17 @@
     ],
     "local": "assets/materials/health-issues.pdf",
     "bytes": 1078967,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise vocabulary for discussing health issues through definitions, word families and gap-fill exercises.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "HEALTHCARE SERVICES",
@@ -928,7 +1983,17 @@
     ],
     "local": "assets/materials/healthcare-services.pdf",
     "bytes": 1161677,
-    "content_type": null
+    "content_type": null,
+    "description": "Learn language for healthcare services, referrals, records and care arrangements, then compare systems through discussion.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "HYPERLOOP - HOW IT WORKS_WORKSHEET",
@@ -937,7 +2002,23 @@
     ],
     "local": "assets/materials/hyperloop-one-worksheet.pdf",
     "bytes": 111124,
-    "content_type": null
+    "content_type": null,
+    "description": "Watch the Hyperloop video, classify statements as true, false or not given and correct the false statements.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Listening"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedResources": [
+      {
+        "href": "https://www.youtube.com/watch?v=zcikLQZI5wQ&feature=youtu.be",
+        "title": "Hyperloop explained"
+      }
+    ]
   },
   {
     "title": "MEDICAL ADVANCES",
@@ -946,7 +2027,17 @@
     ],
     "local": "assets/materials/i-can-describe-medical-advances.pdf",
     "bytes": 1010133,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise vocabulary for medical advances, diagnostic tools and procedures through definitions and sentence exercises.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "ANSWER SHEET",
@@ -955,7 +2046,13 @@
     ],
     "local": "assets/materials/ielts-listening-answer-sheet.pdf",
     "bytes": 233465,
-    "content_type": null
+    "content_type": null,
+    "description": "A printable IELTS listening response form for entering candidate details and answers; this is a blank form, not an answer key.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Template",
+    "skills": []
   },
   {
     "title": "LISTENING BANDS",
@@ -964,7 +2061,19 @@
     ],
     "local": "assets/materials/ielts-listening-band-scores.jpg",
     "bytes": 48458,
-    "content_type": null
+    "content_type": null,
+    "description": "An archived IELTS listening raw-score conversion chart; band-score boundaries can vary between test versions.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Reference",
+    "skills": [
+      "Vocabulary"
+    ],
+    "contentNote": "Use this archived conversion chart only as a guide. IELTS says the marks needed for each band vary slightly between test versions.",
+    "contentNoteSource": {
+      "href": "https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail",
+      "label": "Official IELTS scoring guidance"
+    }
   },
   {
     "title": "LISTENING TEST 1",
@@ -973,7 +2082,22 @@
     ],
     "local": "assets/materials/ielts-listening-test-1.pdf",
     "bytes": 367646,
-    "content_type": null
+    "content_type": null,
+    "description": "An IELTS listening question paper with note completion and multiple-choice tasks; a separate recording is required.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 5,
+    "activityType": "Worksheet",
+    "skills": [
+      "Listening"
+    ],
+    "estimatedMinutes": 35,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "requirements": "The matching audio recording is not included in this archive. Ask your teacher for it before starting the listening tasks.",
+    "relatedFiles": [
+      "assets/materials/ielts-listening-test-answer-sheet.pdf",
+      "assets/materials/ielts-listening-answer-sheet.pdf"
+    ]
   },
   {
     "title": "IELTS WRITING TASK 1",
@@ -982,7 +2106,24 @@
     ],
     "local": "assets/materials/ielts-writing-task-1-types-of-charts.odt",
     "bytes": 544851,
-    "content_type": null
+    "content_type": null,
+    "description": "Examples of IELTS Task 1 charts and guidance for summarising key features, with a correction to the original word-limit advice below.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Worksheet",
+    "skills": [
+      "Writing"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "contentNote": "The original handout incorrectly says that answers over 180 words are penalised. IELTS Task 1 requires at least 150 words; 180 is not a maximum. Aim to finish in about 20 minutes.",
+    "contentNoteSource": {
+      "href": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing",
+      "label": "Official IELTS Writing guidance"
+    },
+    "relatedFiles": [
+      "assets/materials/ielts-writing-task-1-types-of-charts.pdf"
+    ]
   },
   {
     "title": "IELTS WRITING TASK 1",
@@ -991,7 +2132,25 @@
     ],
     "local": "assets/materials/ielts-writing-task-1-types-of-charts.pdf",
     "bytes": 541414,
-    "content_type": null
+    "content_type": null,
+    "description": "Examples of IELTS Task 1 charts and guidance for summarising key features, with a correction to the original word-limit advice below.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Worksheet",
+    "skills": [
+      "Writing"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "contentNote": "The original handout incorrectly says that answers over 180 words are penalised. IELTS Task 1 requires at least 150 words; 180 is not a maximum. Aim to finish in about 20 minutes.",
+    "contentNoteSource": {
+      "href": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing",
+      "label": "Official IELTS Writing guidance"
+    },
+    "relatedFiles": [
+      "assets/materials/ielts-writing-task-1-types-of-charts.odt"
+    ]
   },
   {
     "title": "WRITING TEST ANSWER SHEET",
@@ -1000,7 +2159,14 @@
     ],
     "local": "assets/materials/ielts-writing-test-answer-sheet.ott",
     "bytes": 10192,
-    "content_type": null
+    "content_type": null,
+    "description": "An editable lined template for writing IELTS practice responses; it does not contain model answers.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Template",
+    "skills": [
+      "Writing"
+    ]
   },
   {
     "title": "IN/FORMAL ENGLISH",
@@ -1009,7 +2175,17 @@
     ],
     "local": "assets/materials/informal-formal-english.pdf",
     "bytes": 1633698,
-    "content_type": null
+    "content_type": null,
+    "description": "Compare formal and informal vocabulary and practise choosing an appropriate register in letters and emails.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 5,
+    "activityType": "Worksheet",
+    "skills": [
+      "Writing"
+    ],
+    "estimatedMinutes": 35,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "COLLOCATIONS I",
@@ -1018,7 +2194,17 @@
     ],
     "local": "assets/materials/intermediate-collocation-types-register.pdf",
     "bytes": 804788,
-    "content_type": null
+    "content_type": null,
+    "description": "Study grammatical types of collocation and choose word combinations suited to formal or informal contexts.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 4,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 30,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "FINDING COLLOCATIONS",
@@ -1027,7 +2213,17 @@
     ],
     "local": "assets/materials/intermediate-collocations-2.pdf",
     "bytes": 510497,
-    "content_type": null
+    "content_type": null,
+    "description": "Learn how to notice, record and revise collocations using texts, dictionaries and a vocabulary notebook.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "COLLOCATIONS: GO, BECOME",
@@ -1036,7 +2232,17 @@
     ],
     "local": "assets/materials/intermediate-collocations-ii.pdf",
     "bytes": 545533,
-    "content_type": null
+    "content_type": null,
+    "description": "Choose natural verbs for changes in state and appearance, including get, go, become, grow and turn.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "INTERPRETING GRAPHS",
@@ -1045,7 +2251,17 @@
     ],
     "local": "assets/materials/interpreting-graphs-questions.pdf",
     "bytes": 81297,
-    "content_type": null
+    "content_type": null,
+    "description": "Interpret line graphs and practise verbs and expressions for describing changes, trends and figures.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "Intonation Game & Truth or Lie Game",
@@ -1054,7 +2270,17 @@
     ],
     "local": "assets/materials/intonation-game-truth-and-lie-game.pdf",
     "bytes": 131352,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise conveying attitudes through intonation, then use the truth-or-lie speaking game with classmates.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Discussion",
+    "skills": [
+      "Speaking"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "INTRODUCTION TO COLLOCATIONS ​",
@@ -1063,7 +2289,8 @@
     ],
     "local": "assets/materials/introduction-to-collocations.pdf",
     "bytes": 572353,
-    "content_type": null
+    "content_type": null,
+    "canonical": "assets/materials/intro-to-collocations-unit-1.pdf"
   },
   {
     "title": "INVENTIONS",
@@ -1072,7 +2299,17 @@
     ],
     "local": "assets/materials/inventions.pdf",
     "bytes": 1126481,
-    "content_type": null
+    "content_type": null,
+    "description": "Read about inventions such as radio and practise comprehension, word formation and study vocabulary.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 5,
+    "activityType": "Worksheet",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 35,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "JAZZ PIANO VIDEOS TO DOWNLOAD",
@@ -1081,7 +2318,14 @@
     ],
     "local": "assets/materials/jazz-piano-videos-to-download-2.odt",
     "bytes": 24308,
-    "content_type": null
+    "content_type": null,
+    "description": "A collection of jazz-piano lesson and video links; this is a reference list rather than an English worksheet.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Reference",
+    "skills": [
+      "Vocabulary"
+    ]
   },
   {
     "title": "Jeopardy: Oxford Word Skills Review, Units 29–34",
@@ -1090,7 +2334,18 @@
     ],
     "local": "assets/materials/jeopardy-oxford-review-units-29-34-sample-questions.pdf",
     "bytes": 35920,
-    "content_type": null
+    "content_type": null,
+    "description": "Sample Jeopardy categories for an Oxford Word Skills review: definitions, word stress, word formation and sentence recall.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Discussion",
+    "skills": [
+      "Speaking",
+      "Pronunciation"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "Gloucester Jeopardy Examples",
@@ -1099,7 +2354,18 @@
     ],
     "local": "assets/materials/jeopardy-world-of-work-example-questions.pdf",
     "bytes": 85453,
-    "content_type": null
+    "content_type": null,
+    "description": "Jeopardy example questions covering definitions, general knowledge, synonyms and word stress, with example answers.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Discussion",
+    "skills": [
+      "Speaking",
+      "Pronunciation"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "Jeopardy Intermediate 1: Example Questions",
@@ -1108,7 +2374,18 @@
     ],
     "local": "assets/materials/jeopardy-intermediate-1-example-questions-1.pdf",
     "bytes": 88644,
-    "content_type": null
+    "content_type": null,
+    "description": "Intermediate Jeopardy examples on definitions, opposites, pronunciation and the UK, with example answers.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Discussion",
+    "skills": [
+      "Speaking",
+      "Pronunciation"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "JEOPARDY MULHEIM 1 CATEGORY EXAMPLES",
@@ -1117,7 +2394,17 @@
     ],
     "local": "assets/materials/jeopardy-mulheim-1-category-examples.png",
     "bytes": 46508,
-    "content_type": null
+    "content_type": null,
+    "description": "Category examples for a Mülheim Jeopardy game, including odd words and sounds, sentence recall and general knowledge.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Discussion",
+    "skills": [
+      "Speaking",
+      "Pronunciation"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "JEOPARDY QUIZ 2 CATEGORY EXAMPLES",
@@ -1126,7 +2413,17 @@
     ],
     "local": "assets/materials/jeopardy-quiz-mulheim-2-category-examples.pdf",
     "bytes": 57527,
-    "content_type": null
+    "content_type": null,
+    "description": "Example Jeopardy categories covering definitions, common German-speaker errors, sports and general knowledge.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Discussion",
+    "skills": [
+      "Speaking"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "The Car Jeremy Clarkson Designed: The P45",
@@ -1135,7 +2432,17 @@
     ],
     "local": "assets/materials/jeremy-clarkson-designed-the-p45.pdf",
     "bytes": 110025,
-    "content_type": null
+    "content_type": null,
+    "description": "Multiple-choice viewing questions about Jeremy Clarkson’s P45 car demonstration; use with the corresponding video.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Listening"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "KEY DIFFERENCES BETWEEN COLLOCATIONS, IDIOMS & COMPOUND NOUNS ​",
@@ -1144,7 +2451,15 @@
     ],
     "local": "assets/materials/key-differences-between-collocations-idioms.pdf",
     "bytes": 161807,
-    "content_type": null
+    "content_type": null,
+    "description": "Compare collocations, idioms and compound nouns through definitions, examples and short language activities.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Reference",
+    "skills": [
+      "Vocabulary"
+    ]
   },
   {
     "title": "LEARNING ENGLISH",
@@ -1153,7 +2468,17 @@
     ],
     "local": "assets/materials/learning-english-shortened.pdf",
     "bytes": 238097,
-    "content_type": null
+    "content_type": null,
+    "description": "Conversation cards about learning English, study methods, classroom preferences and using English outside lessons.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Discussion",
+    "skills": [
+      "Speaking"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "LEISURE ACTIVITIES",
@@ -1162,7 +2487,17 @@
     ],
     "local": "assets/materials/leisure-activities.pdf",
     "bytes": 700507,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise leisure vocabulary, sports equipment and fixed expressions through contextual exercises.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "LINE GRAPH & BAR GRAPH",
@@ -1171,7 +2506,15 @@
     ],
     "local": "assets/materials/line-graph-bar-graph.pdf",
     "bytes": 150275,
-    "content_type": null
+    "content_type": null,
+    "description": "A bar chart and line graph about student mental-health survey findings, for practising descriptions of data.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Chart",
+    "skills": [
+      "Writing"
+    ]
   },
   {
     "title": "LINKERS I",
@@ -1180,7 +2523,17 @@
     ],
     "local": "assets/materials/linking-words-phrases.pdf",
     "bytes": 175320,
-    "content_type": null
+    "content_type": null,
+    "description": "Study linking words for addition, contrast and developing an argument, then practise them in sentences and texts.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 4,
+    "activityType": "Worksheet",
+    "skills": [
+      "Grammar"
+    ],
+    "estimatedMinutes": 30,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "LISTENING TEST 2",
@@ -1189,7 +2542,22 @@
     ],
     "local": "assets/materials/listening-test-2-landscape-format.pdf",
     "bytes": 354568,
-    "content_type": null
+    "content_type": null,
+    "description": "An IELTS listening question paper in landscape layout, covering notes, tables and other listening tasks; separate audio is needed.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 4,
+    "activityType": "Worksheet",
+    "skills": [
+      "Listening"
+    ],
+    "estimatedMinutes": 30,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "requirements": "The matching audio recording is not included in this archive. Ask your teacher for it before starting the listening tasks.",
+    "relatedFiles": [
+      "assets/materials/ielts-listening-test-answer-sheet.pdf",
+      "assets/materials/ielts-listening-answer-sheet.pdf"
+    ]
   },
   {
     "title": "LISTENING TEST III",
@@ -1198,7 +2566,22 @@
     ],
     "local": "assets/materials/listening-test-3.pdf",
     "bytes": 619923,
-    "content_type": null
+    "content_type": null,
+    "description": "A third IELTS listening question paper with note completion and short-answer tasks; separate audio is needed.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 4,
+    "activityType": "Worksheet",
+    "skills": [
+      "Listening"
+    ],
+    "estimatedMinutes": 30,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "requirements": "The matching audio recording is not included in this archive. Ask your teacher for it before starting the listening tasks.",
+    "relatedFiles": [
+      "assets/materials/ielts-listening-test-answer-sheet.pdf",
+      "assets/materials/ielts-listening-answer-sheet.pdf"
+    ]
   },
   {
     "title": "MAKE & DO",
@@ -1207,7 +2590,17 @@
     ],
     "local": "assets/materials/make-do.pdf",
     "bytes": 433611,
-    "content_type": null
+    "content_type": null,
+    "description": "Study common make and do collocations and practise choosing the correct verb in everyday contexts.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "MALARIA",
@@ -1216,7 +2609,17 @@
     ],
     "local": "assets/materials/malaria.pdf",
     "bytes": 831933,
-    "content_type": null
+    "content_type": null,
+    "description": "A reading passage about malaria with comprehension questions and vocabulary work, for English reading practice.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 4,
+    "activityType": "Worksheet",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 30,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "MONEY - INTERMEDIATE",
@@ -1225,7 +2628,17 @@
     ],
     "local": "assets/materials/money-intermediate.pdf",
     "bytes": 541459,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise everyday money vocabulary for shopping, refunds, affordability and personal finances.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "MUSIC",
@@ -1234,7 +2647,17 @@
     ],
     "local": "assets/materials/music-vocabulary.pdf",
     "bytes": 289756,
-    "content_type": null
+    "content_type": null,
+    "description": "Learn vocabulary for instruments, musicians and musical styles, with illustrated and contextual exercises.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "NAUTICAL IDIOMS WORKSHEET",
@@ -1243,7 +2666,17 @@
     ],
     "local": "assets/materials/nautical-idioms-one.pdf",
     "bytes": 72874,
-    "content_type": null
+    "content_type": null,
+    "description": "Complete nautical idioms, match them to meanings and practise expressions used figuratively in everyday English.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "NEWS EVENTS",
@@ -1252,7 +2685,17 @@
     ],
     "local": "assets/materials/news-events.pdf",
     "bytes": 147078,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise news-related vocabulary through cloze texts and sentence exercises about reported events.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 5,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 35,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "NEWSPAPER STORIES",
@@ -1261,7 +2704,17 @@
     ],
     "local": "assets/materials/newspaper-stories.pdf",
     "bytes": 2039362,
-    "content_type": null
+    "content_type": null,
+    "description": "Read an unexpected-journey newspaper story, work on narrative language and write a short news report from pictures.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 6,
+    "activityType": "Worksheet",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 40,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "NUMBER & FREQUENCY",
@@ -1270,7 +2723,17 @@
     ],
     "local": "assets/materials/number-frequency.pdf",
     "bytes": 543755,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise collocations for quantities, frequency and changing figures, including descriptions of a sales chart.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "Paraphrase & Definitions: Mixed-Up Clues",
@@ -1280,7 +2743,17 @@
     ],
     "local": "assets/materials/paraphrase-definitions-mixed-up-clues.pdf",
     "bytes": 104108,
-    "content_type": null
+    "content_type": null,
+    "description": "Mixed-up definition clues for a vocabulary guessing activity; identify objects, actions and descriptive words.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "PARAPHRASE",
@@ -1289,7 +2762,17 @@
     ],
     "local": "assets/materials/paraphrase-intermediate.pdf",
     "bytes": 279885,
-    "content_type": null
+    "content_type": null,
+    "description": "Explain nouns, verbs and adjectives through paraphrases, definitions and example sentences.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Discussion",
+    "skills": [
+      "Speaking"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "MONEY - PARTS OF SPEECH",
@@ -1298,7 +2781,17 @@
     ],
     "local": "assets/materials/parts-of-speech-for-money-finances-sorting-2020x.pdf",
     "bytes": 117195,
-    "content_type": null
+    "content_type": null,
+    "description": "Sort finance vocabulary into word classes and use the words to write original sentences.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "PAST SIMPLE & CONT.",
@@ -1307,7 +2800,17 @@
     ],
     "local": "assets/materials/past-tenses.pdf",
     "bytes": 590989,
-    "content_type": null
+    "content_type": null,
+    "description": "Review past simple, continuous and perfect forms, then complete narrative and sentence exercises.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 6,
+    "activityType": "Worksheet",
+    "skills": [
+      "Grammar"
+    ],
+    "estimatedMinutes": 40,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "MAKING DECISIONS",
@@ -1316,7 +2819,17 @@
     ],
     "local": "assets/materials/personality-and-decision.pdf",
     "bytes": 61123,
-    "content_type": null
+    "content_type": null,
+    "description": "Read about personality and decision-making styles and practise describing how people work and make choices.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "PHONEMIC SCRIPT",
@@ -1325,7 +2838,15 @@
     ],
     "local": "assets/materials/phonemic-script.pdf",
     "bytes": 491499,
-    "content_type": null
+    "content_type": null,
+    "description": "Use phonemic symbols to decode and pronounce words, with a link to the Cambridge pronunciation reference.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Reference",
+    "skills": [
+      "Pronunciation"
+    ]
   },
   {
     "title": "PHRASAL VERBS 1",
@@ -1334,7 +2855,17 @@
     ],
     "local": "assets/materials/phrasal-verbs-1.pdf",
     "bytes": 1006204,
-    "content_type": null
+    "content_type": null,
+    "description": "Learn how phrasal verbs work and practise identifying particles and meanings in context.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "PHRASAL VERBS 2",
@@ -1343,7 +2874,17 @@
     ],
     "local": "assets/materials/phrasal-verbs-ii.pdf",
     "bytes": 151041,
-    "content_type": null
+    "content_type": null,
+    "description": "Study phrasal verbs with meanings and example sentences, then practise their use in contextual exercises.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 4,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 30,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "PHRASAL VERBS 1 IN CONTEXT",
@@ -1352,7 +2893,17 @@
     ],
     "local": "assets/materials/phrasal-verbs-in-context-one.pdf",
     "bytes": 278293,
-    "content_type": null
+    "content_type": null,
+    "description": "Replace phrases with appropriate phrasal verbs and adjust their tense in everyday situations.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 4,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 30,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "PHRASAL VERBS 2 IN CONTEXT",
@@ -1361,7 +2912,17 @@
     ],
     "local": "assets/materials/phrasal-verbs-one-meanings-sentences.pdf",
     "bytes": 63836,
-    "content_type": null
+    "content_type": null,
+    "description": "Review separable and inseparable phrasal verbs, object placement and contextual examples.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Worksheet",
+    "skills": [
+      "Grammar"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "PLACES",
@@ -1370,7 +2931,17 @@
     ],
     "local": "assets/materials/places.pdf",
     "bytes": 83392,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise vocabulary for homes and places through cloze passages and contextual exercises.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 4,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 30,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "POLITICS - WAR & PEACE",
@@ -1379,7 +2950,22 @@
     ],
     "local": "assets/materials/politics-war-peace.pdf",
     "bytes": 1015431,
-    "content_type": null
+    "content_type": null,
+    "description": "Learn vocabulary about politics, war and peace; this archived worksheet includes dated background information.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 4,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 30,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "contentNote": "The background text gives an old total of 646 UK constituencies. The current total is 650; use this sheet for vocabulary practice.",
+    "contentNoteSource": {
+      "href": "https://www.parliament.uk/about/how/elections-and-voting/constituencies/",
+      "label": "UK Parliament constituency information"
+    }
   },
   {
     "title": "PRES. SIMPLE & CONT_WORKSHEET 1",
@@ -1388,7 +2974,17 @@
     ],
     "local": "assets/materials/pres-simple-or-continuous-1.pdf",
     "bytes": 34721,
-    "content_type": null
+    "content_type": null,
+    "description": "Complete questions and statements with present simple or present continuous verb forms.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Grammar"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "PRES. SIMPLE & CONT_WORKSHEET 2",
@@ -1397,7 +2993,17 @@
     ],
     "local": "assets/materials/pres-simple-or-continuous-2.pdf",
     "bytes": 35750,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise present simple and continuous in affirmative, negative and question forms in a second exercise set.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Grammar"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "PRES. SIMPLE & CONT_WORKSHEET 3",
@@ -1406,7 +3012,17 @@
     ],
     "local": "assets/materials/pres-simple-or-continuous-3.pdf",
     "bytes": 39394,
-    "content_type": null
+    "content_type": null,
+    "description": "Choose present simple or continuous forms, paying particular attention to stative verbs and future arrangements.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Grammar"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "PRES. PERFECT & PAST SIMPLE",
@@ -1415,7 +3031,17 @@
     ],
     "local": "assets/materials/present-perfect-past-simple-rules.pdf",
     "bytes": 221126,
-    "content_type": null
+    "content_type": null,
+    "description": "Review present perfect and past simple uses, then practise verb choices and sentence transformations.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 4,
+    "activityType": "Worksheet",
+    "skills": [
+      "Grammar"
+    ],
+    "estimatedMinutes": 30,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "Present Simple and Present Continuous: Explanation",
@@ -1424,7 +3050,15 @@
     ],
     "local": "assets/materials/present-simple-or-present-continuous-explanation.pdf",
     "bytes": 91044,
-    "content_type": null
+    "content_type": null,
+    "description": "A side-by-side reference explaining present simple and continuous uses with example sentences.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Reference",
+    "skills": [
+      "Grammar"
+    ]
   },
   {
     "title": "Present Simple or Continuous?",
@@ -1433,7 +3067,17 @@
     ],
     "local": "assets/materials/present-simple-or-present-continuous.pdf",
     "bytes": 38257,
-    "content_type": null
+    "content_type": null,
+    "description": "Match questions to answers to distinguish present simple from present continuous meanings.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Grammar"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "PRESENTATIONS WITHOUT PPT",
@@ -1442,7 +3086,14 @@
     ],
     "local": "assets/materials/presentation-evaluation-sheet-without-ppt.doc",
     "bytes": 40448,
-    "content_type": null
+    "content_type": null,
+    "description": "A presentation-evaluation form covering body language, eye contact, clarity, pronunciation, grammar and vocabulary.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Reference",
+    "skills": [
+      "Pronunciation"
+    ]
   },
   {
     "title": "PUNCTUATION",
@@ -1453,7 +3104,17 @@
     ],
     "local": "assets/materials/punctuation-rules-exercises.pdf",
     "bytes": 1701964,
-    "content_type": null
+    "content_type": null,
+    "description": "Identify punctuation marks and practise adding appropriate punctuation to sentences.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "RECYCLING CANS",
@@ -1462,7 +3123,15 @@
     ],
     "local": "assets/materials/recycling-of-aluminium-cans.pdf",
     "bytes": 398465,
-    "content_type": null
+    "content_type": null,
+    "description": "A labelled flowchart of aluminium-can recycling for practising descriptions of processes and stages.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Chart",
+    "skills": [
+      "Writing"
+    ]
   },
   {
     "title": "RELATIVE CLAUSES",
@@ -1471,7 +3140,17 @@
     ],
     "local": "assets/materials/relative-clauses-rules-exercises.pdf",
     "bytes": 199440,
-    "content_type": null
+    "content_type": null,
+    "description": "Study defining and non-defining relative clauses, then practise combining and rewriting sentences.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 5,
+    "activityType": "Worksheet",
+    "skills": [
+      "Grammar"
+    ],
+    "estimatedMinutes": 35,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "DRY DOCK ACCIDENT",
@@ -1480,7 +3159,17 @@
     ],
     "local": "assets/materials/russia-s-dry-dock-accident.pdf",
     "bytes": 296315,
-    "content_type": null
+    "content_type": null,
+    "description": "An archived report on the PD-50 dry-dock accident, for practising technical and news reading.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 4,
+    "activityType": "Reading",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 30,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "Shapes",
@@ -1489,7 +3178,16 @@
     ],
     "local": "assets/materials/shapes.jpg",
     "bytes": 116614,
-    "content_type": null
+    "content_type": null,
+    "description": "Name basic shapes and lines and describe their positions in a grid.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "SUPPORT PACK",
@@ -1498,7 +3196,24 @@
     ],
     "local": "assets/materials/shopping-is-great-part-1-support-pack-1.pdf",
     "bytes": 590985,
-    "content_type": null
+    "content_type": null,
+    "description": "A British Council video support pack with shopping comprehension and language exercises; answers are included.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Listening"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "answers": true,
+    "relatedResources": [
+      {
+        "href": "https://learnenglish.britishcouncil.org/general-english/video-series/britain-is-great/shopping-is-great-part-1",
+        "title": "Shopping is Great — part 1"
+      }
+    ]
   },
   {
     "title": "SILENT LETTERS 1",
@@ -1507,7 +3222,17 @@
     ],
     "local": "assets/materials/silent-letters-introduction.pdf",
     "bytes": 106271,
-    "content_type": null
+    "content_type": null,
+    "description": "Study common silent-letter patterns and complete words using spelling and pronunciation clues.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Pronunciation"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "SILENT LETTERS 2",
@@ -1516,7 +3241,17 @@
     ],
     "local": "assets/materials/silent-letters-practice.pdf",
     "bytes": 184131,
-    "content_type": null
+    "content_type": null,
+    "description": "Choose words from context and identify their silent letters, then complete missing-letter exercises.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Pronunciation"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "THE SMALLEST CAR IN THE WORLD-WORKSHEET",
@@ -1525,7 +3260,23 @@
     ],
     "local": "assets/materials/smallest-car-in-the-world-worksheet.pdf",
     "bytes": 456302,
-    "content_type": null
+    "content_type": null,
+    "description": "Discussion and multiple-choice viewing questions for the Top Gear film about the Peel P50.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Worksheet",
+    "skills": [
+      "Listening"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedResources": [
+      {
+        "href": "https://www.youtube.com/watch?v=dJfSS0ZXYdo",
+        "title": "The smallest car video"
+      }
+    ]
   },
   {
     "title": "EMAILS-STOCK PHRASES",
@@ -1534,7 +3285,15 @@
     ],
     "local": "assets/materials/stock-phrases-for-business-emails-examples.pdf",
     "bytes": 294997,
-    "content_type": null
+    "content_type": null,
+    "description": "A reference bank of phrases for business emails, from greetings and requests to attachments and closings.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 5,
+    "activityType": "Reference",
+    "skills": [
+      "Writing"
+    ]
   },
   {
     "title": "SUPPORTING SENTENCES",
@@ -1543,7 +3302,17 @@
     ],
     "local": "assets/materials/supporting-sentences.pdf",
     "bytes": 41684,
-    "content_type": null
+    "content_type": null,
+    "description": "Write supporting sentences that develop given topic sentences into paragraphs.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Writing"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "IELTS TASK 1 - COMPARISONS",
@@ -1552,16 +3321,38 @@
     ],
     "local": "assets/materials/task-1-comparing-contrasting.pdf",
     "bytes": 593197,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise structures for comparing and contrasting chart information, using model sentences as a guide.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Writing"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
-    "title": "PROPORTIONAL NUMBERS ANSWERS",
+    "title": "Proportional Numbers — Reference Table and Practice",
     "sections": [
       "medical"
     ],
     "local": "assets/materials/task-1-proportional-numbers-answers.pdf",
     "bytes": 46197,
-    "content_type": null
+    "content_type": null,
+    "description": "A partly completed reference table of fractions, percentages and proportions, followed by practice sentences; see the correction note below.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Reference",
+    "skills": [
+      "Vocabulary"
+    ],
+    "contentNote": "Corrections to the original table: 1/5 is one fifth, 1 out of 5, or 20%; 1/10 in words is one tenth. Percentages for thirds are rounded. The sentences below the table are still exercises.",
+    "relatedFiles": [
+      "assets/materials/task-1-proportional-numbers-ii.pdf"
+    ]
   },
   {
     "title": "PROPORTIONAL NUMBERS",
@@ -1570,7 +3361,20 @@
     ],
     "local": "assets/materials/task-1-proportional-numbers-ii.pdf",
     "bytes": 45487,
-    "content_type": null
+    "content_type": null,
+    "description": "Convert between fractions, words, percentages and “out of” expressions, then complete sentences about proportions.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/task-1-proportional-numbers-answers.pdf"
+    ]
   },
   {
     "title": "LINKERS",
@@ -1579,7 +3383,18 @@
     ],
     "local": "assets/materials/task-2-using-linkers-in-writing.pdf",
     "bytes": 93759,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise the meanings and use of linking expressions in sentences and extended writing.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 6,
+    "activityType": "Worksheet",
+    "skills": [
+      "Writing",
+      "Grammar"
+    ],
+    "estimatedMinutes": 40,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "SUBORDINATE CLAUSES",
@@ -1588,7 +3403,18 @@
     ],
     "local": "assets/materials/task-2-using-linkers-subordinate-clauses-1.pdf",
     "bytes": 188135,
-    "content_type": null
+    "content_type": null,
+    "description": "Connect contrasting ideas using subordinate clauses and linkers such as although, however and in spite of.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Worksheet",
+    "skills": [
+      "Writing",
+      "Grammar"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "SOMEONE IS UNAVAILABLE",
@@ -1597,7 +3423,17 @@
     ],
     "local": "assets/materials/telephone-dialogue-when-someone-is-unavailable.pdf",
     "bytes": 50714,
-    "content_type": null
+    "content_type": null,
+    "description": "Read and complete telephone dialogues for answering calls, introducing yourself and taking messages.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "BUYING TIME",
@@ -1606,7 +3442,17 @@
     ],
     "local": "assets/materials/telephone-dialogues-buying-time.pdf",
     "bytes": 148713,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise polite ways to ask for more time and manage requests through workplace telephone dialogues.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "CONFIRMING INFORMATION",
@@ -1615,7 +3461,17 @@
     ],
     "local": "assets/materials/telephone-dialogues-confirming-information.pdf",
     "bytes": 109761,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise checking and confirming details in business calls through dialogues and follow-up activities.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 9,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 45,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "TELEPHONE TALK II",
@@ -1624,7 +3480,18 @@
     ],
     "local": "assets/materials/telephone-talk-ii.pdf",
     "bytes": 1254637,
-    "content_type": null
+    "content_type": null,
+    "description": "Telephone-language worksheets on numbers, messages and call handling; some activities require separate audio tracks.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 4,
+    "activityType": "Worksheet",
+    "skills": [
+      "Listening"
+    ],
+    "estimatedMinutes": 30,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "requirements": "The matching audio recording is not included in this archive. Ask your teacher for it before starting the listening tasks."
   },
   {
     "title": "THE AIRFISH 8-WORKSHEET",
@@ -1633,7 +3500,23 @@
     ],
     "local": "assets/materials/the-airfish-8-questions.pdf",
     "bytes": 202639,
-    "content_type": null
+    "content_type": null,
+    "description": "Viewing questions about the Airfish 8, comparing it with boats and aircraft and explaining ground effect.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Listening"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedResources": [
+      {
+        "href": "https://www.youtube.com/watch?v=l0ffoi3K9ZY",
+        "title": "Airfish 8 video"
+      }
+    ]
   },
   {
     "title": "THE AIRFISH 8",
@@ -1642,7 +3525,17 @@
     ],
     "local": "assets/materials/the-airfish-8-ground-effect-flying-boat-reading.pdf",
     "bytes": 428588,
-    "content_type": null
+    "content_type": null,
+    "description": "Read about the Airfish 8 and match headings to sections describing its design, development and operation.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 6,
+    "activityType": "Worksheet",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 40,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "YOGA & PILATES",
@@ -1651,7 +3544,17 @@
     ],
     "local": "assets/materials/the-benefits-of-yoga-and-pilates.pdf",
     "bytes": 256390,
-    "content_type": null
+    "content_type": null,
+    "description": "Read a text comparing yoga and Pilates and complete related language and comprehension activities.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Worksheet",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "HISTORY OF ELECTRIC CARS",
@@ -1660,7 +3563,17 @@
     ],
     "local": "assets/materials/the-history-of-electric-cars.pdf",
     "bytes": 101942,
-    "content_type": null
+    "content_type": null,
+    "description": "An archived illustrated article tracing the development of electric vehicles, for reading and discussion.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 4,
+    "activityType": "Reading",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 30,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "THE NEWS",
@@ -1669,7 +3582,17 @@
     ],
     "local": "assets/materials/the-news.pdf",
     "bytes": 646075,
-    "content_type": null
+    "content_type": null,
+    "description": "Interpret newspaper-headline vocabulary and practise expressions used in news reporting.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "BEING MONOLINGUAL",
@@ -1678,7 +3601,17 @@
     ],
     "local": "assets/materials/the-problems-of-being-monolingual.pdf",
     "bytes": 869037,
-    "content_type": null
+    "content_type": null,
+    "description": "Read about monolingualism and English as a global language, then complete vocabulary and discussion activities.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Worksheet",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "The Surprisingly Long History of Electric Cars",
@@ -1687,7 +3620,23 @@
     ],
     "local": "assets/materials/the-surprisingly-long-history-of-electric-cars.pdf",
     "bytes": 38034,
-    "content_type": null
+    "content_type": null,
+    "description": "Multiple-choice and discussion questions for a video about the history of electric cars.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Listening"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedResources": [
+      {
+        "href": "https://ed.ted.com/lessons/the-technology-that-changed-the-world-twice-daniel-sperling-and-gil-tal",
+        "title": "Electric cars"
+      }
+    ]
   },
   {
     "title": "CYBER CRIMINALS",
@@ -1696,7 +3645,17 @@
     ],
     "local": "assets/materials/threat-actors-cyber-criminals.pdf",
     "bytes": 1034952,
-    "content_type": null
+    "content_type": null,
+    "description": "An archived article introducing cybercriminal threat actors, for business and technology reading practice.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Reading",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "TIC TAC TOE POSITIONS",
@@ -1705,7 +3664,17 @@
     ],
     "local": "assets/materials/tic-tac-toe-positions.jpg",
     "bytes": 144689,
-    "content_type": null
+    "content_type": null,
+    "description": "A noughts-and-crosses position diagram for practising grid positions and classroom game instructions.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Reference",
+    "skills": [
+      "Speaking"
+    ],
+    "relatedFiles": [
+      "assets/materials/original-template.docx"
+    ]
   },
   {
     "title": "TOPIC SENTENCES",
@@ -1714,7 +3683,17 @@
     ],
     "local": "assets/materials/topic-sentences.pdf",
     "bytes": 45516,
-    "content_type": null
+    "content_type": null,
+    "description": "Order sentences into paragraphs and identify or write effective topic sentences.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Worksheet",
+    "skills": [
+      "Writing"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "Total Cloze",
@@ -1723,16 +3702,35 @@
     ],
     "local": "assets/materials/total-cloze-empty.pdf",
     "bytes": 10051,
-    "content_type": null
+    "content_type": null,
+    "description": "A blank numbered grid for a teacher-led total-cloze activity; the source text must be supplied separately.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Template",
+    "skills": [],
+    "relatedFiles": [
+      "assets/materials/total-cloze-my-favourite-food-restaurant.jpg"
+    ]
   },
   {
-    "title": "MY FAVOURITE FOOD",
+    "title": "Total Cloze — Food and Restaurant Worked Example",
     "sections": [
       "writing-1"
     ],
     "local": "assets/materials/total-cloze-my-favourite-food-restaurant.jpg",
     "bytes": 1583282,
-    "content_type": null
+    "content_type": null,
+    "description": "A handwritten worked example of a restaurant-and-food total-cloze text, with numbered words and clues.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Reference",
+    "skills": [
+      "Vocabulary"
+    ],
+    "relatedFiles": [
+      "assets/materials/total-cloze-empty.pdf"
+    ]
   },
   {
     "title": "TRAVEL & MOVEMENT",
@@ -1741,7 +3739,17 @@
     ],
     "local": "assets/materials/travel-and-movement.pdf",
     "bytes": 137931,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise travel and transport vocabulary through collocations, cloze passages and contextual exercises.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 4,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 30,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "RAINFORESTS - TEXT",
@@ -1750,7 +3758,20 @@
     ],
     "local": "assets/materials/tropical-rainforests-childrens-ideas-about-them.pdf",
     "bytes": 417509,
-    "content_type": null
+    "content_type": null,
+    "description": "Read a passage about children’s understanding of tropical rainforests; use with the separate question sheet.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Reading",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/tropical-rainforests-questions.pdf"
+    ]
   },
   {
     "title": "RAINFORESTS - QUESTIONS",
@@ -1759,7 +3780,20 @@
     ],
     "local": "assets/materials/tropical-rainforests-questions.pdf",
     "bytes": 277493,
-    "content_type": null
+    "content_type": null,
+    "description": "Comprehension questions for the companion tropical-rainforest reading, including information and opinion checks.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/tropical-rainforests-childrens-ideas-about-them.pdf"
+    ]
   },
   {
     "title": "30 DAY CHALLENGES",
@@ -1768,7 +3802,23 @@
     ],
     "local": "assets/materials/try-something-new-for-30-days-worksheet-2.pdf",
     "bytes": 385450,
-    "content_type": null
+    "content_type": null,
+    "description": "Discuss achievements and plan a personal challenge alongside Matt Cutts’ 30-day challenge video.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Listening"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedResources": [
+      {
+        "href": "assets/materials/try-something-new-for-30-days-worksheet-2.pdf",
+        "title": "Try something new for 30 days"
+      }
+    ]
   },
   {
     "title": "USES OF OBJECTS",
@@ -1777,7 +3827,17 @@
     ],
     "local": "assets/materials/uses-of-everyday-objects.pdf",
     "bytes": 620969,
-    "content_type": null
+    "content_type": null,
+    "description": "Name everyday objects from pictures, then invent unusual uses and describe them for others to guess.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Discussion",
+    "skills": [
+      "Speaking"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "USING A DICTIONARY TO FIND COLLOCATIONS",
@@ -1786,7 +3846,8 @@
     ],
     "local": "assets/materials/using-a-dictionary-to-find-collocations.pdf",
     "bytes": 402114,
-    "content_type": null
+    "content_type": null,
+    "canonical": "assets/materials/collocations-iv-using-a-dictionary-to-find-them.pdf"
   },
   {
     "title": "USING A DICTIONARY",
@@ -1795,7 +3856,17 @@
     ],
     "local": "assets/materials/using-a-dictionary.pdf",
     "bytes": 594730,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise using a learner’s dictionary to find meanings, pronunciation, grammar and other word information.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "LINKERS II",
@@ -1804,16 +3875,43 @@
     ],
     "local": "assets/materials/using-linkers-in-writing.pdf",
     "bytes": 97414,
-    "content_type": null
+    "content_type": null,
+    "description": "Identify linking expressions and practise connecting ideas clearly in sentences and longer writing.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 4,
+    "activityType": "Worksheet",
+    "skills": [
+      "Writing",
+      "Grammar"
+    ],
+    "estimatedMinutes": 30,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "EMAIL MISTAKES 1",
     "sections": [
-      "home"
+      "home",
+      "emails"
     ],
     "local": "assets/materials/vhs-business-course-emails-common-mistakes-part-i.pdf",
     "bytes": 82549,
-    "content_type": null
+    "content_type": null,
+    "aliases": [
+      "EMAILS-COMMON MISTAKES 1",
+      "emails-common-mistakes-part-i.pdf"
+    ],
+    "description": "Choose the correct words in three business emails about deliveries, complaints and meeting arrangements.",
+    "skills": [
+      "Writing"
+    ],
+    "estimatedMinutes": 15,
+    "answers": false,
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "FORMAL / INFORMAL EMAILS",
@@ -1822,7 +3920,17 @@
     ],
     "local": "assets/materials/vhs-intermediate-business-course-informal-or-formal-emails-2.pdf",
     "bytes": 82995,
-    "content_type": null
+    "content_type": null,
+    "description": "Plan and write two emails on similar situations, using a formal or neutral register for one and an informal register for the other.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Writing"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "BIOFUELS",
@@ -1831,7 +3939,17 @@
     ],
     "local": "assets/materials/vocab-for-ielts-reading-biofuels.pdf",
     "bytes": 631076,
-    "content_type": null
+    "content_type": null,
+    "description": "Read about biofuels and practise IELTS-style reading comprehension and vocabulary.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "THE GREEN REVOLUTION",
@@ -1840,16 +3958,34 @@
     ],
     "local": "assets/materials/vocab-for-ielts-u15-the-green-revolution.pdf",
     "bytes": 1019421,
-    "content_type": null
+    "content_type": null,
+    "description": "Practise environmental vocabulary and IELTS-style language tasks on agriculture and the green revolution.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 4,
+    "activityType": "Worksheet",
+    "skills": [
+      "Listening"
+    ],
+    "estimatedMinutes": 30,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "requirements": "Some activities refer to separate audio tracks, which are not included in this archive. The reading, vocabulary and writing tasks can be used separately."
   },
   {
-    "title": "COMMUTING IN 3 CITIES",
+    "title": "Weekly Commuting Costs in Three Cities",
     "sections": [
       "medical"
     ],
     "local": "assets/materials/weekly-commuting-in-3-cities.png",
     "bytes": 208230,
-    "content_type": null
+    "content_type": null,
+    "description": "A bar chart comparing weekly commuting costs by bus, metro and shared car in London, New York and Paris.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "activityType": "Chart",
+    "skills": [
+      "Writing"
+    ]
   },
   {
     "title": "What’s the Best Fuel for Your Car?",
@@ -1859,7 +3995,17 @@
     ],
     "local": "assets/materials/whats-the-best-fuel-for-your-car.pdf",
     "bytes": 187197,
-    "content_type": null
+    "content_type": null,
+    "description": "A numbered question worksheet for the fuel-comparison video; the matching video is required for the activity.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Listening"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "WHERE IN THE WORLD?",
@@ -1868,7 +4014,17 @@
     ],
     "local": "assets/materials/where-in-the-world.pdf",
     "bytes": 947661,
-    "content_type": null
+    "content_type": null,
+    "description": "Read about countries and geographical features and practise related vocabulary and study skills.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 4,
+    "activityType": "Worksheet",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 30,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "Which Picture Is Being Described?",
@@ -1877,7 +4033,15 @@
     ],
     "local": "assets/materials/which-picture-is-being-described-1.pdf",
     "bytes": 136939,
-    "content_type": null
+    "content_type": null,
+    "description": "A labelled picture grid for an oral description-and-guessing activity; descriptions are supplied by the teacher or learners.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Template",
+    "skills": [
+      "Speaking"
+    ]
   },
   {
     "title": "WOODSTOCK",
@@ -1886,7 +4050,17 @@
     ],
     "local": "assets/materials/woodstock-rock-festival.pdf",
     "bytes": 374750,
-    "content_type": null
+    "content_type": null,
+    "description": "Complete a cloze text about the Woodstock festival by choosing vocabulary that fits the context.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "WORD FAMILIES",
@@ -1895,7 +4069,17 @@
     ],
     "local": "assets/materials/word-families.pdf",
     "bytes": 54946,
-    "content_type": null
+    "content_type": null,
+    "description": "Explore the analyze word family, match phonemic transcriptions and use related words in sentences.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Pronunciation"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "WORD-BUILDING 1",
@@ -1904,7 +4088,17 @@
     ],
     "local": "assets/materials/word-building-worksheet-1.pdf",
     "bytes": 222816,
-    "content_type": null
+    "content_type": null,
+    "description": "Build verb, noun and adjective families and use the correct forms to complete sentences.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "WORDS & PHRASES 1",
@@ -1913,7 +4107,17 @@
     ],
     "local": "assets/materials/words-and-phrases.pdf",
     "bytes": 138502,
-    "content_type": null
+    "content_type": null,
+    "description": "Replace phrases with fixed expressions, including common expressions with get, and practise them in context.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "MISPELLED WORDS",
@@ -1923,7 +4127,15 @@
     ],
     "local": "assets/materials/words-commonly-misspelled-punctuation-rules.pdf",
     "bytes": 89403,
-    "content_type": null
+    "content_type": null,
+    "description": "A spelling and punctuation reference with commonly misspelled words, examples and practice activities.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 6,
+    "activityType": "Reference",
+    "skills": [
+      "Vocabulary"
+    ]
   },
   {
     "title": "ADVANTAGES & DISADVANTAGES",
@@ -1932,7 +4144,17 @@
     ],
     "local": "assets/materials/writing-advantages-and-disadvantages-ii.pdf",
     "bytes": 114183,
-    "content_type": null
+    "content_type": null,
+    "description": "Compare paired choices, take notes on advantages and disadvantages and develop the comparison in writing.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Writing"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "A GHOST STORY",
@@ -1941,7 +4163,20 @@
     ],
     "local": "assets/materials/a-ghost-story.pdf",
     "bytes": 222358,
-    "content_type": "application/pdf"
+    "content_type": "application/pdf",
+    "description": "Read a ghost story and work with its narrative language; a separate gapped version provides tense practice.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/a-ghost-story-gapped.pdf"
+    ]
   },
   {
     "title": "A GHOST STORY — GAPPED TEXT",
@@ -1950,7 +4185,20 @@
     ],
     "local": "assets/materials/a-ghost-story-gapped.pdf",
     "bytes": 308305,
-    "content_type": "application/pdf"
+    "content_type": "application/pdf",
+    "description": "Complete the ghost story using past simple, past continuous and past perfect verb forms.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Grammar"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises.",
+    "relatedFiles": [
+      "assets/materials/a-ghost-story.pdf"
+    ]
   },
   {
     "title": "A FUNNY STORY",
@@ -1959,7 +4207,17 @@
     ],
     "local": "assets/materials/funny-story.pdf",
     "bytes": 77439,
-    "content_type": "application/pdf"
+    "content_type": "application/pdf",
+    "description": "Read a humorous story about a missing caravan passenger and work with the narrative in class.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "THIRSTY MAN IN THE DESERT",
@@ -1968,7 +4226,17 @@
     ],
     "local": "assets/materials/thirsty-man-in-the-desert.pdf",
     "bytes": 768380,
-    "content_type": "application/pdf"
+    "content_type": "application/pdf",
+    "description": "Read a short desert story and decide whether the comprehension statements are true or false.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 1,
+    "activityType": "Worksheet",
+    "skills": [
+      "Reading"
+    ],
+    "estimatedMinutes": 15,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "AT AN AIRPORT",
@@ -1977,7 +4245,17 @@
     ],
     "local": "assets/materials/at-an-airport.pdf",
     "bytes": 566415,
-    "content_type": "application/pdf"
+    "content_type": "application/pdf",
+    "description": "Practise airport vocabulary and common expressions through illustrated travel-language exercises.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "AT A HOTEL",
@@ -1986,7 +4264,17 @@
     ],
     "local": "assets/materials/at-a-hotel.pdf",
     "bytes": 593730,
-    "content_type": "application/pdf"
+    "content_type": "application/pdf",
+    "description": "Practise hotel vocabulary and useful expressions for booking, checking in and discussing facilities.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 2,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 20,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   },
   {
     "title": "WORKING CONDITIONS",
@@ -1995,6 +4283,16 @@
     ],
     "local": "assets/materials/working-conditions.pdf",
     "bytes": 364002,
-    "content_type": "application/pdf"
+    "content_type": "application/pdf",
+    "description": "Learn vocabulary for working conditions and employment, then practise it in contextual exercises.",
+    "reviewed": "2026-09-20",
+    "reviewScope": "description-and-activity",
+    "pages": 3,
+    "activityType": "Worksheet",
+    "skills": [
+      "Vocabulary"
+    ],
+    "estimatedMinutes": 25,
+    "timeSource": "Suggested practice session; adjust to the learner and selected exercises."
   }
 ]
