@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tomjohnsonde.github.io/english-materials/sitemap.xml
+Sitemap: https://tomjohnson.top/sitemap.xml

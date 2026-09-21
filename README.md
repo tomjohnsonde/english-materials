@@ -14,7 +14,7 @@ npm run check:external
 
 The build updates shared navigation, resource cards, downloadable lists, 214 complete material pages, 14 section pages and the sitemap. Run it after editing `assets/data.js`, `assets/materials/manifest.json`, shared markup in `assets/site.js` or the page templates. Increase `assetRevision` in `assets/site.js` for a new release. Generated `material-*.html` and `section-*.html` files must be uploaded with the rest of the site; edit their sources instead of the generated HTML.
 
-The 28 tests cover search, filters, contact handling, failures, all 221 legacy detail URLs, duplicate aliases, static metadata, companion files and course dates. Tests use lightweight DOM simulations, not a full browser. The validator checks all HTML files, local links, original material sizes/hashes, duplicate aliases, responsive images, asset revisions and sitemap entries.
+The 31 tests cover search, filters, contact handling, failures, all 221 legacy detail URLs, duplicate aliases, static metadata, companion files and course dates. Tests use lightweight DOM simulations, not a full browser. The validator checks all HTML files, local links, original material sizes/hashes, duplicate aliases, responsive images, asset revisions and sitemap entries.
 
 GitHub Actions runs validation on updates and weekly. External checks follow redirects and inspect a bounded response. Confirmed HTTP errors and recognised missing-page responses fail the check. Authentication, CAPTCHA and rate limiting are reported for manual review rather than assumed broken. A successful response confirms reachability, not the accuracy or completeness of the exercise. Reports are kept separately in `reports/site-check.json` and `reports/external-links.json`.
 
@@ -40,7 +40,7 @@ Course badges describe whether the saved dates are upcoming, in progress or past
 
 ## Publishing
 
-Upload the complete release to the root of `tomjohnsonde/english-materials`, with `index.html` at the root. GitHub Pages uses `main` and `/(root)`. The deployment prefix is `/english-materials/`. Upload all generated detail pages; do not upload previous ZIP files, backups, `.git` or unrelated folders.
+Upload the complete release to the root of `tomjohnsonde/english-materials`, with `index.html` at the root. GitHub Pages uses `main` and `/(root)`. The public website is `https://tomjohnson.top/`, served from the domain root. Keep the included `CNAME` file containing `tomjohnson.top`. Absolute metadata uses `siteUrl` in `assets/data.js`; sitemap generation reads the same setting. Upload all generated detail pages; do not upload previous ZIP files, backups, `.git` or unrelated folders.
 
 Use the full ZIP for a complete copy or the update ZIP over the existing site. This local review did not publish changes.
 
@@ -49,3 +49,11 @@ Use the full ZIP for a complete copy or the update ZIP over the existing site. T
 The in-app browser failed its administrative policy check, so no real desktop/mobile layout, accessibility-tree or performance measurements were completed in this session. Do not treat the DOM simulations or file-size measurements as browser or Lighthouse results.
 
 When browser access is restored, check widths 320, 390, 768 and 1280, enlarged text, keyboard focus, mobile PDF opening, course-table scrolling, search filters and contact behaviour. Protected third-party resources require their ordinary access flow. Live indexing and refreshed social previews can only be confirmed after deployment; Search Console also requires property access.
+
+## Portrait and QR
+
+The home portrait is large on desktop and mobile. The 1122 × 1402 lossless WebP preserves the original portrait pixels; the original PNG is the fallback. A 640-pixel WebP variant remains available through `srcset`.
+
+The QR encodes `https://tomjohnson.top/`, and the QR image is itself a link to that address. To regenerate it after a domain change, install Pillow and qrcode 8.2 in a separate Python environment and run `python scripts/generate-qr.py`. Regeneration is not required for normal builds.
+
+HTTPS is already available on the domain. Both HTTP and HTTPS currently return the site without an HTTP-to-HTTPS redirect. Enable **Enforce HTTPS** in GitHub Pages settings to make the secure address the only entry point. This repository update does not change the remote Pages settings or publish files.
