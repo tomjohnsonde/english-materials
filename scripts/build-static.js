@@ -43,7 +43,7 @@ for (const name of fs.readdirSync(root).filter((name) => name.endsWith('.html') 
   }
   html = staticFiles(html);
   if (name === '404.html') {
-    html = html.replace(/\b(href|src|action)="(?!https?:|mailto:|#|\/)([^\"]+)"/g, '$1="/english-materials/$2"');
+    html = html.replace(/\b(href|src|action)="(?!https?:|mailto:|#|\/)([^\"]+)"/g, '$1="/$2"');
   }
   if (html !== original) {
     changed += 1;
@@ -64,7 +64,7 @@ function staticFiles(html) {
   });
 }
 function detailPage(template, title, description, route, markup, schema) {
-  const url = new URL(route, 'https://tomjohnsonde.github.io/english-materials/').href;
+  const url = new URL(route, data.siteUrl).href;
   return template
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${escape(title)} · Intermediate English Materials</title>`)
     .replace(/(<meta (?:name|property)="(?:description|og:description|twitter:description)" content=")[^"]*/g, `$1${escape(description)}`)
@@ -94,7 +94,7 @@ for (const file of files) {
     learningResourceType: file.activityType || 'Learning material',
     ...(file.level ? { educationalLevel: file.level } : {}),
     ...(file.estimatedMinutes ? { timeRequired: `PT${file.estimatedMinutes}M` } : {}),
-    encoding: { '@type': 'MediaObject', contentUrl: new URL(file.local, 'https://tomjohnsonde.github.io/english-materials/').href, encodingFormat: record.format }
+    encoding: { '@type': 'MediaObject', contentUrl: new URL(file.local, data.siteUrl).href, encodingFormat: record.format }
   }));
 }
 for (const section of sections.filter((section) => section.legacyHref)) {

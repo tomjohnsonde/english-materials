@@ -4,7 +4,7 @@ const vm = require('vm');
 
 const model = require('../assets/site.js');
 const root = path.resolve(__dirname, '..');
-const origin = 'https://tomjohnsonde.github.io/english-materials/';
+const origin = require('../assets/data.js').siteUrl;
 const sitemapPath = path.join(root, 'sitemap.xml');
 
 function readData() {

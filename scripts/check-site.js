@@ -31,7 +31,7 @@ function localHrefs(html) {
   for (const match of html.matchAll(/(?:href|src)=["']([^"']+)["']/gi)) {
     const href = match[1];
     if (!href || href.startsWith('#') || /^(?:https?:|mailto:|tel:|data:)/i.test(href)) continue;
-    found.push(decodeURIComponent(href.split('#')[0].split('?')[0].replace(/^\/english-materials\//, '')));
+    found.push(decodeURIComponent(href.split('#')[0].split('?')[0].replace(/^\//, '')));
   }
   return found.filter(Boolean);
 }

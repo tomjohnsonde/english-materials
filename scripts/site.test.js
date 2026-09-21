@@ -222,10 +222,11 @@ test('static HTML has navigation, direct file access and safe form defaults', ()
   assert.doesNotMatch(notFound, /(?:href|src|action)="(?:assets\/|index\.html|library\.html)/);
 });
 
-test('the portrait uses small responsive files and all named variants exist', () => {
+test('the large portrait provides an original-resolution source and responsive variants', () => {
   const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
   assert.match(html, /<picture>/);
-  assert.doesNotMatch(html, /src="assets\/tom-johnson-illustrated-portrait.png"/);
+  assert.match(html, /tom-johnson-1122.webp 1122w/);
+  assert.match(html, /width="1122" height="1402"/);
   for (const file of ['tom-johnson-320.webp', 'tom-johnson-640.webp', 'tom-johnson-640.jpg']) assert.ok(fs.statSync(path.join(root, 'assets', file)).size < 150000);
 });
 
@@ -246,11 +247,11 @@ test('every canonical material has complete HTML and social metadata before Java
     const html = fs.readFileSync(path.join(root, route), 'utf8');
     assert.ok(html.includes(`<h1>${model.escapeHtml(record.title)}</h1>`), route);
     assert.ok(html.includes(`<meta property="og:description" content="${model.escapeHtml(record.description)}"`), route);
-    assert.ok(html.includes(`rel="canonical" href="https://tomjohnsonde.github.io/english-materials/${route}"`), route);
+    assert.ok(html.includes(`rel="canonical" href="https://tomjohnson.top/${route}"`), route);
     assert.ok(html.includes(`href="${file.local}" download`), route);
     const schema = JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
     assert.equal(schema.name, record.title);
-    assert.equal(schema.encoding.contentUrl, new URL(file.local, 'https://tomjohnsonde.github.io/english-materials/').href);
+    assert.equal(schema.encoding.contentUrl, new URL(file.local, 'https://tomjohnson.top/').href);
     assert.ok(!html.includes('The material details will load here'));
   }
 });
@@ -325,4 +326,40 @@ test('unrelated search words cannot match short words such as a, an or in', () =
   assert.equal(model.filterRecords(records, { query: 'antidisestablishmentarianxyz' }).length, 0);
   assert.ok(model.filterRecords(records, { query: 'collocation' }).length > 0);
   assert.ok(model.filterRecords(records, { query: 'conditonals' }).length > 0);
+});
+
+test('all public metadata and hosting settings agree on the new custom domain', () => {
+  const origin = require('../assets/data.js').siteUrl;
+  assert.equal(origin, 'https://tomjohnson.top/');
+  assert.equal(fs.readFileSync(path.join(root, 'CNAME'), 'utf8').trim(), new URL(origin).hostname);
+  const webmanifest = JSON.parse(fs.readFileSync(path.join(root, 'assets/site.webmanifest'), 'utf8'));
+  assert.equal(webmanifest.start_url, '/');
+  assert.equal(webmanifest.scope, '/');
+  for (const name of fs.readdirSync(root).filter((name) => name.endsWith('.html'))) {
+    const html = fs.readFileSync(path.join(root, name), 'utf8');
+    assert.doesNotMatch(html, /tomjohnsonde\.github\.io|\/english-materials\//, name);
+    for (const match of html.matchAll(/<(?:link rel="canonical" href|meta (?:property="og:(?:url|image)"|name="twitter:image") content)="([^"]+)"/g)) {
+      assert.equal(new URL(match[1]).origin, new URL(origin).origin, name);
+    }
+  }
+  const sitemap = fs.readFileSync(path.join(root, 'sitemap.xml'), 'utf8');
+  for (const match of sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)) assert.equal(new URL(match[1]).origin, new URL(origin).origin);
+  assert.ok(fs.readFileSync(path.join(root, 'robots.txt'), 'utf8').includes(`Sitemap: ${origin}sitemap.xml`));
+});
+
+test('QR image and its visible link open the same new home address', () => {
+  const html = fs.readFileSync(path.join(root, 'qr.html'), 'utf8');
+  assert.match(html, /<a class="qr-page__code-frame" href="https:\/\/tomjohnson\.top\/"[^>]*>\s*<img/);
+  assert.match(html, /class="qr-page__link" href="https:\/\/tomjohnson\.top\/">tomjohnson\.top/);
+  assert.match(html, /qr-english-materials\.png\?v=20260920\.7/);
+});
+
+test('404 assets and navigation resolve from deeply nested missing URLs at the domain root', () => {
+  const html = fs.readFileSync(path.join(root, '404.html'), 'utf8');
+  for (const match of html.matchAll(/(?:href|src|action)="([^"#]+)"/g)) {
+    if (/^(?:https?:|mailto:)/.test(match[1])) continue;
+    assert.ok(match[1].startsWith('/'), match[1]);
+    const url = new URL(match[1], 'https://tomjohnson.top/missing/deep/page.html');
+    assert.ok(fs.existsSync(path.join(root, url.pathname.slice(1))), match[1]);
+  }
 });
