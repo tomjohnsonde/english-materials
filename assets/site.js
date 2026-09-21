@@ -2,8 +2,8 @@
   const data = globalThis.siteData || (typeof module !== 'undefined' ? require('./data.js') : undefined);
   const page = globalThis.document?.body?.dataset.page || '';
   const materialRoot = 'assets/materials/';
-  const siteOrigin = 'https://tomjohnsonde.github.io/english-materials/';
-  const assetRevision = '20260920.6';
+  const siteOrigin = data.siteUrl;
+  const assetRevision = '20260920.7';
   const escapeHtml = (value) => String(value ?? '').replace(/[&<>'"]/g, (character) => ({ '&': '&amp;', '>': '&gt;', '<': '&lt;', "'": '&#39;', '"': '&quot;' }[character]));
   const isLocalMaterial = (href) => typeof href === 'string' && href.startsWith(materialRoot);
   const isExternalResource = (href) => typeof href === 'string' && /^https?:\/\//i.test(href);

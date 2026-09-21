@@ -1,4 +1,5 @@
 globalThis.siteData = {
+  "siteUrl": "https://tomjohnson.top/",
   "navigation": [
     {
       "label": "Home",
